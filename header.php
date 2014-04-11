@@ -7,8 +7,6 @@
 	<head>
 
 		<link rel="stylesheet" media="only screen and (min-width: 960px)" href="<?php bloginfo('template_url'); ?>/style.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 960px)" href="<?php bloginfo('template_url'); ?>/tablet.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="<?php bloginfo('template_url'); ?>/mobile.css" />
 		
 		<!--[if lt IE 9]>
      		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
