@@ -27,8 +27,7 @@
 		<div id="siteWrap">
 		<header role="banner">
 			
-			
-			Header
+			<h1>Pixellocker</h1>
 
 		</header>
 
