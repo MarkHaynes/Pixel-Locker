@@ -5,8 +5,10 @@
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 
 	<head>
-
-		<link rel="stylesheet" media="only screen and (min-width: 960px)" href="<?php bloginfo('template_url'); ?>/style.css" />
+		
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/normalize.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
 		
 		<!--[if lt IE 9]>
      		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,17 +26,24 @@
 	</head>
 	<body>
 
-		<div id="siteWrap">
 		<header role="banner">
-			
-			<h1>Pixellocker</h1>
+		
+			<div class="wrap">
+
+				<div id="logo">
+					<a href="http://pixellocker.co.uk">
+						<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px">
+					</a>
+				</div>
+
+				<nav role="navigation">
+					<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+				</nav>
+
+				<div class="clear"></div>
+
+			</div>
 
 		</header>
-
-		<nav role="navigation">
-			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-
-		</nav>
-		
 
 		
