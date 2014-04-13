@@ -1,0 +1,80 @@
+
+#mainHeader {
+
+	width: $full-width;
+	height: $header-height;
+	background-color: $color-header-bg;
+}
+
+
+#pl-logo {
+   height: $logo-height;
+    width: $logo-width;
+}
+
+#logo {
+	@extend #pl-logo;
+    float: left;
+    margin: $logo-margin;
+}
+
+nav {
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		height: $header-height;
+
+		li {
+		    margin-left: $nav-margin;
+		    width: $nav-link-width;
+		    display: inline-block;
+
+			a {
+			    width: $nav-link-width;
+			    line-height: $header-height;
+			    display: block;
+			    text-align: center;
+			    font-size: 1em;
+			}
+			
+			a:hover {
+			    background-color: $color-nav-hover;
+			    color: $color-nav-btn-hover-text;
+			    text-decoration: none;
+			}
+		}
+
+	}
+}
+
+#mainNav{
+	@extend nav;
+	float: right;
+
+	li.quote {
+		width: 110px;
+		 margin-left: 20px;
+		background-color: transparent;
+
+	a {
+	    width: 110px;
+	    line-height: 38px;
+	    font-size: 0.875em;
+		@include border-radius($btn-radius);
+	    background-color: $color-quote-btn;
+	}
+
+	a:hover {
+	    background-color: $color-quote-btn-hover;
+	}
+
+	}
+
+	li.current-menu-item a {
+		text-decoration: underline;
+		background-color: $color-nav-current;
+		color: $color-nav-current-text;
+	}
+}

@@ -1,0 +1,67 @@
+/* Fonts */
+/* Content Section colors */
+/* Font colors */
+/* Service colors */
+/* Nav and Button colors */
+/* Dimensions */
+/* Variables End */
+/* line 63, ../sass/base.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  background-color: #091f37;
+  color: #4e6c81;
+}
+
+/* line 70, ../sass/base.scss */
+h1 {
+  font-size: 2.5em;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+
+/* line 77, ../sass/base.scss */
+h2 {
+  font-size: 2.5em;
+  text-decoration: none;
+  font-weight: 300;
+  color: #87c8ee;
+}
+
+/* line 83, ../sass/base.scss */
+h3 {
+  font-size: 2.125em;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 88, ../sass/base.scss */
+h4 {
+  font-size: 1.875em;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 98, ../sass/base.scss */
+a {
+  text-decoration: none;
+  color: #dfdfdf;
+  -webkit-transition: all 0.4s ease-in-out;
+  -mox-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 107, ../sass/base.scss */
+.wrap {
+  width: 94%;
+  max-width: 1300px;
+  padding: 0 3%;
+  margin: 0 auto;
+}
+
+/* line 114, ../sass/base.scss */
+.clear {
+  clear: both;
+}
