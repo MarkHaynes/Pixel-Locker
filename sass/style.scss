@@ -6,7 +6,8 @@
 	Version: 2.0
 */
 
-@import 'compass/css3/';
-@import 'base';
-@import 'header';
+@import "compass/css3/";
+@import '_base';
+@import '_header';
+@import '_footer';
 @import '_wordpressCore';
