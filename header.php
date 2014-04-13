@@ -8,8 +8,8 @@
 		
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/normalize.css" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
-		
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css"/>
+
 		<!--[if lt IE 9]>
      		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -26,7 +26,7 @@
 	</head>
 	<body>
 
-		<header role="banner">
+		<header id="mainHeader" role="banner">
 		
 			<div class="wrap">
 
@@ -36,7 +36,7 @@
 					</a>
 				</div>
 
-				<nav role="navigation">
+				<nav id="mainNav" role="navigation">
 					<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 				</nav>
 

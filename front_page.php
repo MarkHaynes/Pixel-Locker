@@ -73,7 +73,7 @@ Template Name: Custom Front Page
 			
 				<div class="meetTheTeam">
 
-					<h2>Meet The Team></h2>
+					<h2>Meet The Team</h2>
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
