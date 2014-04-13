@@ -7,6 +7,7 @@
 				'header-menu' => __( 'Header Menu'),
 				'mobile-menu' => __( 'Mobile Menu'),
 				'footer-menu' => __( 'Footer Menu')
+			)
 		);
 	}
 	add_action ('init', 'register_menus');
