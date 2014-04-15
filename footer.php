@@ -1,18 +1,19 @@
 			
 			<footer id="mainFooter" role="contentinfo">
-				<div class="wrap">
+				
 					
-					<section id="bottomStrip">
-
+				<section id="bottomStrip">
+					<div class="wrap">
 						<h1>It would be great to hear from you :)</h1>
 
 						<div class="btn"><a href="http://pixellocker.co.uk">Contact Us</a></div>
-					
-					</section>
+					</div>
+				</section>
 
+				<div class="wrap">
 					<div id="copyright">
 						
-						<p><img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"> Copyright © 2011-2014 Pixel Locker</p>
+						<p><img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="15px"> Copyright © 2011-2014 Pixel Locker</p>
 
 					</div>
 

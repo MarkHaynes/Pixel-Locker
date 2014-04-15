@@ -1,0 +1,29 @@
+#bottomStrip {
+	@extend #strip;
+}
+#copyright {
+	float: left;
+}
+.facebook {
+	@extend .btn;
+	
+	a {
+		background-color: $facebook-blue;
+	}
+
+	a:hover {
+		background-color: lighten($facebook-blue, 10%);
+	}
+}
+
+.twitter {
+	@extend .btn;
+
+	a {
+		background-color: $twitter-blue;
+	}
+
+	a:hover {
+		background-color: lighten($twitter-blue, 10%);
+	}
+}

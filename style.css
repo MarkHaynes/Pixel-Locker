@@ -7,60 +7,88 @@
 */
 /* Fonts */
 /* Content Section colors */
-/* Font colors */
 /* Service colors */
-/* Nav and Button colors */
-/* Dimensions */
 /* Variables End */
-/* line 63, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  background-color: #091f37;
+  background-color: #0a1b2d;
   color: #4e6c81;
+  height: 100%;
+  width: 100%;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 40, ../sass/_base.scss */
+main, section {
+  display: block;
+  overflow: auto;
+}
+
+/* line 45, ../sass/_base.scss */
+main {
+  background-color: #fff;
+}
+
+/* line 49, ../sass/_base.scss */
+h1, h2, h3, h4 {
+  text-decoration: none;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+/* line 55, ../sass/_base.scss */
 h1 {
   font-size: 2.5em;
-  text-decoration: none;
-  font-weight: 300;
-  color: white;
-}
-
-/* line 77, ../sass/_base.scss */
-h2 {
-  font-size: 2.5em;
-  text-decoration: none;
-  font-weight: 300;
   color: #87c8ee;
 }
 
-/* line 83, ../sass/_base.scss */
-h3 {
+/* line 60, ../sass/_base.scss */
+h2 {
   font-size: 2.125em;
-  text-decoration: none;
-  font-weight: 300;
 }
 
-/* line 88, ../sass/_base.scss */
-h4 {
+/* line 64, ../sass/_base.scss */
+h3 {
   font-size: 1.875em;
-  text-decoration: none;
-  font-weight: 300;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 72, ../sass/_base.scss */
 a {
   text-decoration: none;
-  color: #dfdfdf;
+  color: #ccc;
   -webkit-transition: all 0.4s ease-in-out;
   -mox-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 107, ../sass/_base.scss */
+/* line 83, ../sass/_base.scss */
+.btn a, .quote a, .facebook a, .twitter a {
+  min-width: 60px;
+  line-height: 38px;
+  padding: 0 15px;
+  font-size: 0.875em;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #365c7b;
+}
+/* line 93, ../sass/_base.scss */
+.btn a:hover, .quote a:hover, .facebook a:hover, .twitter a:hover {
+  background-color: #4d84b0;
+  color: #fff;
+}
+
+/* line 99, ../sass/_base.scss */
 .wrap {
   width: 94%;
   max-width: 1300px;
@@ -68,7 +96,7 @@ a {
   margin: 0 auto;
 }
 
-/* line 114, ../sass/_base.scss */
+/* line 106, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -77,79 +105,111 @@ a {
 #mainHeader {
   width: 100%;
   height: 60px;
-  background-color: #0e2d4c;
+  background-color: #0e2842;
 }
 
-/* line 10, ../sass/_header.scss */
-#pl-logo, #logo {
-  height: 30px;
-  width: 210px;
-}
-
-/* line 15, ../sass/_header.scss */
+/* line 9, ../sass/_header.scss */
 #logo {
+  height: 30px;
   float: left;
   margin: 15px 0;
 }
 
-/* line 23, ../sass/_header.scss */
-nav ul, #mainNav ul {
+/* line 17, ../sass/_header.scss */
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   height: 60px;
 }
-/* line 29, ../sass/_header.scss */
-nav ul li, #mainNav ul li {
+/* line 23, ../sass/_header.scss */
+nav ul li {
   margin-left: 10px;
-  width: 120px;
   display: inline-block;
-}
-/* line 34, ../sass/_header.scss */
-nav ul li a, #mainNav ul li a {
-  width: 120px;
   line-height: 60px;
+}
+/* line 28, ../sass/_header.scss */
+nav ul li a {
+  min-width: 120px;
   display: block;
   text-align: center;
   font-size: 1em;
 }
-/* line 42, ../sass/_header.scss */
-nav ul li a:hover, #mainNav ul li a:hover {
-  background-color: #0c2744;
-  color: white;
+/* line 35, ../sass/_header.scss */
+nav ul li a:hover {
+  background-color: #0b2035;
+  color: #fff;
   text-decoration: none;
 }
+/* line 42, ../sass/_header.scss */
+nav ul li.current-menu-item a {
+  text-decoration: underline;
+  color: #99c1e9;
+}
 
-/* line 52, ../sass/_header.scss */
-#mainNav {
+/* line 49, ../sass/_header.scss */
+#mainNav, #bottomNav {
   float: right;
 }
-/* line 56, ../sass/_header.scss */
-#mainNav li.quote {
-  width: 110px;
-  margin-left: 20px;
-  background-color: transparent;
+
+/* line 1, ../sass/_frontPage.scss */
+#strip, #topStrip, .lightStrip, #bottomStrip {
+  text-align: center;
+  padding: 20px 0;
+  min-height: 120px;
 }
-/* line 61, ../sass/_header.scss */
-#mainNav li.quote a {
-  width: 110px;
-  line-height: 38px;
-  font-size: 0.875em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  background-color: #365c7b;
+/* line 6, ../sass/_frontPage.scss */
+#strip p, #topStrip p, .lightStrip p, #bottomStrip p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.25em;
 }
-/* line 69, ../sass/_header.scss */
-#mainNav li.quote a:hover {
-  background-color: #5f8baa;
+
+/* line 14, ../sass/_frontPage.scss */
+#topStrip {
+  background-color: #123253;
 }
-/* line 75, ../sass/_header.scss */
-#mainNav li.current-menu-item a {
-  text-decoration: underline;
-  background-color: #103352;
-  color: #9fdcff;
+/* line 18, ../sass/_frontPage.scss */
+#topStrip h1 {
+  color: #ffffff;
+}
+/* line 22, ../sass/_frontPage.scss */
+#topStrip p {
+  color: #ccc;
+}
+
+/* line 27, ../sass/_frontPage.scss */
+.lightStrip {
+  background-color: #e5f3fb;
+}
+/* line 31, ../sass/_frontPage.scss */
+.lightStrip h1 {
+  color: #87c8ee;
+}
+
+/* line 4, ../sass/_footer.scss */
+#copyright {
+  float: left;
+}
+
+/* line 10, ../sass/_footer.scss */
+.facebook a {
+  background-color: #4c69ba;
+}
+/* line 14, ../sass/_footer.scss */
+.facebook a:hover {
+  background-color: #7188c8;
+}
+
+/* line 22, ../sass/_footer.scss */
+.twitter a {
+  background-color: #55acee;
+}
+/* line 26, ../sass/_footer.scss */
+.twitter a:hover {
+  background-color: #83c3f3;
 }
 
 /* line 1, ../sass/_wordpressCore.scss */
