@@ -37,7 +37,7 @@
 				</div>
 
 				<nav id="mainNav" role="navigation">
-					<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 				</nav>
 
 				<div class="clear"></div>
