@@ -14,7 +14,7 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 class="pageTitle">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
+				<h1 >Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
 
 				<p>We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</p>
 			
@@ -67,7 +67,7 @@ Template Name: Custom Front Page
 		
 				<h3>We have a lot to offer.</h3>
 
-				<div class="button">Read More</div>
+				<div class="btn"><a href="#">Read More</a></div>
 
 			</div>
 		</section>
@@ -95,7 +95,7 @@ Template Name: Custom Front Page
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-						<div class="button">Personal Website</div>
+						<div class="btn"><a href="#">Personal Website</a></div>
 
 					</li>
 
@@ -106,7 +106,7 @@ Template Name: Custom Front Page
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-						<div class="button">Personal Website</div>
+						<div class="btn"><a href="#">Personal Website</a></div>
 
 					</li>
 				</ul>
