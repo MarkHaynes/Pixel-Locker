@@ -3,11 +3,11 @@
 				
 					
 				<section id="bottomStrip">
-					<div class="wrap">
-						<h1>It would be great to hear from you :)</h1>
 
-						<div class="btn"><a href="http://pixellocker.co.uk">Contact Us</a></div>
-					</div>
+					<h1 class="title">It would be great to hear from you :)</h1>
+
+					<div class="btn"><a href="http://pixellocker.co.uk">Contact Us</a></div>
+
 				</section>
 
 				<div class="wrap">

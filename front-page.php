@@ -14,9 +14,9 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 >Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
+				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
 
-				<p>We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</p>
+				<span class="subtitle">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
 			
 			</div>
 		</section>
@@ -24,12 +24,11 @@ Template Name: Custom Front Page
 		<section class="lightStrip">
 			<div class="wrap">
 
-				<h1>Always happy to help,</h1>
+					<h1 class="title">Always happy to help,</h1>
 
-				<p>We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</p>
-	
-				<div class="servicesStrip">
+					<span class="subtitle">We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</span>
 
+				<div class="strip">
 					<ul id="servicesList">
 						<li class="serviceBox">
 							
@@ -62,13 +61,14 @@ Template Name: Custom Front Page
 
 						</li>
 					</ul>
+				</div>
+				<div>
+
+					<h3 class="title">We have a lot to offer.</h3>
+
+					<div class="btn"><a href="#">Read More</a></div>
 
 				</div>
-		
-				<h3>We have a lot to offer.</h3>
-
-				<div class="btn"><a href="#">Read More</a></div>
-
 			</div>
 		</section>
 
@@ -113,15 +113,15 @@ Template Name: Custom Front Page
 
 			</div>		
 		</section>
+		<div class="wrap">
+   			<?php the_content(); ?>
+
+			<?php endwhile; else: ?>
+
+ 				<p>Sorry, no posts matched your criteria.</p>
+
+ 			<?php endif; ?>
+ 		</div>
 	</main>
-	
-   		
-   		<?php the_content(); ?>
-
-		<?php endwhile; else: ?>
-
- 			<p>Sorry, no posts matched your criteria.</p>
-
- 		<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -1,5 +1,18 @@
 #bottomStrip {
-	@extend #strip;
+	@extend .strip;
+	background-color: lighten($colour-darkblue, 4%);
+	
+	.title {
+		color: #ffffff;
+		font-size: 1.875em
+	}
+
+	.subtitle {
+		color: #ccc;
+	}
+	.btn {
+		text-align: center;
+	}
 }
 #copyright {
 	float: left;
@@ -12,7 +25,7 @@
 	}
 
 	a:hover {
-		background-color: lighten($facebook-blue, 10%);
+		background-color: lighten($facebook-blue, 5%);
 	}
 }
 
@@ -24,6 +37,6 @@
 	}
 
 	a:hover {
-		background-color: lighten($twitter-blue, 10%);
+		background-color: lighten($twitter-blue, 5%);
 	}
 }

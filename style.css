@@ -13,7 +13,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  background-color: #0a1b2d;
+  background-color: #0a1e31;
   color: #4e6c81;
   height: 100%;
   width: 100%;
@@ -31,10 +31,9 @@ main {
 }
 
 /* line 49, ../sass/_base.scss */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 300;
-  margin: 20px 0;
 }
 
 /* line 55, ../sass/_base.scss */
@@ -46,29 +45,50 @@ h1 {
 /* line 60, ../sass/_base.scss */
 h2 {
   font-size: 2.125em;
+  color: #44a9e5;
 }
 
-/* line 64, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 h3 {
   font-size: 1.875em;
+  color: #1b84c1;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
+  color: #12567e;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
+h5 {
+  font-size: 1.25em;
+  color: #2e9fe1;
+}
+
+/* line 78, ../sass/_base.scss */
+h6 {
+  font-size: 1.125em;
+  color: #1874aa;
+}
+
+/* line 83, ../sass/_base.scss */
 a {
   text-decoration: none;
-  color: #ccc;
+  color: #2974c0;
   -webkit-transition: all 0.4s ease-in-out;
   -mox-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
+a:hover {
+  text-decoration: none;
+  color: #6fa7e0;
+}
+
+/* line 98, ../sass/_base.scss */
 .btn a, .quote a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -81,14 +101,15 @@ a {
   border-radius: 2px;
   display: inline-block;
   background-color: #365c7b;
+  color: #ddd;
 }
-/* line 93, ../sass/_base.scss */
+/* line 109, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #4d84b0;
   color: #fff;
 }
 
-/* line 99, ../sass/_base.scss */
+/* line 115, ../sass/_base.scss */
 .wrap {
   width: 94%;
   max-width: 1300px;
@@ -96,7 +117,7 @@ a {
   margin: 0 auto;
 }
 
-/* line 106, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -134,82 +155,119 @@ nav ul li a {
   display: block;
   text-align: center;
   font-size: 1em;
+  color: #ccc;
 }
-/* line 35, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 nav ul li a:hover {
   background-color: #0b2035;
   color: #fff;
   text-decoration: none;
 }
-/* line 42, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 
-/* line 49, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }
 
 /* line 1, ../sass/_frontPage.scss */
-#strip, #topStrip, .lightStrip, #bottomStrip {
-  text-align: center;
-  padding: 20px 0;
-  min-height: 120px;
+.strip, #topStrip, .lightStrip, #bottomStrip {
+  padding: 40px 0;
 }
-/* line 6, ../sass/_frontPage.scss */
-#strip p, #topStrip p, .lightStrip p, #bottomStrip p {
+/* line 4, ../sass/_frontPage.scss */
+.strip .title, #topStrip .title, .lightStrip .title, #bottomStrip .title {
+  margin: 0 0 14px 0;
+  text-align: center;
+}
+/* line 9, ../sass/_frontPage.scss */
+.strip .subtitle, #topStrip .subtitle, .lightStrip .subtitle, #bottomStrip .subtitle {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 14px auto 0 auto;
+  text-align: center;
   font-style: italic;
   font-weight: 300;
   font-size: 1.25em;
+  display: block;
 }
 
-/* line 14, ../sass/_frontPage.scss */
+/* line 20, ../sass/_frontPage.scss */
 #topStrip {
   background-color: #123253;
 }
-/* line 18, ../sass/_frontPage.scss */
-#topStrip h1 {
+/* line 24, ../sass/_frontPage.scss */
+#topStrip .title {
   color: #ffffff;
 }
-/* line 22, ../sass/_frontPage.scss */
-#topStrip p {
+/* line 28, ../sass/_frontPage.scss */
+#topStrip .subtitle {
   color: #ccc;
 }
 
-/* line 27, ../sass/_frontPage.scss */
+/* line 33, ../sass/_frontPage.scss */
 .lightStrip {
-  background-color: #e5f3fb;
+  background-color: #eef7fd;
 }
-/* line 31, ../sass/_frontPage.scss */
-.lightStrip h1 {
+/* line 37, ../sass/_frontPage.scss */
+.lightStrip .title {
   color: #87c8ee;
 }
+/* line 41, ../sass/_frontPage.scss */
+.lightStrip .subtitle {
+  color: #7293aa;
+}
+/* line 44, ../sass/_frontPage.scss */
+.lightStrip .btn, .lightStrip .quote, .lightStrip .facebook, .lightStrip .twitter {
+  text-align: center;
+}
 
-/* line 4, ../sass/_footer.scss */
+/* line 48, ../sass/_frontPage.scss */
+.whiteStrip {
+  padding: 20px 0;
+}
+
+/* line 1, ../sass/_footer.scss */
+#bottomStrip {
+  background-color: #123253;
+}
+/* line 5, ../sass/_footer.scss */
+#bottomStrip .title {
+  color: #ffffff;
+  font-size: 1.875em;
+}
+/* line 10, ../sass/_footer.scss */
+#bottomStrip .subtitle {
+  color: #ccc;
+}
+/* line 13, ../sass/_footer.scss */
+#bottomStrip .btn, #bottomStrip .quote, #bottomStrip .facebook, #bottomStrip .twitter {
+  text-align: center;
+}
+
+/* line 17, ../sass/_footer.scss */
 #copyright {
   float: left;
 }
 
-/* line 10, ../sass/_footer.scss */
+/* line 23, ../sass/_footer.scss */
 .facebook a {
   background-color: #4c69ba;
 }
-/* line 14, ../sass/_footer.scss */
+/* line 27, ../sass/_footer.scss */
 .facebook a:hover {
-  background-color: #7188c8;
+  background-color: #5e78c1;
 }
 
-/* line 22, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .twitter a {
   background-color: #55acee;
 }
-/* line 26, ../sass/_footer.scss */
+/* line 39, ../sass/_footer.scss */
 .twitter a:hover {
-  background-color: #83c3f3;
+  background-color: #6cb7f0;
 }
 
 /* line 1, ../sass/_wordpressCore.scss */

@@ -31,7 +31,7 @@ $box-radius: 4px;
 body {
     font-family: $main-font;
     font-size: 1em;
-    background-color: darken($colour-darkblue, 5%);
+    background-color: darken($colour-darkblue, 4%);
     color: $colour-font;
     height: 100%;
     width: 100%;
@@ -46,10 +46,10 @@ main {
     background-color: #fff;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     font-weight: 300;
-    margin: 20px 0;
+
 }
 
 h1 {
@@ -59,25 +59,40 @@ h1 {
 
 h2 {
     font-size: 2.125em;
+    color: darken($colour-lightblue, 15%);
 }
 
 h3 {
     font-size: 1.875em;
+    color: darken($colour-lightblue, 30%);
 }
 
 h4 {
     font-size: 1.5em;
+    color: darken($colour-lightblue, 45%);
+}
+h5 {
+    font-size: 1.25em;
+    color: darken($colour-lightblue, 20%);
+}
+h6 {
+    font-size: 1.125em;
+    color: darken($colour-lightblue, 35%);
 }
 
 a {
     text-decoration: none;
-    color: #ccc;
+    color: lighten($colour-darkblue, 30%);
     -webkit-transition: all 0.4s ease-in-out;
     -mox-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
+a:hover {
+    text-decoration: none;
+    color: lighten($colour-darkblue, 50%);
+}
 .btn {
 
     a{
@@ -89,6 +104,7 @@ a {
         @include border-radius($btn-radius);
         display: inline-block;
         background-color: $btn-colour;
+        color: #ddd;
     }
     a:hover {
             background-color: lighten($btn-colour,15%);
