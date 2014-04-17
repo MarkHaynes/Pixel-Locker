@@ -1,3 +1,4 @@
+
 #bottomStrip {
 	@extend .strip;
 	background-color: lighten($colour-darkblue, 4%);
@@ -16,6 +17,12 @@
 }
 #copyright {
 	float: left;
+	line-height: 60px;
+
+	p {
+		margin: 0;
+		color: #999;
+	}
 }
 .facebook {
 	@extend .btn;

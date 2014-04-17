@@ -46,5 +46,37 @@
 	}
 }
 .whiteStrip {
-	padding: 20px 0;
+	padding: 40px 0;
+}
+ul#servicesList {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 1200px;
+
+	li.serviceBox {
+		padding:  2%;
+		margin: 0 1%;
+		width: 27%;
+		display: inline-block;
+		background-color: #fff;
+		@include border-radius($box-radius);
+
+		.serviceIcon{
+			margin: 20px 0 0 0;
+		}
+		h1, h2, h3, h4,{
+			margin: 0px;
+		}
+		.design{
+			color: $colour-red;
+		}
+		.dev {
+			color: $colour-green;
+		}
+		.host {
+			color: $colour-blue;
+		}
+	}
 }

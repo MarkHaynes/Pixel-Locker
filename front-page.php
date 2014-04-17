@@ -32,27 +32,27 @@ Template Name: Custom Front Page
 					<ul id="servicesList">
 						<li class="serviceBox">
 							
-							<img class="serviceIcon" alt="Design Icon" src="<?php bloginfo('template_url'); ?>/images/wedesign.png" height="30px">
+							<img class="serviceIcon" alt="Design Icon" src="<?php bloginfo('template_url'); ?>/images/wedesign.png">
 
-							<h2 class="red">We Design</h2>
+							<h2 class="design">We Design</h2>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-						</li>		
-						<li class="serviceBox">
+						</li><!--
+						--><li class="serviceBox">
 							
-							<img class="serviceIcon" alt="Develop Icon" src="<?php bloginfo('template_url'); ?>/images/wedesign.png" height="30px">
+							<img class="serviceIcon" alt="Develop Icon" src="<?php bloginfo('template_url'); ?>/images/wedevelop.png">
 
 							<h2 class="dev">We Develop</h2>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-						</li>		
-						<li class="serviceBox">
+						</li><!--
+						--><li class="serviceBox">
 							
-							<img class="serviceIcon" alt="Host Icon" src="<?php bloginfo('template_url'); ?>/images/wedesign.png" height="30px">
+							<img class="serviceIcon" alt="Host Icon" src="<?php bloginfo('template_url'); ?>/images/wehost.png">
 
 							<h2 class="host">We Host</h2>
 
@@ -111,17 +111,16 @@ Template Name: Custom Front Page
 					</li>
 				</ul>
 
+	   			<?php the_content(); ?>
+
+				<?php endwhile; else: ?>
+
+	 				<p>Sorry, no posts matched your criteria.</p>
+
+	 			<?php endif; ?>
+
 			</div>		
 		</section>
-		<div class="wrap">
-   			<?php the_content(); ?>
-
-			<?php endwhile; else: ?>
-
- 				<p>Sorry, no posts matched your criteria.</p>
-
- 			<?php endif; ?>
- 		</div>
 	</main>
 
 <?php get_footer(); ?>
