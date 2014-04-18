@@ -9,7 +9,7 @@ $btn-colour: #365c7b;
 
 /* Service colors */
 $colour-red: #976667;
-$colour-green: #aac396;
+$colour-green: #9dba86;
 $colour-blue: #739cc3;
 
 $facebook-blue: #4c69ba;
@@ -30,8 +30,8 @@ $box-radius: 4px;
 
 body {
     font-family: $main-font;
-    font-size: 1em;
-    background-color: darken($colour-darkblue, 4%);
+
+    background-color: darken($colour-darkblue, 5%);
     color: $colour-font;
     height: 100%;
     width: 100%;

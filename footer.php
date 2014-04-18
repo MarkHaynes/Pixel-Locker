@@ -11,15 +11,16 @@
 				</section>
 
 				<div class="wrap">
+
+					<nav id="bottomNav">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+					</nav>
+
 					<div id="copyright">
 						
 						<p><img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="15px"> Copyright © 2011-2014 Pixel Locker</p>
 
 					</div>
-
-					<nav id="bottomNav">
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-					</nav>
 
 				</div>
 			</footer>

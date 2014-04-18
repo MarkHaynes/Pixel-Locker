@@ -12,8 +12,7 @@
 /* line 31, ../sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  background-color: #0a1e31;
+  background-color: #0a1b2d;
   color: #4e6c81;
   height: 100%;
   width: 100%;
@@ -183,7 +182,7 @@ nav ul li.current-menu-item a {
   text-align: center;
 }
 /* line 9, ../sass/_frontPage.scss */
-.strip .subtitle, #topStrip .subtitle, .lightStrip .subtitle, #bottomStrip .subtitle {
+.strip .quote, #topStrip .quote, .lightStrip .quote, #bottomStrip .quote {
   max-width: 800px;
   margin: 14px auto 0 auto;
   text-align: center;
@@ -192,43 +191,48 @@ nav ul li.current-menu-item a {
   font-size: 1.25em;
   display: block;
 }
+/* line 19, ../sass/_frontPage.scss */
+.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, #bottomStrip .subHeading {
+  margin: 0 0 14px 0;
+  text-align: center;
+}
 
-/* line 20, ../sass/_frontPage.scss */
+/* line 25, ../sass/_frontPage.scss */
 #topStrip {
   background-color: #123253;
 }
-/* line 24, ../sass/_frontPage.scss */
+/* line 29, ../sass/_frontPage.scss */
 #topStrip .title {
   color: #ffffff;
 }
-/* line 28, ../sass/_frontPage.scss */
-#topStrip .subtitle {
+/* line 33, ../sass/_frontPage.scss */
+#topStrip .quote {
   color: #ccc;
 }
 
-/* line 33, ../sass/_frontPage.scss */
+/* line 38, ../sass/_frontPage.scss */
 .lightStrip {
   background-color: #eef7fd;
 }
-/* line 37, ../sass/_frontPage.scss */
+/* line 42, ../sass/_frontPage.scss */
 .lightStrip .title {
   color: #87c8ee;
 }
-/* line 41, ../sass/_frontPage.scss */
-.lightStrip .subtitle {
+/* line 45, ../sass/_frontPage.scss */
+.lightStrip .quote {
   color: #7293aa;
 }
-/* line 44, ../sass/_frontPage.scss */
+/* line 48, ../sass/_frontPage.scss */
 .lightStrip .btn, .lightStrip .quote, .lightStrip .facebook, .lightStrip .twitter {
   text-align: center;
 }
 
-/* line 48, ../sass/_frontPage.scss */
+/* line 52, ../sass/_frontPage.scss */
 .whiteStrip {
   padding: 40px 0;
 }
 
-/* line 51, ../sass/_frontPage.scss */
+/* line 55, ../sass/_frontPage.scss */
 ul#servicesList {
   list-style-type: none;
   padding: 0;
@@ -236,7 +240,7 @@ ul#servicesList {
   text-align: center;
   max-width: 1200px;
 }
-/* line 58, ../sass/_frontPage.scss */
+/* line 62, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox {
   padding: 2%;
   margin: 0 1%;
@@ -248,25 +252,45 @@ ul#servicesList li.serviceBox {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 66, ../sass/_frontPage.scss */
+/* line 70, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
   margin: 20px 0 0 0;
 }
-/* line 69, ../sass/_frontPage.scss */
+/* line 73, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 72, ../sass/_frontPage.scss */
-ul#servicesList li.serviceBox .design {
+/* line 76, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .designT {
   color: #976667;
 }
-/* line 75, ../sass/_frontPage.scss */
-ul#servicesList li.serviceBox .dev {
-  color: #aac396;
+/* line 79, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .devT {
+  color: #9dba86;
 }
-/* line 78, ../sass/_frontPage.scss */
-ul#servicesList li.serviceBox .host {
+/* line 82, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .hostT {
   color: #739cc3;
+}
+/* line 86, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox:hover {
+  color: #fff;
+}
+/* line 89, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
+  color: #fff;
+}
+/* line 94, ../sass/_frontPage.scss */
+ul#servicesList li.design:hover {
+  background-color: #976667;
+}
+/* line 97, ../sass/_frontPage.scss */
+ul#servicesList li.dev:hover {
+  background-color: #9dba86;
+}
+/* line 100, ../sass/_frontPage.scss */
+ul#servicesList li.host:hover {
+  background-color: #739cc3;
 }
 
 /* line 2, ../sass/_footer.scss */

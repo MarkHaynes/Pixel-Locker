@@ -6,7 +6,7 @@
 		text-align: center;
 	}
 
-	.subtitle {
+	.quote {
 		max-width: 800px;
 		margin: 14px auto 0 auto;
 		text-align: center;
@@ -14,6 +14,11 @@
 		font-weight: 300;
 		font-size: 1.25em;
 		display: block;
+	}
+
+	.subHeading {
+		margin: 0 0 14px 0;
+		text-align: center;
 	}
 
 }
@@ -25,7 +30,7 @@
 		color: #ffffff;
 	}
 
-	.subtitle {
+	.quote {
 		color: #ccc;
 	}
 
@@ -37,8 +42,7 @@
 	.title {
 		color: $colour-lightblue;
 	}
-
-	.subtitle {
+	.quote {
 		color: lighten($colour-font, 15%);
 	}
 	.btn {
@@ -69,14 +73,32 @@ ul#servicesList {
 		h1, h2, h3, h4,{
 			margin: 0px;
 		}
-		.design{
+		.designT {
 			color: $colour-red;
 		}
-		.dev {
+		.devT {
 			color: $colour-green;
 		}
-		.host {
+		.hostT {
 			color: $colour-blue;
 		}
 	}
+	li.serviceBox:hover {
+		color: #fff;
+
+		.designT, .devT, .hostT {
+			color: #fff;
+		}
+	}
+	
+	li.design:hover {
+		background-color: $colour-red;
+	}
+	li.dev:hover {
+		background-color: $colour-green;
+	}
+	li.host:hover {
+		background-color: $colour-blue;
+	}
+
 }

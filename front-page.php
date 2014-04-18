@@ -16,7 +16,7 @@ Template Name: Custom Front Page
 
 				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
 
-				<span class="subtitle">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
+				<span class="quote">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
 			
 			</div>
 		</section>
@@ -26,35 +26,35 @@ Template Name: Custom Front Page
 
 					<h1 class="title">Always happy to help,</h1>
 
-					<span class="subtitle">We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</span>
+					<span class="quote">We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</span>
 
 				<div class="strip">
 					<ul id="servicesList">
-						<li class="serviceBox">
+						<li class="serviceBox design">
 							
 							<img class="serviceIcon" alt="Design Icon" src="<?php bloginfo('template_url'); ?>/images/wedesign.png">
 
-							<h2 class="design">We Design</h2>
+							<h2 class="designT">We Design</h2>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 						</li><!--
-						--><li class="serviceBox">
+						--><li class="serviceBox dev">
 							
 							<img class="serviceIcon" alt="Develop Icon" src="<?php bloginfo('template_url'); ?>/images/wedevelop.png">
 
-							<h2 class="dev">We Develop</h2>
+							<h2 class="devT">We Develop</h2>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 						</li><!--
-						--><li class="serviceBox">
+						--><li class="serviceBox host">
 							
 							<img class="serviceIcon" alt="Host Icon" src="<?php bloginfo('template_url'); ?>/images/wehost.png">
 
-							<h2 class="host">We Host</h2>
+							<h2 class="hostT">We Host</h2>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -64,7 +64,7 @@ Template Name: Custom Front Page
 				</div>
 				<div>
 
-					<h3 class="title">We have a lot to offer.</h3>
+					<h3 class="subHeading">We have a lot to offer.</h3>
 
 					<div class="btn"><a href="#">Read More</a></div>
 
