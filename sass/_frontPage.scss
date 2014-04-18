@@ -24,6 +24,7 @@
 }
 #topStrip {
 	@extend .strip;
+	margin-top: 60px;
 	background-color: lighten($colour-darkblue, 4%);
 	
 	.title {
@@ -90,7 +91,7 @@ ul#servicesList {
 			color: #fff;
 		}
 	}
-	
+
 	li.design:hover {
 		background-color: $colour-red;
 	}
@@ -99,6 +100,61 @@ ul#servicesList {
 	}
 	li.host:hover {
 		background-color: $colour-blue;
+	}
+
+}
+
+#meetTheTeam {
+	max-width: 1040px;
+	margin: 0 auto 40px auto;
+
+	h1, h2, h3 {
+		margin: 0;
+	}
+	p {
+		margin-top: 0;
+	}
+
+}
+
+#teamDesc, #teamMembers, .memberAvatar, .memberDesc {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#teamDesc {
+	width: 36%;
+	margin-left: 2%;
+	margin-right: 12%;
+}
+
+#teamDesc, #teamMembers {
+	padding: 0;
+	min-width: 320px;
+}
+
+#teamMembers {
+	width: 48%;
+	margin-right: 2%;
+
+	.teamMember {
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.memberAvatar {
+			height: 16%;
+			width: 16%;
+			margin-right: 4%;
+			background-color: #87c8ee;
+			border-radius: 50%;
+		}
+		.memberDesc {
+			width: 80%;
+			p {
+				font-style: italic;
+			}
+		}
 	}
 
 }

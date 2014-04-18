@@ -75,41 +75,42 @@ Template Name: Custom Front Page
 		<section class="whiteStrip">
 			<div class="wrap">
 			
-				<div class="meetTheTeam">
+				<div id="meetTheTeam">
+					<div id="teamDesc">
+						<h1>Meet The Team</h1>
 
-					<h1>Meet The Team</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div><!--
+					--><div id="teamMembers">
+						<div class="teamMember">
 
+							<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px"><!--
+							--><div class="memberDesc">
+								<h2>Mark Haynes</h2>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+								<div class="btn"><a href="#">Personal Website</a></div>
+							</div>
+						</div><!--
+						--><div class="teamMember">
+
+							<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px"><!--
+							--><div class="memberDesc">
+								<h2>Chris Huxley</h2>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+								<div class="btn"><a href="#">Personal Website</a></div>
+							</div>
+						</div>
+					</div>
 				</div>
-
-				<ul id="teamMembers">
-					<li>
-						<img class="avatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px">
-
-						<h2>Mark Haynes</h2>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-						<div class="btn"><a href="#">Personal Website</a></div>
-
-					</li>
-
-					<li>
-						<img class="avatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px">
-
-						<h2>Chris Huxley</h2>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-						<div class="btn"><a href="#">Personal Website</a></div>
-
-					</li>
-				</ul>
 
 	   			<?php the_content(); ?>
 

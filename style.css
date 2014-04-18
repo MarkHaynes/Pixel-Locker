@@ -122,32 +122,34 @@ a:hover {
 
 /* line 2, ../sass/_header.scss */
 #mainHeader {
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 60px;
   background-color: #0e2842;
 }
 
-/* line 9, ../sass/_header.scss */
+/* line 10, ../sass/_header.scss */
 #logo {
   height: 30px;
   float: left;
   margin: 15px 0;
 }
 
-/* line 17, ../sass/_header.scss */
+/* line 18, ../sass/_header.scss */
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   height: 60px;
 }
-/* line 23, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 nav ul li {
   margin-left: 10px;
   display: inline-block;
   line-height: 60px;
 }
-/* line 28, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 nav ul li a {
   min-width: 120px;
   display: block;
@@ -155,19 +157,19 @@ nav ul li a {
   font-size: 1em;
   color: #ccc;
 }
-/* line 36, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 nav ul li a:hover {
   background-color: #0b2035;
   color: #fff;
   text-decoration: none;
 }
-/* line 43, ../sass/_header.scss */
+/* line 44, ../sass/_header.scss */
 nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 
-/* line 50, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }
@@ -199,40 +201,41 @@ nav ul li.current-menu-item a {
 
 /* line 25, ../sass/_frontPage.scss */
 #topStrip {
+  margin-top: 60px;
   background-color: #123253;
 }
-/* line 29, ../sass/_frontPage.scss */
+/* line 30, ../sass/_frontPage.scss */
 #topStrip .title {
   color: #ffffff;
 }
-/* line 33, ../sass/_frontPage.scss */
+/* line 34, ../sass/_frontPage.scss */
 #topStrip .quote {
   color: #ccc;
 }
 
-/* line 38, ../sass/_frontPage.scss */
+/* line 39, ../sass/_frontPage.scss */
 .lightStrip {
   background-color: #eef7fd;
 }
-/* line 42, ../sass/_frontPage.scss */
+/* line 43, ../sass/_frontPage.scss */
 .lightStrip .title {
   color: #87c8ee;
 }
-/* line 45, ../sass/_frontPage.scss */
+/* line 46, ../sass/_frontPage.scss */
 .lightStrip .quote {
   color: #7293aa;
 }
-/* line 48, ../sass/_frontPage.scss */
+/* line 49, ../sass/_frontPage.scss */
 .lightStrip .btn, .lightStrip .quote, .lightStrip .facebook, .lightStrip .twitter {
   text-align: center;
 }
 
-/* line 52, ../sass/_frontPage.scss */
+/* line 53, ../sass/_frontPage.scss */
 .whiteStrip {
   padding: 40px 0;
 }
 
-/* line 55, ../sass/_frontPage.scss */
+/* line 56, ../sass/_frontPage.scss */
 ul#servicesList {
   list-style-type: none;
   padding: 0;
@@ -240,7 +243,7 @@ ul#servicesList {
   text-align: center;
   max-width: 1200px;
 }
-/* line 62, ../sass/_frontPage.scss */
+/* line 63, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox {
   padding: 2%;
   margin: 0 1%;
@@ -252,45 +255,106 @@ ul#servicesList li.serviceBox {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 70, ../sass/_frontPage.scss */
+/* line 71, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
   margin: 20px 0 0 0;
 }
-/* line 73, ../sass/_frontPage.scss */
+/* line 74, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 76, ../sass/_frontPage.scss */
+/* line 77, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
   color: #976667;
 }
-/* line 79, ../sass/_frontPage.scss */
+/* line 80, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
   color: #9dba86;
 }
-/* line 82, ../sass/_frontPage.scss */
+/* line 83, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
   color: #739cc3;
 }
-/* line 86, ../sass/_frontPage.scss */
+/* line 87, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 89, ../sass/_frontPage.scss */
+/* line 90, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 94, ../sass/_frontPage.scss */
+/* line 95, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
   background-color: #976667;
 }
-/* line 97, ../sass/_frontPage.scss */
+/* line 98, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
   background-color: #9dba86;
 }
-/* line 100, ../sass/_frontPage.scss */
+/* line 101, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
   background-color: #739cc3;
+}
+
+/* line 107, ../sass/_frontPage.scss */
+#meetTheTeam {
+  max-width: 1040px;
+  margin: 0 auto 40px auto;
+}
+/* line 111, ../sass/_frontPage.scss */
+#meetTheTeam h1, #meetTheTeam h2, #meetTheTeam h3 {
+  margin: 0;
+}
+/* line 114, ../sass/_frontPage.scss */
+#meetTheTeam p {
+  margin-top: 0;
+}
+
+/* line 120, ../sass/_frontPage.scss */
+#teamDesc, #teamMembers, .memberAvatar, .memberDesc {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 125, ../sass/_frontPage.scss */
+#teamDesc {
+  width: 36%;
+  margin-left: 2%;
+  margin-right: 12%;
+}
+
+/* line 131, ../sass/_frontPage.scss */
+#teamDesc, #teamMembers {
+  padding: 0;
+  min-width: 320px;
+}
+
+/* line 136, ../sass/_frontPage.scss */
+#teamMembers {
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 140, ../sass/_frontPage.scss */
+#teamMembers .teamMember {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 145, ../sass/_frontPage.scss */
+#teamMembers .teamMember .memberAvatar {
+  height: 16%;
+  width: 16%;
+  margin-right: 4%;
+  background-color: #87c8ee;
+  border-radius: 50%;
+}
+/* line 152, ../sass/_frontPage.scss */
+#teamMembers .teamMember .memberDesc {
+  width: 80%;
+}
+/* line 154, ../sass/_frontPage.scss */
+#teamMembers .teamMember .memberDesc p {
+  font-style: italic;
 }
 
 /* line 2, ../sass/_footer.scss */
@@ -320,22 +384,23 @@ ul#servicesList li.host:hover {
 #copyright p {
   margin: 0;
   color: #999;
+  font-size: 0.875em;
 }
 
-/* line 30, ../sass/_footer.scss */
+/* line 31, ../sass/_footer.scss */
 .facebook a {
   background-color: #4c69ba;
 }
-/* line 34, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .facebook a:hover {
   background-color: #5e78c1;
 }
 
-/* line 42, ../sass/_footer.scss */
+/* line 43, ../sass/_footer.scss */
 .twitter a {
   background-color: #55acee;
 }
-/* line 46, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 .twitter a:hover {
   background-color: #6cb7f0;
 }
