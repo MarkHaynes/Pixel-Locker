@@ -4,9 +4,7 @@
 					
 				<section id="bottomStrip">
 
-					<h1 class="title">It would be great to hear from you :)</h1>
-
-					<div class="btn"><a href="http://pixellocker.co.uk">Contact Us</a></div>
+					<?php get_footerMsg();?>
 
 				</section>
 

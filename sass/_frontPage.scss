@@ -24,7 +24,6 @@
 }
 #topStrip {
 	@extend .strip;
-	margin-top: 60px;
 	background-color: lighten($colour-darkblue, 4%);
 	
 	.title {
@@ -106,7 +105,7 @@ ul#servicesList {
 
 #meetTheTeam {
 	max-width: 1040px;
-	margin: 0 auto 40px auto;
+	margin: 0 auto;
 
 	h1, h2, h3 {
 		margin: 0;
