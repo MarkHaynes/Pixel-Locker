@@ -30,7 +30,6 @@ $box-radius: 4px;
 
 body {
     font-family: $main-font;
-
     background-color: darken($colour-darkblue, 5%);
     color: $colour-font;
     height: 100%;
@@ -53,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.75em;
     color: $colour-lightblue;
 }
 
@@ -112,13 +111,29 @@ a:hover {
         }
 }
     
-.wrap {
+.wrap, .post {
     width: 94%;
-    max-width: 1300px;
     padding: 0 3%;
     margin: 0 auto;
 }
 
+.wrap {
+    max-width: 1300px;
+}
+.post {
+    max-width: 922.641px;
+    text-align: justify;
+}
+.meta {
+    max-width: 800px;
+    margin: 14px auto 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1em;
+    display: block;
+
+}
 .clear {
     clear: both;
 }

@@ -1,26 +1,22 @@
 
 <?php get_header(); ?>
-
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-		<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-
 		
-   		
-   		<?php the_content(); ?>
+		<main>
+			<section class="whiteStrip">
+				<div class="wrap">
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<?php endwhile; else: ?>
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+		   		
+			   		<?php the_content(); ?>
 
- 			<p>Sorry, no posts matched your criteria.</p>
+					<?php endwhile; else: ?>
 
- 		<?php endif; ?>
+			 			<p>Sorry, no posts matched your criteria.</p>
 
+			 		<?php endif; ?>
+			 	</div>
+			</section>
+	 	</main>
 
-
-
-
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -18,60 +18,60 @@ body {
   width: 100%;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 39, ../sass/_base.scss */
 main, section {
   display: block;
 }
 
-/* line 44, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 main {
   background-color: #fff;
   margin-top: 60px;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 h1 {
-  font-size: 2.5em;
+  font-size: 2.75em;
   color: #87c8ee;
 }
 
-/* line 60, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 h2 {
   font-size: 2.125em;
   color: #44a9e5;
 }
 
-/* line 65, ../sass/_base.scss */
+/* line 64, ../sass/_base.scss */
 h3 {
   font-size: 1.875em;
   color: #1b84c1;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 69, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
   color: #12567e;
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 73, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #2e9fe1;
 }
 
-/* line 78, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #1874aa;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #2974c0;
@@ -81,13 +81,13 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 92, ../sass/_base.scss */
+/* line 91, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: #6fa7e0;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 97, ../sass/_base.scss */
 .btn a, .quote a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -102,21 +102,42 @@ a:hover {
   background-color: #365c7b;
   color: #ddd;
 }
-/* line 109, ../sass/_base.scss */
+/* line 108, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #4d84b0;
   color: #fff;
 }
 
-/* line 115, ../sass/_base.scss */
-.wrap {
+/* line 114, ../sass/_base.scss */
+.wrap, .post {
   width: 94%;
-  max-width: 1300px;
   padding: 0 3%;
   margin: 0 auto;
 }
 
-/* line 122, ../sass/_base.scss */
+/* line 120, ../sass/_base.scss */
+.wrap {
+  max-width: 1300px;
+}
+
+/* line 123, ../sass/_base.scss */
+.post {
+  max-width: 922.641px;
+  text-align: justify;
+}
+
+/* line 127, ../sass/_base.scss */
+.meta {
+  max-width: 800px;
+  margin: 14px auto 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+  display: block;
+}
+
+/* line 137, ../sass/_base.scss */
 .clear {
   clear: both;
 }
