@@ -16,7 +16,7 @@ Template Name: Custom Front Page
 
 				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
 
-				<span class="quote">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
+				<span class="tagline">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
 			
 			</div>
 		</section>
@@ -26,7 +26,7 @@ Template Name: Custom Front Page
 
 					<h1 class="title">Always happy to help,</h1>
 
-					<span class="quote">We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</span>
+					<span class="tagline">We pride ourselves in our ability to provide all that you need to get started on the web. Our team has you covered...</span>
 
 				<div class="strip">
 					<ul id="servicesList">

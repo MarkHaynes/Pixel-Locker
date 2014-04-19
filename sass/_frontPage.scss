@@ -6,7 +6,7 @@
 		text-align: center;
 	}
 
-	.quote {
+	.tagline {
 		max-width: 800px;
 		margin: 14px auto 0 auto;
 		text-align: center;
@@ -30,7 +30,7 @@
 		color: #ffffff;
 	}
 
-	.quote {
+	.tagline {
 		color: #ccc;
 	}
 
@@ -42,7 +42,7 @@
 	.title {
 		color: $colour-lightblue;
 	}
-	.quote {
+	.tagline {
 		color: lighten($colour-font, 15%);
 	}
 	.btn {

@@ -185,7 +185,7 @@ nav ul li.current-menu-item a {
   text-align: center;
 }
 /* line 9, ../sass/_frontPage.scss */
-.strip .quote, #topStrip .quote, .lightStrip .quote, #bottomStrip .quote {
+.strip .tagline, #topStrip .tagline, .lightStrip .tagline, #bottomStrip .tagline {
   max-width: 800px;
   margin: 14px auto 0 auto;
   text-align: center;
@@ -209,7 +209,7 @@ nav ul li.current-menu-item a {
   color: #ffffff;
 }
 /* line 33, ../sass/_frontPage.scss */
-#topStrip .quote {
+#topStrip .tagline {
   color: #ccc;
 }
 
@@ -222,7 +222,7 @@ nav ul li.current-menu-item a {
   color: #87c8ee;
 }
 /* line 45, ../sass/_frontPage.scss */
-.lightStrip .quote {
+.lightStrip .tagline {
   color: #7293aa;
 }
 /* line 48, ../sass/_frontPage.scss */
