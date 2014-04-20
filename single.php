@@ -18,14 +18,18 @@
 
 		<section class="whiteStrip">
 
-			<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+			<?php if ( has_post_thumbnail() ): ?>
+				<div class="thumb">
+                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                </div>
+            <?php  endif; ?>
 
 			<div class="post">
 	   		
 		   		<?php the_content(); ?>
 
 				<?php endwhile; else: ?>
-					
+
 		 			<h1>Sorry, no posts matched your criteria.</h1>
 
 				<?php endif; ?>
