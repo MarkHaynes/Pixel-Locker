@@ -120,24 +120,7 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 123, ../sass/_base.scss */
-.post {
-  max-width: 922.641px;
-  text-align: justify;
-}
-
-/* line 127, ../sass/_base.scss */
-.meta {
-  max-width: 800px;
-  margin: 14px auto 0 auto;
-  text-align: center;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 1em;
-  display: block;
-}
-
-/* line 137, ../sass/_base.scss */
+/* line 124, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -376,6 +359,30 @@ ul#servicesList li.host:hover {
 /* line 153, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberDesc p {
   font-style: italic;
+}
+
+/* line 1, ../sass/_post.scss */
+.postInfo {
+  max-width: 800px;
+  margin: 14px auto 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+  display: block;
+}
+
+/* line 12, ../sass/_post.scss */
+.thumb {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 40px;
+}
+
+/* line 18, ../sass/_post.scss */
+.post {
+  max-width: 922.641px;
+  text-align: justify;
 }
 
 /* line 2, ../sass/_footer.scss */
