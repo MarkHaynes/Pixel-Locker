@@ -1,22 +1,38 @@
-
 <?php get_header(); ?>
-		
-		<main>
-			<section class="whiteStrip">
-				<div class="wrap">
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-		   		
-			   		<?php the_content(); ?>
+	<main>
+		<section id="topStrip">
+			<div class="wrap">
 
-					<?php endwhile; else: ?>
+				<h1 class="title"><?php the_title(); ?></h1>
+			
+			</div>
+		</section>
 
-			 			<p>Sorry, no posts matched your criteria.</p>
+		<section class="whiteStrip">
+			<div class="wrap">
 
-			 		<?php endif; ?>
-			 	</div>
-			</section>
-	 	</main>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+				<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+
+		   		<?php the_content(); ?>
+
+				<?php endwhile; else: ?>
+        
+					<section class="notFound">
+
+						<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
+
+			            <div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
+
+				 	</section>
+		            
+		        <?php endif; ?>
+			</div>
+		</section>
+	</main>
+
+	<div style="clear:both"></div>
 
 <?php get_footer(); ?>
