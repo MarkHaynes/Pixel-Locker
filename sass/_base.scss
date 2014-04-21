@@ -41,7 +41,6 @@ main, section {
 }
 
 main {
-    background-color: #fff;
     margin-top: 60px;
 }
 
@@ -81,7 +80,7 @@ h6 {
 
 a {
     text-decoration: none;
-    color: lighten($colour-darkblue, 30%);
+    color: lighten($colour-darkblue, 40%);
     -webkit-transition: all 0.4s ease-in-out;
     -mox-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -90,7 +89,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: lighten($colour-darkblue, 50%);
+    color: lighten($colour-darkblue, 55%);
 }
 .btn {
 
@@ -102,25 +101,31 @@ a:hover {
         text-align: center;
         @include border-radius($btn-radius);
         display: inline-block;
-        background-color: $btn-colour;
+        background-color: lighten($btn-colour,10%);
         color: #ddd;
     }
     a:hover {
-            background-color: lighten($btn-colour,15%);
+            background-color: lighten($btn-colour,20%);
             color: #fff;
         }
 }
     
-.wrap, .post {
+.wrap {
     width: 94%;
     padding: 0 3%;
     margin: 0 auto;
-}
-
-.wrap {
     max-width: 1300px;
 }
+.notFound {
+    text-align: center;
+    padding: 5em 0;
+    background-color: #fff;
 
+    h1 {
+        @extend h2;
+        margin: 0 0 14px 0;
+    }
+}
 .clear {
     clear: both;
 }

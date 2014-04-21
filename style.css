@@ -25,70 +25,69 @@ main, section {
 
 /* line 43, ../sass/_base.scss */
 main {
-  background-color: #fff;
   margin-top: 60px;
 }
 
-/* line 48, ../sass/_base.scss */
-h1, h2, h3, h4, h5, h6 {
+/* line 47, ../sass/_base.scss */
+h1, h2, .notFound h1, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 h1 {
   font-size: 2.75em;
   color: #87c8ee;
 }
 
-/* line 59, ../sass/_base.scss */
-h2 {
+/* line 58, ../sass/_base.scss */
+h2, .notFound h1 {
   font-size: 2.125em;
   color: #44a9e5;
 }
 
-/* line 64, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 h3 {
   font-size: 1.875em;
   color: #1b84c1;
 }
 
-/* line 69, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
   color: #12567e;
 }
 
-/* line 73, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #2e9fe1;
 }
 
-/* line 77, ../sass/_base.scss */
+/* line 76, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #1874aa;
 }
 
-/* line 82, ../sass/_base.scss */
+/* line 81, ../sass/_base.scss */
 a {
   text-decoration: none;
-  color: #2974c0;
+  color: #458ed7;
   -webkit-transition: all 0.4s ease-in-out;
   -mox-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 91, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
-  color: #6fa7e0;
+  color: #84b4e5;
 }
 
-/* line 97, ../sass/_base.scss */
-.btn a, .quote a, .facebook a, .twitter a {
+/* line 96, ../sass/_base.scss */
+.btn a, .quote a, .post .readMore a, #postsNav a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
   padding: 0 15px;
@@ -99,28 +98,35 @@ a:hover {
   -ms-border-radius: 2px;
   border-radius: 2px;
   display: inline-block;
-  background-color: #365c7b;
+  background-color: #46779e;
   color: #ddd;
 }
-/* line 108, ../sass/_base.scss */
-.btn a:hover, .quote a:hover, .facebook a:hover, .twitter a:hover {
-  background-color: #4d84b0;
+/* line 107, ../sass/_base.scss */
+.btn a:hover, .quote a:hover, .post .readMore a:hover, #postsNav a:hover, .facebook a:hover, .twitter a:hover {
+  background-color: #5e90b9;
   color: #fff;
 }
 
-/* line 114, ../sass/_base.scss */
-.wrap, .post {
+/* line 113, ../sass/_base.scss */
+.wrap, .post .postWrap {
   width: 94%;
   padding: 0 3%;
   margin: 0 auto;
-}
-
-/* line 120, ../sass/_base.scss */
-.wrap {
   max-width: 1300px;
 }
 
+/* line 119, ../sass/_base.scss */
+.notFound {
+  text-align: center;
+  padding: 5em 0;
+  background-color: #fff;
+}
 /* line 124, ../sass/_base.scss */
+.notFound h1 {
+  margin: 0 0 14px 0;
+}
+
+/* line 129, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -230,16 +236,17 @@ nav ul li.current-menu-item a {
   color: #7293aa;
 }
 /* line 48, ../sass/_frontPage.scss */
-.lightStrip .btn, .lightStrip .quote, .lightStrip .facebook, .lightStrip .twitter {
+.lightStrip .btn, .lightStrip .quote, .lightStrip .post .readMore, .post .lightStrip .readMore, .lightStrip #postsNav, .lightStrip .facebook, .lightStrip .twitter {
   text-align: center;
 }
 
 /* line 52, ../sass/_frontPage.scss */
 .whiteStrip {
+  background-color: #fff;
   padding: 40px 0;
 }
 
-/* line 55, ../sass/_frontPage.scss */
+/* line 56, ../sass/_frontPage.scss */
 ul#servicesList {
   list-style-type: none;
   padding: 0;
@@ -247,7 +254,7 @@ ul#servicesList {
   text-align: center;
   max-width: 1200px;
 }
-/* line 62, ../sass/_frontPage.scss */
+/* line 63, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox {
   padding: 2%;
   margin: 0 1%;
@@ -259,92 +266,92 @@ ul#servicesList li.serviceBox {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 70, ../sass/_frontPage.scss */
+/* line 71, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
   margin: 20px 0 0 0;
 }
-/* line 73, ../sass/_frontPage.scss */
-ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
+/* line 74, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox .notFound h1, .notFound ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 76, ../sass/_frontPage.scss */
+/* line 77, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
   color: #976667;
 }
-/* line 79, ../sass/_frontPage.scss */
+/* line 80, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
   color: #9dba86;
 }
-/* line 82, ../sass/_frontPage.scss */
+/* line 83, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
   color: #739cc3;
 }
-/* line 86, ../sass/_frontPage.scss */
+/* line 87, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 89, ../sass/_frontPage.scss */
+/* line 90, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 94, ../sass/_frontPage.scss */
+/* line 95, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
   background-color: #976667;
 }
-/* line 97, ../sass/_frontPage.scss */
+/* line 98, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
   background-color: #9dba86;
 }
-/* line 100, ../sass/_frontPage.scss */
+/* line 101, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
   background-color: #739cc3;
 }
 
-/* line 106, ../sass/_frontPage.scss */
+/* line 107, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
 }
-/* line 110, ../sass/_frontPage.scss */
-#meetTheTeam h1, #meetTheTeam h2, #meetTheTeam h3 {
+/* line 111, ../sass/_frontPage.scss */
+#meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 0;
 }
-/* line 113, ../sass/_frontPage.scss */
+/* line 114, ../sass/_frontPage.scss */
 #meetTheTeam p {
   margin-top: 0;
 }
 
-/* line 119, ../sass/_frontPage.scss */
+/* line 120, ../sass/_frontPage.scss */
 #teamDesc, #teamMembers, .memberAvatar, .memberDesc {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 124, ../sass/_frontPage.scss */
+/* line 125, ../sass/_frontPage.scss */
 #teamDesc {
   width: 36%;
   margin-left: 2%;
   margin-right: 12%;
 }
 
-/* line 130, ../sass/_frontPage.scss */
+/* line 131, ../sass/_frontPage.scss */
 #teamDesc, #teamMembers {
   padding: 0;
   min-width: 320px;
 }
 
-/* line 135, ../sass/_frontPage.scss */
+/* line 136, ../sass/_frontPage.scss */
 #teamMembers {
   width: 48%;
   margin-right: 2%;
 }
-/* line 139, ../sass/_frontPage.scss */
+/* line 140, ../sass/_frontPage.scss */
 #teamMembers .teamMember {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 144, ../sass/_frontPage.scss */
+/* line 145, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberAvatar {
   height: 16%;
   width: 16%;
@@ -352,17 +359,21 @@ ul#servicesList li.host:hover {
   background-color: #87c8ee;
   border-radius: 50%;
 }
-/* line 151, ../sass/_frontPage.scss */
+/* line 152, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberDesc {
   width: 80%;
 }
-/* line 153, ../sass/_frontPage.scss */
+/* line 154, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberDesc p {
   font-style: italic;
 }
 
 /* line 1, ../sass/_post.scss */
-.postInfo {
+.post {
+  border-bottom: 1px solid #cfe2f5;
+}
+/* line 4, ../sass/_post.scss */
+.post .postInfo {
   max-width: 800px;
   margin: 14px auto 0 auto;
   text-align: center;
@@ -371,18 +382,39 @@ ul#servicesList li.host:hover {
   font-size: 1em;
   display: block;
 }
-
-/* line 12, ../sass/_post.scss */
-.thumb {
+/* line 15, ../sass/_post.scss */
+.post .thumb {
   width: 100%;
-  height: 30%;
-  margin-bottom: 40px;
+  height: 200px;
+  margin-bottom: 32px;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  background-color: #eef7fd;
+}
+/* line 25, ../sass/_post.scss */
+.post .postWrap {
+  max-width: 615.094px;
+  /* maxwidth: 922.641px; */
+  text-align: justify;
+}
+/* line 32, ../sass/_post.scss */
+.post .readMore {
+  text-align: center;
+  padding: 16px 0;
+  height: 38px;
 }
 
-/* line 18, ../sass/_post.scss */
-.post {
-  max-width: 922.641px;
-  text-align: justify;
+/* line 41, ../sass/_post.scss */
+#postsNav {
+  line-height: 60px;
+  background-color: #eef7fd;
+  text-align: center;
+}
+/* line 46, ../sass/_post.scss */
+#postsNav a {
+  min-width: 110px;
+  margin: 0 10px;
 }
 
 /* line 2, ../sass/_footer.scss */
@@ -399,7 +431,7 @@ ul#servicesList li.host:hover {
   color: #ccc;
 }
 /* line 14, ../sass/_footer.scss */
-#bottomStrip .btn, #bottomStrip .quote, #bottomStrip .facebook, #bottomStrip .twitter {
+#bottomStrip .btn, #bottomStrip .quote, #bottomStrip .post .readMore, .post #bottomStrip .readMore, #bottomStrip #postsNav, #bottomStrip .facebook, #bottomStrip .twitter {
   text-align: center;
 }
 
