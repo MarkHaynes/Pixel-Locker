@@ -379,7 +379,7 @@ ul#servicesList li.host:hover {
   text-align: center;
   font-style: italic;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.125em;
   display: block;
 }
 /* line 15, ../sass/_post.scss */
