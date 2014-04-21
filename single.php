@@ -38,7 +38,7 @@
         
 			<section class="notFound">
 
-				<h1>Sorry, we could not find what you are looking for.</h1>
+				<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
 
 	            <div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
 
