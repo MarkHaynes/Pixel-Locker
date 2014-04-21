@@ -152,15 +152,14 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  height: 60px;
 }
-/* line 24, ../sass/_header.scss */
+/* line 23, ../sass/_header.scss */
 nav ul li {
-  margin-left: 10px;
+  margin: 0 3px;
   display: inline-block;
   line-height: 60px;
 }
-/* line 29, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 nav ul li a {
   min-width: 120px;
   display: block;
@@ -168,20 +167,20 @@ nav ul li a {
   font-size: 1em;
   color: #ccc;
 }
-/* line 37, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 nav ul li a:hover {
   background-color: #0b2035;
   color: #fff;
   text-decoration: none;
 }
-/* line 44, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 
-/* line 51, ../sass/_header.scss */
-#mainNav, #bottomNav {
+/* line 50, ../sass/_header.scss */
+#mainNav, #bottomNav, .social {
   float: right;
 }
 
@@ -275,85 +274,90 @@ ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesL
   margin: 0px;
 }
 /* line 77, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox p {
+  text-align: justify;
+}
+/* line 80, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
   color: #976667;
 }
-/* line 80, ../sass/_frontPage.scss */
+/* line 83, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
   color: #9dba86;
 }
-/* line 83, ../sass/_frontPage.scss */
+/* line 86, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
   color: #739cc3;
 }
-/* line 87, ../sass/_frontPage.scss */
+/* line 90, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 90, ../sass/_frontPage.scss */
+/* line 93, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 95, ../sass/_frontPage.scss */
+/* line 98, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
   background-color: #976667;
 }
-/* line 98, ../sass/_frontPage.scss */
+/* line 101, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
   background-color: #9dba86;
 }
-/* line 101, ../sass/_frontPage.scss */
+/* line 104, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
   background-color: #739cc3;
 }
 
-/* line 107, ../sass/_frontPage.scss */
+/* line 110, ../sass/_frontPage.scss */
 #meetTheTeam {
   width: 94%;
   padding: 0 3%;
   max-width: 1040px;
   margin: 0 auto;
 }
-/* line 113, ../sass/_frontPage.scss */
+/* line 116, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 0;
 }
-/* line 116, ../sass/_frontPage.scss */
+/* line 119, ../sass/_frontPage.scss */
 #meetTheTeam p {
+  text-align: justify;
   margin-top: 0;
 }
 
-/* line 122, ../sass/_frontPage.scss */
+/* line 126, ../sass/_frontPage.scss */
 #teamDesc, #teamMembers, .memberAvatar, .memberDesc {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 127, ../sass/_frontPage.scss */
+/* line 131, ../sass/_frontPage.scss */
 #teamDesc {
-  width: 36%;
+  width: 40%;
+  max-width: 410.063px;
   margin-left: 2%;
-  margin-right: 12%;
-}
-
-/* line 133, ../sass/_frontPage.scss */
-#teamDesc, #teamMembers {
-  padding: 0;
-  min-width: 320px;
+  margin-right: 8%;
 }
 
 /* line 138, ../sass/_frontPage.scss */
+#teamDesc, #teamMembers {
+  padding: 0;
+}
+
+/* line 142, ../sass/_frontPage.scss */
 #teamMembers {
   width: 48%;
   margin-right: 2%;
 }
-/* line 142, ../sass/_frontPage.scss */
+/* line 146, ../sass/_frontPage.scss */
 #teamMembers .teamMember {
-  margin-bottom: 30px;
+  padding: 5% 0;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 147, ../sass/_frontPage.scss */
+/* line 151, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberAvatar {
   height: 16%;
   width: 16%;
@@ -361,11 +365,11 @@ ul#servicesList li.host:hover {
   background-color: #87c8ee;
   border-radius: 50%;
 }
-/* line 154, ../sass/_frontPage.scss */
+/* line 158, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberDesc {
   width: 80%;
 }
-/* line 156, ../sass/_frontPage.scss */
+/* line 160, ../sass/_frontPage.scss */
 #teamMembers .teamMember .memberDesc p {
   font-style: italic;
 }
@@ -415,8 +419,7 @@ ul#servicesList li.host:hover {
 }
 /* line 46, ../sass/_post.scss */
 #postsNav a {
-  min-width: 110px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 /* line 2, ../sass/_footer.scss */
@@ -476,15 +479,61 @@ ul#servicesList li.host:hover {
   }
   /* line 8, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox {
-    padding: 3%;
+    padding: 4%;
     margin: 2% auto;
-    width: 94%;
+    width: 92%;
+    max-width: 410.063px;
     display: inline-block;
     background-color: #fff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
+  }
+
+  /* line 21, ../sass/_mobile.scss */
+  #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam .post .readMore, .post #meetTheTeam .readMore, #meetTheTeam #postsNav, #meetTheTeam .facebook, #meetTheTeam .twitter {
+    text-align: center;
+  }
+  /* line 25, ../sass/_mobile.scss */
+  #meetTheTeam p {
+    margin: 1em auto;
+  }
+  /* line 29, ../sass/_mobile.scss */
+  #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
+    width: 94%;
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 35, ../sass/_mobile.scss */
+  #meetTheTeam #teamMembers {
+    max-width: 410.063px;
+  }
+  /* line 38, ../sass/_mobile.scss */
+  #meetTheTeam #teamMembers .teamMember {
+    margin: 0;
+  }
+  /* line 41, ../sass/_mobile.scss */
+  #meetTheTeam #teamMembers .teamMember .memberAvatar {
+    height: auto;
+    width: 30%;
+    margin: 2% auto;
+    display: block;
+  }
+  /* line 47, ../sass/_mobile.scss */
+  #meetTheTeam #teamMembers .teamMember .memberDesc {
+    width: 100%;
+  }
+  /* line 50, ../sass/_mobile.scss */
+  #meetTheTeam #teamMembers .teamMember .memberDesc p {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /* line 60, ../sass/_mobile.scss */
+  #mainNav, .social, #bottomNav, #copyright {
+    float: none;
+    text-align: center;
   }
 }
 /* line 1, ../sass/_wordpressCore.scss */

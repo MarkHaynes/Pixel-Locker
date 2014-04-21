@@ -19,10 +19,9 @@ nav {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
-		height: 60px;
 
 		li {
-		    margin-left: 10px;
+		    margin: 0 3px;
 		    display: inline-block;
 		    line-height: 60px;
 
@@ -48,7 +47,7 @@ nav {
 	}
 }
 
-#mainNav, #bottomNav{
+#mainNav, #bottomNav, .social {
 	float: right;
 }
 

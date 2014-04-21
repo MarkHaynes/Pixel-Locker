@@ -49,7 +49,7 @@
         
         <?php endwhile; ?>
 
-            <nav id="postsNav"><?php posts_nav_link(' ','« Newer Articles','Older Articles »'); ?></nav>
+            <nav id="postsNav"><?php posts_nav_link(' ','« Newer','Older »'); ?></nav>
             
         <?php else: ?>
         

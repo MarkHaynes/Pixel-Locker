@@ -87,7 +87,7 @@ Template Name: Custom Front Page
 				--><div id="teamMembers">
 					<div class="teamMember">
 
-						<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px"><!--
+						<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/avatar.png" height="30px"><!--
 						--><div class="memberDesc">
 							<h2>Mark Haynes</h2>
 
@@ -98,7 +98,7 @@ Template Name: Custom Front Page
 					</div><!--
 					--><div class="teamMember">
 
-						<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/mark.png" height="30px"><!--
+						<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/avatar.png" height="30px"><!--
 						--><div class="memberDesc">
 							<h2>Chris Huxley</h2>
 

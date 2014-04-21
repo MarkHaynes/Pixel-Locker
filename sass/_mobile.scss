@@ -6,13 +6,59 @@
 		text-align: center;
 
 		li.serviceBox {
-			padding: 3%;
+			padding: 4%;
 			margin: 2% auto;
-			width: 94%;
+			width: 92%;
+			max-width: 410.063px;
 			display: inline-block;
 			background-color: #fff;
 			@include border-radius($box-radius);
 		}
 	}
 
+	#meetTheTeam {
+
+		h1, h2, .btn {
+			text-align: center;
+		}
+
+		p {
+			margin: 1em auto;
+		}
+
+		#teamDesc, #teamMembers {
+			width: 94%;
+			margin: 0 auto;
+			display: block;
+		}
+
+		#teamMembers {
+			max-width: 410.063px;
+
+			.teamMember {
+				margin: 0;
+
+				.memberAvatar {
+					height: auto;
+					width: 30%;
+					margin: 2% auto;
+					display: block;
+				}
+				.memberDesc {
+					width: 100%;
+
+					p {
+						text-align: center;
+						margin-top: 0;
+					}
+				}
+			}
+
+		}
+	}
+
+	#mainNav, .social, #bottomNav, #copyright {
+		float: none;
+		text-align: center;
+	}
 }
