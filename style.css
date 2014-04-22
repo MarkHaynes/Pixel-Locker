@@ -21,56 +21,58 @@ body {
 /* line 39, ../sass/_base.scss */
 main, section {
   display: block;
+  position: relative;
+  width: 100%;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 main {
   margin-top: 60px;
 }
 
-/* line 47, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 h1, h2, .notFound h1, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 53, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 h1 {
   font-size: 2.75em;
   color: #87c8ee;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 h2, .notFound h1 {
   font-size: 2.125em;
   color: #44a9e5;
 }
 
-/* line 63, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 h3 {
   font-size: 1.875em;
   color: #1b84c1;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
   color: #12567e;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #2e9fe1;
 }
 
-/* line 76, ../sass/_base.scss */
+/* line 78, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #1874aa;
 }
 
-/* line 81, ../sass/_base.scss */
+/* line 83, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #458ed7;
@@ -80,13 +82,13 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 90, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: #84b4e5;
 }
 
-/* line 96, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 .btn a, .quote a, .post .readMore a, #postsNav a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -101,13 +103,13 @@ a:hover {
   background-color: #46779e;
   color: #ddd;
 }
-/* line 107, ../sass/_base.scss */
+/* line 109, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, .post .readMore a:hover, #postsNav a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5e90b9;
   color: #fff;
 }
 
-/* line 113, ../sass/_base.scss */
+/* line 115, ../sass/_base.scss */
 .wrap, .post .postWrap {
   width: 92%;
   padding: 0 4%;
@@ -115,18 +117,18 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 119, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 124, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 129, ../sass/_base.scss */
+/* line 131, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -465,30 +467,35 @@ ul#servicesList li.host:hover {
   background-color: #6cb7f0;
 }
 
+/* line 1, ../sass/_mobile.scss */
+#nav-wrap-mobile, a#mobile-button:link {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  /* line 3, ../sass/_mobile.scss */
+  /* line 7, ../sass/_mobile.scss */
   h1 {
     font-size: 2.5em;
   }
 
-  /* line 7, ../sass/_mobile.scss */
+  /* line 11, ../sass/_mobile.scss */
   #mainNav, #bottomNav {
     display: none;
   }
 
-  /* line 11, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   .wrap, .post .postWrap {
     width: 88%;
     padding: 0 6%;
   }
 
-  /* line 16, ../sass/_mobile.scss */
+  /* line 20, ../sass/_mobile.scss */
   ul#servicesList {
     list-style-type: none;
     width: 100%;
     text-align: center;
   }
-  /* line 21, ../sass/_mobile.scss */
+  /* line 25, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox {
     padding: 2% 5%;
     margin: 2% auto;
@@ -502,49 +509,126 @@ ul#servicesList li.host:hover {
     border-radius: 4px;
   }
 
-  /* line 34, ../sass/_mobile.scss */
+  /* line 38, ../sass/_mobile.scss */
   #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam .post .readMore, .post #meetTheTeam .readMore, #meetTheTeam #postsNav, #meetTheTeam .facebook, #meetTheTeam .twitter {
     text-align: center;
   }
-  /* line 38, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 42, ../sass/_mobile.scss */
+  /* line 46, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /* line 48, ../sass/_mobile.scss */
+  /* line 52, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 410.063px;
   }
-  /* line 51, ../sass/_mobile.scss */
+  /* line 55, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     margin: 0;
   }
-  /* line 54, ../sass/_mobile.scss */
+  /* line 58, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 60, ../sass/_mobile.scss */
+  /* line 64, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 63, ../sass/_mobile.scss */
+  /* line 67, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 
-  /* line 73, ../sass/_mobile.scss */
+  /* line 77, ../sass/_mobile.scss */
   #mainNav, .social, #bottomNav, #copyright {
     float: none;
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 86, ../sass/_mobile.scss */
+  nav#mainNav {
+    display: none;
+  }
+
+  /* line 90, ../sass/_mobile.scss */
+  a#mobile-button:link, a#mobile-button:visited {
+    background-color: #13375b;
+    border: 1px solid #0e2842;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    display: block;
+  }
+
+  /* line 107, ../sass/_mobile.scss */
+  a#mobile-button:hover {
+    background-color: #102d4a;
+  }
+
+  /* line 111, ../sass/_mobile.scss */
+  #nav-wrap-mobile {
+    display: none;
+    top: 58px;
+    left: 0;
+    height: 90%;
+    width: 70%;
+    z-index: 10;
+    background-color: #0e2842;
+    position: absolute;
+  }
+
+  /* line 122, ../sass/_mobile.scss */
+  ul.menu-mobile {
+    margin: 2px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  /* line 128, ../sass/_mobile.scss */
+  ul.menu-mobile li {
+    color: #0e2842;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #0e2842;
+    text-align: center;
+  }
+
+  /* line 136, ../sass/_mobile.scss */
+  ul.menu-mobile li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #13375b;
+    border-top: 1px solid #17416c;
+    border-bottom: 1px solid #0a1b2d;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+  }
+
+  /* line 150, ../sass/_mobile.scss */
+  ul.menu-mobile li a:hover {
+    background-color: #365c7b;
+    color: #fff;
   }
 }
 /* line 1, ../sass/_wordpressCore.scss */

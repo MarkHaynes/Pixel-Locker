@@ -34,5 +34,47 @@
 		
 		</div> <!--#siteWrap-->
 
+		<!-- Mobile Nav -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    var pageWidth = $(window).width();  
+			    if ( pageWidth >= 801 ) {
+			        $("#mobile-button").html("Menu");
+					$( "main" ).css("right", "0");
+					$( "#nav-wrap-mobile" ).css("display", "none");
+
+			    }
+			    $(window).resize(function() {
+			        if ($(window).width() >= 801) {
+			         	$("#mobile-button").html("Menu");
+						$( "main" ).css("right", "0");
+						$( "#nav-wrap-mobile" ).css("display", "none");
+			        }
+			    });
+			});
+
+		
+			$( "#mobile-button" ).click(function() {
+				var value = $("#mobile-button").html();
+				if (value=="Menu"){
+					$("#mobile-button").html("Close");
+					$( "main" ).css("right", "-70%");
+					$( "#nav-wrap-mobile" ).css("display", "block");
+				}
+
+				else {
+					$("#mobile-button").html("Menu");
+					$( "main" ).css("right", "0");
+					setTimeout( function(){
+      					$( "#nav-wrap-mobile" ).css("display", "none");
+    				},100);					
+				}
+			  	
+			  	$( "#nav-wrap-mobile" ).css("height", "90%");
+
+
+			});
+    	</script>
 	</body>
 </html>

@@ -17,11 +17,18 @@
 		<![endif]-->
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		
+
+		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon-precomposed"  href="<?php bloginfo('template_url'); ?>/appleicons/apple-touch-icon-precomposed.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php bloginfo('template_url'); ?>/appleicons/apple-touch-icon-57x57-precomposed.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_url'); ?>/appleicons/apple-touch-icon-72x72-precomposed.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('template_url'); ?>/appleicons/apple-touch-icon-114x114-precomposed.png" />
+
+		<meta property="og:site_name" content="Pixel Locker: Web Design">
+    	<meta property="og:title" content="Pixel Locker: Bespoke Web Design!">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.pixellocker.co.uk/">
+		<meta property="og:locale" content="en_GB">	
 
 		<?php wp_head(); ?>
 
@@ -36,6 +43,14 @@
 					<a href="http://pixellocker.co.uk">
 						<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px">
 					</a>
+				</div>
+
+				<a href="#" id="mobile-button" title="Menu">Menu</a>	
+			
+				<div id="nav-wrap-mobile">
+					<nav id="nav-mobile">
+						<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'menu-mobile' ) ); ?>
+					</nav>
 				</div>
 
 				<nav id="mainNav" role="navigation">

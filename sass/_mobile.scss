@@ -1,3 +1,7 @@
+#nav-wrap-mobile, a#mobile-button:link  {
+	display: none;
+}
+
 @media screen and (max-width: 600px){
 
 	h1 {
@@ -74,4 +78,78 @@
 		float: none;
 		text-align: center;
 	}
+}
+
+@media screen and (max-width: 800px){
+//Mobile Nav
+
+	nav#mainNav {
+		display: none;
+	}
+
+	a#mobile-button:link, a#mobile-button:visited {
+		background-color: lighten($colour-darkblue, 6%);
+		border: 1px solid $colour-darkblue;
+		color: white;
+		font-size: 1.4em;
+		text-decoration: none;
+		text-align: center;
+		line-height: 50px; 
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		right: 25px;
+		top: 5px;
+		display: block;
+
+	}
+
+	a#mobile-button:hover {
+		background-color: lighten($colour-darkblue, 2%);
+	}
+
+	#nav-wrap-mobile {
+		display: none;
+		top: 58px;
+		left: 0;
+		height: 90%;
+		width: 70%;
+		z-index: 10;
+		background-color: $colour-darkblue;
+		position: absolute;
+	}
+	
+	ul.menu-mobile {
+		margin: 2px 0;
+		padding: 0;
+		list-style-type: none;	   
+	}
+
+	ul.menu-mobile li {
+		color: $colour-darkblue;
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid $colour-darkblue;
+		text-align: center;
+	}
+
+	ul.menu-mobile li a {
+		color: #fff;
+		display: block;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		background-color: lighten($colour-darkblue, 6%);
+		border-top: 1px solid lighten($colour-darkblue, 10%);
+		border-bottom: 1px solid darken($colour-darkblue, 5%);
+		height: 40px;
+		line-height: 40px;
+		font-size: 1.2em;
+	}
+
+	ul.menu-mobile li a:hover {
+		background-color: $btn-colour;
+		color: #fff;
+	}
+
 }
