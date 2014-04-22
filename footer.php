@@ -68,7 +68,7 @@
 					$( "main" ).css("right", "0");
 					setTimeout( function(){
       					$( "#nav-wrap-mobile" ).css("display", "none");
-    				},100);					
+    				},0);					
 				}
 			  	
 			  	$( "#nav-wrap-mobile" ).css("height", "90%");
