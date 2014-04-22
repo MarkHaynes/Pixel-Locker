@@ -9,9 +9,14 @@
 }
 
 #logo {
-	height: 30px;
+	max-width: 210px;
     float: left;
     margin: 15px 0;
+}
+
+#logo img {
+	display: block;
+	width: 100%;
 }
 
 nav {
