@@ -21,58 +21,59 @@ body {
 /* line 39, ../sass/_base.scss */
 main, section {
   display: block;
-  position: relative;
-  width: 100%;
 }
 
-/* line 45, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 main {
+  position: relative;
   margin-top: 60px;
+  width: 100%;
+  z-index: 1;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 50, ../sass/_base.scss */
 h1, h2, .notFound h1, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 h1 {
   font-size: 2.75em;
   color: #87c8ee;
 }
 
-/* line 60, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 h2, .notFound h1 {
   font-size: 2.125em;
   color: #44a9e5;
 }
 
-/* line 65, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 h3 {
   font-size: 1.875em;
   color: #1b84c1;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
   color: #12567e;
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 75, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #2e9fe1;
 }
 
-/* line 78, ../sass/_base.scss */
+/* line 79, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #1874aa;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #458ed7;
@@ -82,13 +83,13 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 92, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: #84b4e5;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 99, ../sass/_base.scss */
 .btn a, .quote a, .post .readMore a, #postsNav a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -103,13 +104,13 @@ a:hover {
   background-color: #46779e;
   color: #ddd;
 }
-/* line 109, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, .post .readMore a:hover, #postsNav a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5e90b9;
   color: #fff;
 }
 
-/* line 115, ../sass/_base.scss */
+/* line 116, ../sass/_base.scss */
 .wrap, .post .postWrap {
   width: 92%;
   padding: 0 4%;
@@ -117,18 +118,18 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 121, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 126, ../sass/_base.scss */
+/* line 127, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 131, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -140,28 +141,29 @@ a:hover {
   width: 100%;
   height: 60px;
   background-color: #0e2842;
+  z-index: 2;
 }
 
-/* line 10, ../sass/_header.scss */
+/* line 11, ../sass/_header.scss */
 #logo {
   height: 30px;
   float: left;
   margin: 15px 0;
 }
 
-/* line 18, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 23, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 nav ul li {
   margin: 0 3px;
   display: inline-block;
   line-height: 60px;
 }
-/* line 28, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 nav ul li a {
   min-width: 120px;
   display: block;
@@ -169,19 +171,19 @@ nav ul li a {
   font-size: 1em;
   color: #ccc;
 }
-/* line 36, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 nav ul li a:hover {
   background-color: #0b2035;
   color: #fff;
   text-decoration: none;
 }
-/* line 43, ../sass/_header.scss */
+/* line 44, ../sass/_header.scss */
 nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 
-/* line 50, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 #mainNav, #bottomNav, .social {
   float: right;
 }

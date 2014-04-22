@@ -38,12 +38,13 @@ body {
 
 main, section {
     display: block;
-    position: relative;
-    width: 100%;
 }
 
 main {
-    margin-top: 60px;
+    position: relative;
+    margin-top: 60px;    
+    width: 100%;
+    z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
