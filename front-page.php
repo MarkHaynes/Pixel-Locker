@@ -9,7 +9,6 @@ Template Name: Custom Front Page
 <?php get_header(); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
 	<main>
 		<section id="topStrip">
 			<div class="wrap">
@@ -124,6 +123,4 @@ Template Name: Custom Front Page
 			</div>
 		</section>
 	</main>
-</div>
-
 <?php get_footer(); ?>

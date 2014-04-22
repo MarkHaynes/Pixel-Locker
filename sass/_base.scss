@@ -33,7 +33,7 @@ body {
     background-color: darken($colour-darkblue, 5%);
     color: $colour-font;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 .wrapper {

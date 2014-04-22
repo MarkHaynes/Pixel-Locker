@@ -15,7 +15,7 @@ body {
   background-color: #0a1b2d;
   color: #4e6c81;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* line 39, ../sass/_base.scss */
