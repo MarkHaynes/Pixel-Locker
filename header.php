@@ -46,12 +46,7 @@
 				</div>
 
 				<a href="#" id="mobile-button" title="Menu">Menu</a>	
-			
-				<div id="nav-wrap-mobile">
-					<nav id="nav-mobile">
-						<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'menu-mobile' ) ); ?>
-					</nav>
-				</div>
+
 
 				<nav id="mainNav" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
@@ -62,5 +57,11 @@
 			</div>
 
 		</header>
+		<div class="wrapper">
+			<div id="nav-wrap-mobile">
+				<nav id="nav-mobile">
+					<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'menu-mobile' ) ); ?>
+				</nav>
+			</div>
 
 		

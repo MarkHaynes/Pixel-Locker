@@ -34,6 +34,8 @@
 		
 		</div> <!--#siteWrap-->
 
+	</div><!--Main Wrapper-->
+
 		<!-- Mobile Nav -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
 		<script type="text/javascript">
@@ -42,6 +44,7 @@
 			    if ( pageWidth >= 801 ) {
 			        $("#mobile-button").html("Menu");
 					$( "main" ).css("right", "0");
+					$( "footer" ).css("right", "0");
 					$( "#nav-wrap-mobile" ).css("display", "none");
 
 			    }
@@ -49,6 +52,7 @@
 			        if ($(window).width() >= 801) {
 			         	$("#mobile-button").html("Menu");
 						$( "main" ).css("right", "0");
+						$( "footer" ).css("right", "0");
 						$( "#nav-wrap-mobile" ).css("display", "none");
 			        }
 			    });
@@ -60,12 +64,14 @@
 				if (value=="Menu"){
 					$("#mobile-button").html("Close");
 					$( "main" ).css("right", "-70%");
+					$( "footer" ).css("right", "-70%");
 					$( "#nav-wrap-mobile" ).css("display", "block");
 				}
 
 				else {
 					$("#mobile-button").html("Menu");
 					$( "main" ).css("right", "0");
+					$( "footer" ).css("right", "0");
 					setTimeout( function(){
       					$( "#nav-wrap-mobile" ).css("display", "none");
     				},0);					

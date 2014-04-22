@@ -36,6 +36,11 @@ body {
     width: 100%;
 }
 
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 main, section {
     display: block;
 }

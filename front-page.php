@@ -124,5 +124,6 @@ Template Name: Custom Front Page
 			</div>
 		</section>
 	</main>
+</div>
 
 <?php get_footer(); ?>
