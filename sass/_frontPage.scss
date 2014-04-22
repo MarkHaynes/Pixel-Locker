@@ -39,11 +39,8 @@
 	@extend .strip;
 	background-color: lighten($colour-lightblue, 21%);
 
-	.title {
-		color: $colour-lightblue;
-	}
 	.tagline {
-		color: lighten($colour-font, 15%);
+		color: lighten($colour-font, 10%);
 	}
 	.btn {
 		text-align: center;

@@ -5,11 +5,12 @@ $colour-font: #4e6c81;
 /* Content Section colors */
 $colour-darkblue: #0e2842;
 $colour-lightblue: #87c8ee;
+$heading-colour: #5ab4e8;
 $btn-colour: #365c7b;
 
 /* Service colors */
 $colour-red: #994242;
-$colour-green: #9dbb87;
+$colour-green: #8cad6a;
 $colour-blue: #759cc2;
 
 $facebook-blue: #4c69ba;
@@ -60,30 +61,30 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.75em;
-    color: $colour-lightblue;
+    color: $heading-colour;
 }
 
 h2 {
     font-size: 2.125em;
-    color: darken($colour-lightblue, 15%);
+    color: lighten($heading-colour, 5%);
 }
 
 h3 {
     font-size: 1.875em;
-    color: darken($colour-lightblue, 30%);
+    color: darken($heading-colour, 30%);
 }
 
 h4 {
     font-size: 1.5em;
-    color: darken($colour-lightblue, 45%);
+    color: darken($heading-colour, 10%);
 }
 h5 {
     font-size: 1.25em;
-    color: darken($colour-lightblue, 20%);
+    color: darken($heading-colour, 20%);
 }
 h6 {
     font-size: 1.125em;
-    color: darken($colour-lightblue, 35%);
+    color: darken($heading-colour, 30%);
 }
 
 a {
