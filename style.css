@@ -109,8 +109,8 @@ a:hover {
 
 /* line 113, ../sass/_base.scss */
 .wrap, .post .postWrap {
-  width: 94%;
-  padding: 0 3%;
+  width: 92%;
+  padding: 0 4%;
   margin: 0 auto;
   max-width: 1300px;
 }
@@ -224,7 +224,7 @@ nav ul li.current-menu-item a {
 
 /* line 38, ../sass/_frontPage.scss */
 .lightStrip {
-  background-color: #eef7fd;
+  background-color: #e5f3fb;
 }
 /* line 42, ../sass/_frontPage.scss */
 .lightStrip .title {
@@ -267,53 +267,56 @@ ul#servicesList li.serviceBox {
 }
 /* line 71, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
+  width: 60px;
   margin: 20px 0 0 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
 }
-/* line 74, ../sass/_frontPage.scss */
+/* line 76, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox .notFound h1, .notFound ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 77, ../sass/_frontPage.scss */
+/* line 79, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox p {
   text-align: justify;
 }
-/* line 80, ../sass/_frontPage.scss */
+/* line 82, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
-  color: #976667;
+  color: #966768;
 }
-/* line 83, ../sass/_frontPage.scss */
+/* line 85, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
-  color: #9dba86;
+  color: #9dbb87;
 }
-/* line 86, ../sass/_frontPage.scss */
+/* line 88, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
-  color: #739cc3;
+  color: #759cc2;
 }
-/* line 90, ../sass/_frontPage.scss */
+/* line 92, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 93, ../sass/_frontPage.scss */
+/* line 95, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 98, ../sass/_frontPage.scss */
+/* line 100, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
-  background-color: #976667;
+  background-color: #966768;
 }
-/* line 101, ../sass/_frontPage.scss */
+/* line 103, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
-  background-color: #9dba86;
+  background-color: #9dbb87;
 }
-/* line 104, ../sass/_frontPage.scss */
+/* line 106, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
-  background-color: #739cc3;
+  background-color: #759cc2;
 }
 
-/* line 110, ../sass/_frontPage.scss */
+/* line 112, ../sass/_frontPage.scss */
 #meetTheTeam {
-  width: 94%;
-  padding: 0 3%;
   max-width: 1040px;
   margin: 0 auto;
 }
@@ -326,51 +329,43 @@ ul#servicesList li.host:hover {
   text-align: justify;
   margin-top: 0;
 }
-
-/* line 126, ../sass/_frontPage.scss */
-#teamDesc, #teamMembers, .memberAvatar, .memberDesc {
+/* line 124, ../sass/_frontPage.scss */
+#meetTheTeam #teamDesc, #meetTheTeam #teamMembers, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* line 131, ../sass/_frontPage.scss */
-#teamDesc {
+/* line 129, ../sass/_frontPage.scss */
+#meetTheTeam #teamDesc {
   width: 40%;
   max-width: 410.063px;
   margin-left: 2%;
   margin-right: 8%;
 }
-
-/* line 138, ../sass/_frontPage.scss */
-#teamDesc, #teamMembers {
-  padding: 0;
-}
-
-/* line 142, ../sass/_frontPage.scss */
-#teamMembers {
+/* line 136, ../sass/_frontPage.scss */
+#meetTheTeam #teamMembers {
   width: 48%;
   margin-right: 2%;
 }
-/* line 146, ../sass/_frontPage.scss */
-#teamMembers .teamMember {
+/* line 140, ../sass/_frontPage.scss */
+#meetTheTeam #teamMembers .teamMember {
   padding: 5% 0;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 151, ../sass/_frontPage.scss */
-#teamMembers .teamMember .memberAvatar {
+/* line 145, ../sass/_frontPage.scss */
+#meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: 16%;
   width: 16%;
   margin-right: 4%;
   background-color: #87c8ee;
   border-radius: 50%;
 }
-/* line 158, ../sass/_frontPage.scss */
-#teamMembers .teamMember .memberDesc {
+/* line 152, ../sass/_frontPage.scss */
+#meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 80%;
 }
-/* line 160, ../sass/_frontPage.scss */
-#teamMembers .teamMember .memberDesc p {
+/* line 154, ../sass/_frontPage.scss */
+#meetTheTeam #teamMembers .teamMember .memberDesc p {
   font-style: italic;
 }
 
@@ -396,7 +391,7 @@ ul#servicesList li.host:hover {
   display: block;
   text-align: center;
   overflow: hidden;
-  background-color: #eef7fd;
+  background-color: #e5f3fb;
 }
 /* line 25, ../sass/_post.scss */
 .post .postWrap {
@@ -414,7 +409,7 @@ ul#servicesList li.host:hover {
 /* line 41, ../sass/_post.scss */
 #postsNav {
   line-height: 60px;
-  background-color: #eef7fd;
+  background-color: #e5f3fb;
   text-align: center;
 }
 /* line 46, ../sass/_post.scss */
@@ -472,16 +467,32 @@ ul#servicesList li.host:hover {
 
 @media screen and (max-width: 600px) {
   /* line 3, ../sass/_mobile.scss */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  /* line 7, ../sass/_mobile.scss */
+  #mainNav, #bottomNav {
+    display: none;
+  }
+
+  /* line 11, ../sass/_mobile.scss */
+  .wrap, .post .postWrap {
+    width: 88%;
+    padding: 0 6%;
+  }
+
+  /* line 16, ../sass/_mobile.scss */
   ul#servicesList {
     list-style-type: none;
     width: 100%;
     text-align: center;
   }
-  /* line 8, ../sass/_mobile.scss */
+  /* line 21, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox {
-    padding: 4%;
+    padding: 2% 5%;
     margin: 2% auto;
-    width: 92%;
+    width: 90%;
     max-width: 410.063px;
     display: inline-block;
     background-color: #fff;
@@ -491,46 +502,46 @@ ul#servicesList li.host:hover {
     border-radius: 4px;
   }
 
-  /* line 21, ../sass/_mobile.scss */
+  /* line 34, ../sass/_mobile.scss */
   #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam .post .readMore, .post #meetTheTeam .readMore, #meetTheTeam #postsNav, #meetTheTeam .facebook, #meetTheTeam .twitter {
     text-align: center;
   }
-  /* line 25, ../sass/_mobile.scss */
+  /* line 38, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 29, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
-    width: 94%;
+    width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /* line 35, ../sass/_mobile.scss */
+  /* line 48, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 410.063px;
   }
-  /* line 38, ../sass/_mobile.scss */
+  /* line 51, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     margin: 0;
   }
-  /* line 41, ../sass/_mobile.scss */
+  /* line 54, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 47, ../sass/_mobile.scss */
+  /* line 60, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 50, ../sass/_mobile.scss */
+  /* line 63, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 
-  /* line 60, ../sass/_mobile.scss */
+  /* line 73, ../sass/_mobile.scss */
   #mainNav, .social, #bottomNav, #copyright {
     float: none;
     text-align: center;

@@ -37,7 +37,7 @@
 }
 .lightStrip {
 	@extend .strip;
-	background-color: lighten($colour-lightblue, 23%);
+	background-color: lighten($colour-lightblue, 21%);
 
 	.title {
 		color: $colour-lightblue;
@@ -69,7 +69,9 @@ ul#servicesList {
 		@include border-radius($box-radius);
 
 		.serviceIcon{
+			width: 60px;
 			margin: 20px 0 0 0;
+		@include border-radius($btn-radius);
 		}
 		h1, h2, h3, h4,{
 			margin: 0px;
@@ -108,8 +110,6 @@ ul#servicesList {
 }
 
 #meetTheTeam {
-    width: 94%;
-    padding: 0 3%;
 	max-width: 1040px;
 	margin: 0 auto;
 
@@ -121,46 +121,40 @@ ul#servicesList {
 		margin-top: 0;
 	}
 
-}
+	#teamDesc, #teamMembers, .memberAvatar, .memberDesc {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-#teamDesc, #teamMembers, .memberAvatar, .memberDesc {
-	display: inline-block;
-	vertical-align: middle;
-}
+	#teamDesc {
+		width: 40%;
+		max-width: 410.063px;
+		margin-left: 2%;
+		margin-right: 8%;
+	}
 
-#teamDesc {
-	width: 40%;
-	max-width: 410.063px;
-	margin-left: 2%;
-	margin-right: 8%;
-}
+	#teamMembers {
+		width: 48%;
+		margin-right: 2%;
 
-#teamDesc, #teamMembers {
-	padding: 0;
-}
+		.teamMember {
+			padding: 5% 0;
+			margin-left: auto;
+			margin-right: auto;
 
-#teamMembers {
-	width: 48%;
-	margin-right: 2%;
-
-	.teamMember {
-		padding: 5% 0;
-		margin-left: auto;
-		margin-right: auto;
-
-		.memberAvatar {
-			height: 16%;
-			width: 16%;
-			margin-right: 4%;
-			background-color: #87c8ee;
-			border-radius: 50%;
-		}
-		.memberDesc {
-			width: 80%;
-			p {
-				font-style: italic;
+			.memberAvatar {
+				height: 16%;
+				width: 16%;
+				margin-right: 4%;
+				background-color: #87c8ee;
+				border-radius: 50%;
+			}
+			.memberDesc {
+				width: 80%;
+				p {
+					font-style: italic;
+				}
 			}
 		}
 	}
-
 }

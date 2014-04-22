@@ -18,8 +18,7 @@
         <article class="post">
 			<section class="lightStrip">
 				<div class="wrap">
-					
-					
+
 					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
 					<span class="postInfo"><?php the_time( 'D, jS F Y' ); ?> / / Posted in <?php the_category(', '); ?></span>
@@ -46,7 +45,6 @@
 
 		 	</section>
 
-
         </article>
         
         <?php endwhile; ?>
@@ -56,11 +54,11 @@
         <?php else: ?>
         
 			<section class="notFound">
+				<div class="wrap">
+					<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
 
-				<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
-
-	            <div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
-
+	            	<div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
+	            </div>
 		 	</section>
             
         <?php endif; ?>

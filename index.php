@@ -11,6 +11,7 @@
 			</div>
 		</section>
 
+		<?php query_posts('category_name=-blog&paged='.get_query_var('paged')) ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article class="post">
@@ -54,11 +55,11 @@
         <?php else: ?>
         
 			<section class="notFound">
+				<div class="wrap">
+					<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
 
-				<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
-
-	            <div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
-
+	            	<div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
+	            </div>
 		 	</section>
             
         <?php endif; ?>

@@ -1,14 +1,27 @@
 @media screen and (max-width: 600px){
 
+	h1 {
+		font-size: 2.5em;
+	}
+
+	#mainNav, #bottomNav {
+		display: none;
+	}
+
+	.wrap {
+		width: 88%;
+		padding: 0 6%;
+	}
+
 	ul#servicesList {
 		list-style-type: none;
 		width: 100%;
 		text-align: center;
 
 		li.serviceBox {
-			padding: 4%;
+			padding: 2% 5%;
 			margin: 2% auto;
-			width: 92%;
+			width: 90%;
 			max-width: 410.063px;
 			display: inline-block;
 			background-color: #fff;
@@ -27,7 +40,7 @@
 		}
 
 		#teamDesc, #teamMembers {
-			width: 94%;
+			width: 100%;
 			margin: 0 auto;
 			display: block;
 		}

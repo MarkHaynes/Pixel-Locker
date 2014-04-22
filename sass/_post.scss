@@ -19,7 +19,7 @@
 		display: block;
 		text-align: center;
 		overflow: hidden;
-		background-color: lighten($colour-lightblue, 23%);
+		background-color: lighten($colour-lightblue, 21%);
 	}
 
 	.postWrap {
@@ -41,7 +41,7 @@
 #postsNav {
 	@extend .btn;
 	line-height: 60px;
-	background-color: lighten($colour-lightblue, 23%);
+	background-color: lighten($colour-lightblue, 21%);
 	text-align: center;
 		a {
 			margin: 0 5px;
