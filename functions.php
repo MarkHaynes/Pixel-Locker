@@ -25,7 +25,11 @@
 		}
 		else {
 			echo '<h1 class="title">It would be great to hear from you :)</h1>';
-			echo '<div class="btn"><a href="http://pixellocker.co.uk">Contact Us</a></div>';
+			echo '<nav class="social"><ul>';
+			echo '<li class="btn"><a href="http://pixellocker.co.uk">email</a></li>';
+			echo '<li class="facebook"><a href="#">facebook</a></li>';
+			echo '<li class="twitter"><a href="#">twitter</a></li>';
+			echo '</ul></nav>';
 		}
 	}
 

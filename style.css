@@ -196,7 +196,7 @@ nav ul li.current-menu-item a {
 }
 
 /* line 56, ../sass/_header.scss */
-#mainNav, #bottomNav, .social {
+#mainNav, #bottomNav {
   float: right;
 }
 
@@ -300,7 +300,7 @@ ul#servicesList li.serviceBox p {
 }
 /* line 82, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
-  color: #966768;
+  color: #994242;
 }
 /* line 85, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
@@ -320,7 +320,7 @@ ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hove
 }
 /* line 100, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
-  background-color: #966768;
+  background-color: #994242;
 }
 /* line 103, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
@@ -438,20 +438,20 @@ footer {
   position: relative;
 }
 
-/* line 6, ../sass/_footer.scss */
+/* line 5, ../sass/_footer.scss */
 #bottomStrip {
   background-color: #123253;
 }
-/* line 10, ../sass/_footer.scss */
+/* line 9, ../sass/_footer.scss */
 #bottomStrip .title {
   color: #ffffff;
   font-size: 1.875em;
 }
-/* line 15, ../sass/_footer.scss */
+/* line 14, ../sass/_footer.scss */
 #bottomStrip .subtitle {
   color: #ccc;
 }
-/* line 18, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 #bottomStrip .btn, #bottomStrip .quote, #bottomStrip .post .readMore, .post #bottomStrip .readMore, #bottomStrip #postsNav, #bottomStrip .facebook, #bottomStrip .twitter {
   text-align: center;
 }
@@ -484,6 +484,11 @@ footer {
 /* line 51, ../sass/_footer.scss */
 .twitter a:hover {
   background-color: #6cb7f0;
+}
+
+/* line 56, ../sass/_footer.scss */
+.social {
+  text-align: center;
 }
 
 /* line 1, ../sass/_mobile.scss */
@@ -580,7 +585,7 @@ footer {
   }
 
   /* line 89, ../sass/_mobile.scss */
-  #mainNav, .social, #bottomNav, #copyright {
+  #mainNav, #bottomNav, #copyright {
     float: none;
     text-align: center;
   }

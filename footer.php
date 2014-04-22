@@ -10,13 +10,6 @@
 
 				<div class="wrap">
 
-					<nav class="social">
-						<ul>
-							<li class="facebook"><a href="#">facebook</a></li>
-							<li class="twitter"><a href="#">twitter</a></li>
-						</ul>
-					</nav>
-
 					<nav id="bottomNav">
 						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</nav>

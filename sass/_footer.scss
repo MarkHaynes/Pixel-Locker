@@ -2,7 +2,6 @@ footer {
 	position: relative;
 }
 
-
 #bottomStrip {
 	@extend .strip;
 	background-color: lighten($colour-darkblue, 4%);
@@ -19,6 +18,7 @@ footer {
 		text-align: center;
 	}
 }
+
 #copyright {
 	float: left;
 	line-height: 60px;
@@ -51,4 +51,8 @@ footer {
 	a:hover {
 		background-color: lighten($twitter-blue, 5%);
 	}
+}
+
+.social {
+	text-align: center;
 }
