@@ -38,4 +38,5 @@
 	}
 	add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
+add_theme_support( 'post-thumbnails' ); 
 ?>

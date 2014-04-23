@@ -96,7 +96,90 @@
 	}
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 601px) and (max-width: 860px){
+//Mobile Nav
+
+	.wrap {
+		width: 92%;
+		padding: 0 4%;
+	}
+
+	ul#servicesList {
+		list-style-type: none;
+		width: 100%;
+		text-align: center;
+
+		li.serviceBox {
+			padding: 2% 4%;
+			margin: 1%;
+			width: 40%;
+			display: inline-block;
+			background-color: #fff;
+			@include border-radius($box-radius);
+		}
+
+		li.serviceBox:last-child {
+			width: 90%;
+			max-width: 620px;
+		}
+
+		li.p {
+			text-align: justify;
+		}
+	}
+
+	#meetTheTeam {
+
+		p {
+			margin: 1em auto;
+		}
+
+		#teamDesc, #teamMembers {
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			max-width: 615.094px;
+		}
+
+		#teamMembers {
+
+			h2, .btn {
+				text-align: center;
+			}
+
+			.teamMember {
+				width: 46%;
+				margin: 0 2%;
+				display: inline-block;
+
+				.memberAvatar {
+					height: auto;
+					width: 30%;
+					margin: 2% auto;
+					display: block;
+				}
+				.memberDesc {
+					width: 100%;
+
+					p {
+						text-align: center;
+						margin-top: 0;
+					}
+				}
+			}
+
+		}
+	}
+
+	#mainNav, #bottomNav, #copyright {
+		float: none;
+		text-align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 860px){
 //Mobile Nav
 
 	nav#mainNav {

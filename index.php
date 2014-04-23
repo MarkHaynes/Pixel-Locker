@@ -21,7 +21,7 @@
 					
 					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-					<span class="postInfo"><?php the_time( 'D, jS F Y' ); ?> / / Posted in <?php the_category(', '); ?></span>
+					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?> ( <?php the_time( 'D, jS F, Y' ); ?> ) </span>
 				
 				</div>
 			</section>
