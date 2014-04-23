@@ -59,8 +59,9 @@ ul#servicesList {
 
 	li.serviceBox {
 		padding:  2%;
-		margin: 0 1%;
-		width: 27%;
+		margin: 0 0.5%;
+		width: 28.333%;
+		max-width: 273.375px;
 		display: inline-block;
 		background-color: #fff;
 		@include border-radius($box-radius);

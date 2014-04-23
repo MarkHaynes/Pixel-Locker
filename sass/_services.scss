@@ -1,11 +1,115 @@
+
+.serviceDesc {
+	width: 60%;
+	max-width: 615.094px;
+}
+
+.serviceBtn {
+	@extend .btn;
+	text-align: center;
+	a {
+		color: #ddd;
+		line-height: 44px;
+        padding: 0 20px;
+        font-size: 0.875em;
+        margin: 1em 0;
+	}
+
+    a:hover {
+        color: #fff;
+    }
+}
+
 #design {
+	@extend .strip;
+	background-color: $colour-red;
+
+	.wrap {
+		background: url('images/wedesignlarge.png') no-repeat right;
+		background-size: 40%;
+	}
+	
+	h1, h2, h3, p, h1 a {
+		color: #fff;
+	}
+
+	p {
+		text-align: justify;
+		margin-top: 0;
+	}
+
+	.serviceBtn {
+		a {
+			background-color: darken($colour-red, 12.5%);
+		}
+
+	    a:hover {
+	        background-color: darken($colour-red, 7.5%);
+	    }
+	}
 
 }
 
 #develop {
+	@extend .strip;
+	background-color: $colour-green;
+
+	.wrap {
+		background: url('images/wedeveloplarge.png') no-repeat left;
+		background-size: 40%;
+	}
+	
+	h1, h2, h3, p, h1 a {
+		color: #fff;
+	}
+
+	p {
+		text-align: justify;
+		margin-top: 0;
+	}
+
+	.serviceDesc {
+		float: right;
+	}
+
+	.serviceBtn {
+		a {
+			background-color: darken($colour-green, 12.5%);
+		}
+
+	    a:hover {
+	        background-color: darken($colour-green, 7.5%);
+	    }
+	}
 
 }
 
 #host {
+	@extend .strip;
+	background-color: $colour-blue;
+
+	.wrap {
+		background: url('images/wehostlarge.png') no-repeat right;
+		background-size: 40%;
+	}
+	
+	h1, h2, h3, p, h1 a {
+		color: #fff;
+	}
+
+	p {
+		text-align: justify;
+		margin-top: 0;
+	}
+
+		.serviceBtn {
+		a {
+			background-color: darken($colour-blue, 12.5%);
+		}
+
+	    a:hover {
+	        background-color: darken($colour-blue, 7.5%);
+	    }
+	}
 
 }

@@ -43,6 +43,10 @@
 			background-color: #fff;
 			@include border-radius($box-radius);
 		}
+
+		li.p {
+			text-align: justify;
+		}
 	}
 
 	#meetTheTeam {

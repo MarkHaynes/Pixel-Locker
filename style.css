@@ -96,7 +96,7 @@ a:hover {
 }
 
 /* line 105, ../sass/_base.scss */
-.btn a, .quote a, .post .readMore a, #postsNav a, .facebook a, .twitter a {
+.btn a, .quote a, .post .readMore a, #postsNav a, .serviceBtn a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
   padding: 0 15px;
@@ -111,15 +111,15 @@ a:hover {
   color: #ddd;
 }
 /* line 116, ../sass/_base.scss */
-.btn a:hover, .quote a:hover, .post .readMore a:hover, #postsNav a:hover, .facebook a:hover, .twitter a:hover {
+.btn a:hover, .quote a:hover, .post .readMore a:hover, #postsNav a:hover, .serviceBtn a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5e90b9;
   color: #fff;
 }
 
 /* line 122, ../sass/_base.scss */
 .wrap, .post .postWrap {
-  width: 92%;
-  padding: 0 4%;
+  width: 96%;
+  padding: 0 2%;
   margin: 0 auto;
   max-width: 1300px;
 }
@@ -201,16 +201,16 @@ nav ul li.current-menu-item a {
 }
 
 /* line 1, ../sass/_frontPage.scss */
-.strip, #topStrip, .lightStrip, #bottomStrip {
+.strip, #topStrip, .lightStrip, #design, #develop, #host, #bottomStrip {
   padding: 40px 0;
 }
 /* line 4, ../sass/_frontPage.scss */
-.strip .title, #topStrip .title, .lightStrip .title, #bottomStrip .title {
+.strip .title, #topStrip .title, .lightStrip .title, #design .title, #develop .title, #host .title, #bottomStrip .title {
   margin: 0 0 14px 0;
   text-align: center;
 }
 /* line 9, ../sass/_frontPage.scss */
-.strip .tagline, #topStrip .tagline, .lightStrip .tagline, #bottomStrip .tagline {
+.strip .tagline, #topStrip .tagline, .lightStrip .tagline, #design .tagline, #develop .tagline, #host .tagline, #bottomStrip .tagline {
   max-width: 800px;
   margin: 14px auto 0 auto;
   text-align: center;
@@ -220,7 +220,7 @@ nav ul li.current-menu-item a {
   display: block;
 }
 /* line 19, ../sass/_frontPage.scss */
-.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, #bottomStrip .subHeading {
+.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, #design .subHeading, #develop .subHeading, #host .subHeading, #bottomStrip .subHeading {
   margin: 0 0 14px 0;
   text-align: center;
 }
@@ -247,7 +247,7 @@ nav ul li.current-menu-item a {
   color: #6286a0;
 }
 /* line 45, ../sass/_frontPage.scss */
-.lightStrip .btn, .lightStrip .quote, .lightStrip .post .readMore, .post .lightStrip .readMore, .lightStrip #postsNav, .lightStrip .facebook, .lightStrip .twitter {
+.lightStrip .btn, .lightStrip .quote, .lightStrip .post .readMore, .post .lightStrip .readMore, .lightStrip #postsNav, .lightStrip .serviceBtn, .lightStrip .facebook, .lightStrip .twitter {
   text-align: center;
 }
 
@@ -268,8 +268,9 @@ ul#servicesList {
 /* line 60, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox {
   padding: 2%;
-  margin: 0 1%;
-  width: 27%;
+  margin: 0 0.5%;
+  width: 28.333%;
+  max-width: 273.375px;
   display: inline-block;
   background-color: #fff;
   -webkit-border-radius: 4px;
@@ -277,7 +278,7 @@ ul#servicesList li.serviceBox {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 68, ../sass/_frontPage.scss */
+/* line 69, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
   width: 60px;
   margin: 20px 0 0 0;
@@ -286,85 +287,85 @@ ul#servicesList li.serviceBox .serviceIcon {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 73, ../sass/_frontPage.scss */
+/* line 74, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox .notFound h1, .notFound ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 76, ../sass/_frontPage.scss */
+/* line 77, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox p {
   text-align: justify;
 }
-/* line 79, ../sass/_frontPage.scss */
+/* line 80, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
   color: #994242;
 }
-/* line 82, ../sass/_frontPage.scss */
+/* line 83, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 85, ../sass/_frontPage.scss */
+/* line 86, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 89, ../sass/_frontPage.scss */
+/* line 90, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 92, ../sass/_frontPage.scss */
+/* line 93, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 97, ../sass/_frontPage.scss */
+/* line 98, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
   background-color: #994242;
 }
-/* line 100, ../sass/_frontPage.scss */
+/* line 101, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 103, ../sass/_frontPage.scss */
+/* line 104, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
   background-color: #759cc2;
 }
 
-/* line 109, ../sass/_frontPage.scss */
+/* line 110, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
 }
-/* line 113, ../sass/_frontPage.scss */
+/* line 114, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 0;
 }
-/* line 116, ../sass/_frontPage.scss */
+/* line 117, ../sass/_frontPage.scss */
 #meetTheTeam p {
   text-align: justify;
   margin-top: 0;
 }
-/* line 121, ../sass/_frontPage.scss */
+/* line 122, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam #teamMembers, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 126, ../sass/_frontPage.scss */
+/* line 127, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc {
   width: 40%;
   max-width: 410.063px;
   margin-left: 2%;
   margin-right: 8%;
 }
-/* line 133, ../sass/_frontPage.scss */
+/* line 134, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers {
   width: 48%;
   margin-right: 2%;
 }
-/* line 137, ../sass/_frontPage.scss */
+/* line 138, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember {
   padding: 5% 0;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 142, ../sass/_frontPage.scss */
+/* line 143, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: 16%;
   width: 16%;
@@ -372,11 +373,11 @@ ul#servicesList li.host:hover {
   background-color: #87c8ee;
   border-radius: 50%;
 }
-/* line 149, ../sass/_frontPage.scss */
+/* line 150, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 80%;
 }
-/* line 151, ../sass/_frontPage.scss */
+/* line 152, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc p {
   font-style: italic;
 }
@@ -430,6 +431,114 @@ ul#servicesList li.host:hover {
   margin: 0 5px;
 }
 
+/* line 2, ../sass/_services.scss */
+.serviceDesc {
+  width: 60%;
+  max-width: 615.094px;
+}
+
+/* line 7, ../sass/_services.scss */
+.serviceBtn {
+  text-align: center;
+}
+/* line 10, ../sass/_services.scss */
+.serviceBtn a {
+  color: #ddd;
+  line-height: 44px;
+  padding: 0 20px;
+  font-size: 0.875em;
+  margin: 1em 0;
+}
+/* line 18, ../sass/_services.scss */
+.serviceBtn a:hover {
+  color: #fff;
+}
+
+/* line 23, ../sass/_services.scss */
+#design {
+  background-color: #994242;
+}
+/* line 27, ../sass/_services.scss */
+#design .wrap, #design .post .postWrap, .post #design .postWrap {
+  background: url("images/wedesignlarge.png") no-repeat right;
+  background-size: 40%;
+}
+/* line 32, ../sass/_services.scss */
+#design h1, #design h2, #design .notFound h1, .notFound #design h1, #design h3, #design p, #design h1 a {
+  color: #fff;
+}
+/* line 36, ../sass/_services.scss */
+#design p {
+  text-align: justify;
+  margin-top: 0;
+}
+/* line 42, ../sass/_services.scss */
+#design .serviceBtn a {
+  background-color: #6c2f2f;
+}
+/* line 46, ../sass/_services.scss */
+#design .serviceBtn a:hover {
+  background-color: #7e3636;
+}
+
+/* line 53, ../sass/_services.scss */
+#develop {
+  background-color: #8cad6a;
+}
+/* line 57, ../sass/_services.scss */
+#develop .wrap, #develop .post .postWrap, .post #develop .postWrap {
+  background: url("images/wedeveloplarge.png") no-repeat left;
+  background-size: 40%;
+}
+/* line 62, ../sass/_services.scss */
+#develop h1, #develop h2, #develop .notFound h1, .notFound #develop h1, #develop h3, #develop p, #develop h1 a {
+  color: #fff;
+}
+/* line 66, ../sass/_services.scss */
+#develop p {
+  text-align: justify;
+  margin-top: 0;
+}
+/* line 71, ../sass/_services.scss */
+#develop .serviceDesc {
+  float: right;
+}
+/* line 76, ../sass/_services.scss */
+#develop .serviceBtn a {
+  background-color: #6c8b4c;
+}
+/* line 80, ../sass/_services.scss */
+#develop .serviceBtn a:hover {
+  background-color: #799b55;
+}
+
+/* line 87, ../sass/_services.scss */
+#host {
+  background-color: #759cc2;
+}
+/* line 91, ../sass/_services.scss */
+#host .wrap, #host .post .postWrap, .post #host .postWrap {
+  background: url("images/wehostlarge.png") no-repeat right;
+  background-size: 40%;
+}
+/* line 96, ../sass/_services.scss */
+#host h1, #host h2, #host .notFound h1, .notFound #host h1, #host h3, #host p, #host h1 a {
+  color: #fff;
+}
+/* line 100, ../sass/_services.scss */
+#host p {
+  text-align: justify;
+  margin-top: 0;
+}
+/* line 106, ../sass/_services.scss */
+#host .serviceBtn a {
+  background-color: #4c7cab;
+}
+/* line 110, ../sass/_services.scss */
+#host .serviceBtn a:hover {
+  background-color: #5a89b6;
+}
+
 /* line 1, ../sass/_footer.scss */
 footer {
   position: relative;
@@ -449,7 +558,7 @@ footer {
   color: #ccc;
 }
 /* line 17, ../sass/_footer.scss */
-#bottomStrip .btn, #bottomStrip .quote, #bottomStrip .post .readMore, .post #bottomStrip .readMore, #bottomStrip #postsNav, #bottomStrip .facebook, #bottomStrip .twitter {
+#bottomStrip .btn, #bottomStrip .quote, #bottomStrip .post .readMore, .post #bottomStrip .readMore, #bottomStrip #postsNav, #bottomStrip .serviceBtn, #bottomStrip .facebook, #bottomStrip .twitter {
   text-align: center;
 }
 
@@ -541,59 +650,63 @@ footer {
     -ms-border-radius: 4px;
     border-radius: 4px;
   }
+  /* line 47, ../sass/_mobile.scss */
+  ul#servicesList li.p {
+    text-align: justify;
+  }
 
-  /* line 50, ../sass/_mobile.scss */
-  #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam .post .readMore, .post #meetTheTeam .readMore, #meetTheTeam #postsNav, #meetTheTeam .facebook, #meetTheTeam .twitter {
+  /* line 54, ../sass/_mobile.scss */
+  #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam .post .readMore, .post #meetTheTeam .readMore, #meetTheTeam #postsNav, #meetTheTeam .serviceBtn, #meetTheTeam .facebook, #meetTheTeam .twitter {
     text-align: center;
   }
-  /* line 54, ../sass/_mobile.scss */
+  /* line 58, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 58, ../sass/_mobile.scss */
+  /* line 62, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /* line 64, ../sass/_mobile.scss */
+  /* line 68, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 410.063px;
   }
-  /* line 67, ../sass/_mobile.scss */
+  /* line 71, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     margin: 0;
   }
-  /* line 70, ../sass/_mobile.scss */
+  /* line 74, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 76, ../sass/_mobile.scss */
+  /* line 80, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 79, ../sass/_mobile.scss */
+  /* line 83, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 
-  /* line 89, ../sass/_mobile.scss */
+  /* line 93, ../sass/_mobile.scss */
   #mainNav, #bottomNav, #copyright {
     float: none;
     text-align: center;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 98, ../sass/_mobile.scss */
+  /* line 102, ../sass/_mobile.scss */
   nav#mainNav {
     display: none;
   }
 
-  /* line 102, ../sass/_mobile.scss */
+  /* line 106, ../sass/_mobile.scss */
   a#mobile-button:link, a#mobile-button:visited {
     background-color: #13375b;
     border: 1px solid #0e2842;
@@ -610,12 +723,12 @@ footer {
     display: block;
   }
 
-  /* line 119, ../sass/_mobile.scss */
+  /* line 123, ../sass/_mobile.scss */
   a#mobile-button:hover {
     background-color: #102d4a;
   }
 
-  /* line 123, ../sass/_mobile.scss */
+  /* line 127, ../sass/_mobile.scss */
   #nav-wrap-mobile {
     display: none;
     top: 58px;
@@ -627,14 +740,14 @@ footer {
     position: absolute;
   }
 
-  /* line 135, ../sass/_mobile.scss */
+  /* line 139, ../sass/_mobile.scss */
   ul.menu-mobile {
     margin: 2px 0;
     padding: 0;
     list-style-type: none;
   }
 
-  /* line 141, ../sass/_mobile.scss */
+  /* line 145, ../sass/_mobile.scss */
   ul.menu-mobile li {
     color: #0e2842;
     width: 100%;
@@ -643,7 +756,7 @@ footer {
     text-align: center;
   }
 
-  /* line 149, ../sass/_mobile.scss */
+  /* line 153, ../sass/_mobile.scss */
   ul.menu-mobile li a {
     color: #fff;
     display: block;
@@ -658,7 +771,7 @@ footer {
     font-size: 1.2em;
   }
 
-  /* line 163, ../sass/_mobile.scss */
+  /* line 167, ../sass/_mobile.scss */
   ul.menu-mobile li a:hover {
     background-color: #365c7b;
     color: #fff;
