@@ -128,6 +128,15 @@ a:hover {
     margin: 0 auto;
     max-width: 1300px;
 }
+
+.contentWrap {
+    @extend .wrap;
+    max-width: 920px;
+    p {
+        text-align: justify;
+    }
+}
+
 .notFound {
     text-align: center;
     padding: 5em 0;

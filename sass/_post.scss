@@ -11,22 +11,19 @@
 
 .postInfo {
     max-width: 800px;
-    margin: 8px auto;
+    margin: 6px auto;
     text-align: center;
     font-weight: 300;
     font-size: 1em;
     display: block;
 }
 
-.postWrap {
-	@extend .wrap;
-    max-width: 922.641px;
-    text-align: justify;
+.thumbStrip {
+	background-color: lighten($colour-darkblue, 82%);
 }
 
 .thumb {
 	width: 100%;
-	margin: 0 auto 30px auto;
 	display: block;
 	text-align: center;
 	overflow: hidden;
@@ -36,19 +33,38 @@
 		max-width: 100%;
 	}
 }
+.post {
+	background-color: lighten($colour-darkblue, 82%);
+	padding-bottom: 40px;
 
-.blogPost .postWrap {
-	max-width: 615.094px;
-	text-align: center;
+	.thumbStrip {
+		padding: 40px 0;
+	}
+
+}
+
+.blogPost {
+	background-color: lighten($colour-darkblue, 82%);
+	padding: 40px 0;
+
+	.thumbStrip {
+		padding-bottom: 40px;
+	}
+
 }
 
 .blogPost h1, .blogPost p {
 	margin-top: 0px;
 }
 
+.postWrap {
+	@extend .wrap;
+	max-width: 620px;
+	text-align: center;
+}
 
 .blogPost, #postsNav {
-	border-top: 5px solid lighten($colour-darkblue, 70%);
+	border-top: 5px solid lighten($colour-darkblue, 74%);
 }
 
 #postsNav {

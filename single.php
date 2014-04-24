@@ -17,16 +17,23 @@
 				</div>
 			</section>
 
+
+			<?php if ( has_post_thumbnail() ): ?>
+				
+			<section class="thumbStrip">
+				<div class="contentWrap">
+
+					<div class="thumb">
+	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+	                </div>
+
+				</div>
+			</section>
+
+			<?php  endif; ?>
+
 			<section class="whiteStrip">
-				<div class="postWrap">
-
-					<?php if ( has_post_thumbnail() ): ?>
-
-						<div class="thumb">
-		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-		                </div>
-
-					<?php  endif; ?>
+				<div class="contentWrap">
 					
 			   		<?php the_content(); ?>
 
