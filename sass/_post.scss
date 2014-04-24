@@ -1,51 +1,54 @@
-.post {
-	border-bottom: 1px solid lighten($colour-darkblue, 73%);
 
-	.lightStrip {
-		.postInfo {
-			color: lighten($colour-font, 10%);
-		}
-	}
-
+#topStrip {
 	.postInfo {
-	    max-width: 800px;
-	    margin: 14px auto 0 auto;
-	    text-align: center;
-	    font-weight: 300;
-	    font-size: 1em;
-	    display: block;
 		color: #ccc;
 	}
+}
 
-	.thumb {
-		width: 100%;
-		max-width: 1040px;
-		max-height: 260px;
-		margin: 0 auto;
-		display: block;
-		text-align: center;
-		overflow: hidden;
+.postInfoWrap {
+	margin: 30px auto 0 auto;
+}
 
-		img {
-			height: auto;
-			max-width: 100%;
-		}
+.postInfo {
+    max-width: 800px;
+    margin: 8px auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+    display: block;
+}
+
+.postWrap {
+	@extend .wrap;
+    max-width: 922.641px;
+    text-align: justify;
+}
+
+.thumb {
+	width: 100%;
+	margin: 0 auto 30px auto;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+
+	img {
+		height: auto;
+		max-width: 100%;
 	}
+}
 
-	.postWrap {
-		@extend .wrap;
-	    max-width: 922.641px;
-	    /* maxwidth: 615.094px; */
-	    text-align: justify;
-	}
+.blogPost .postWrap {
+	max-width: 615.094px;
+	text-align: center;
+}
 
-	.readMore {
-		@extend .btn;
-		text-align: center;
-		padding: 16px 0;
-		height: 38px;
+.blogPost h1, .blogPost p {
+	margin-top: 0px;
+}
 
-	}
+
+.blogPost, #postsNav {
+	border-top: 5px solid lighten($colour-darkblue, 70%);
 }
 
 #postsNav {

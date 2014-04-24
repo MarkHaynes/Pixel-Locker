@@ -11,26 +11,23 @@
 					
 					<h1 class="title"><?php the_title(); ?></h1>
 
-					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?> ( <?php the_time( 'D, jS F, Y' ); ?> ) </span>
+					<span class="postInfo"><?php the_time( 'D, jS F, Y' ); ?></span>
+					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?></span>
 				
 				</div>
 			</section>
 
-			<section class="lightStrip">
-				<div class="wrap">
+			<section class="whiteStrip">
+				<div class="postWrap">
 
 					<?php if ( has_post_thumbnail() ): ?>
+
 						<div class="thumb">
 		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 		                </div>
-		            <?php  endif; ?>
 
-		        </div>
-			</section>
-
-			<section class="whiteStrip">
-				<div class="postWrap">
-		   		
+					<?php  endif; ?>
+					
 			   		<?php the_content(); ?>
 
 		 		</div>

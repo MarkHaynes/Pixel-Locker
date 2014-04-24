@@ -14,38 +14,28 @@
 		<?php query_posts('category_name=-blog&paged='.get_query_var('paged')) ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <article class="post">
-			<section class="lightStrip">
-				<div class="wrap">
-					
-					
-					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-
-					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?> ( <?php the_time( 'D, jS F, Y' ); ?> ) </span>
-				
-				</div>
-			</section>
-
+        <article class="blogPost">
 			<section class="whiteStrip">
 				<div class="postWrap">
 
-					<div class="thumb"></div>
-
 					<?php if ( has_post_thumbnail() ): ?>
+
 						<div class="thumb">
 		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 		                </div>
-		            <?php  endif; ?>
+
+					<?php  endif; ?>
+					
+					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
 					<?php the_excerpt(); ?>
 
+					<div class="postInfoWrap">
+						<span class="postInfo"><?php the_time( 'D, jS F, Y' ); ?></span><span class="postInfo">Posted in: <?php the_category(' ~ '); ?></span>
+					</div>
+
 				</div>
-
-				<div class="readMore"><a href="<?php the_permalink() ?>">Read More</a></div>
-
-		 	</section>
-
-
+			</section>
         </article>
         
         <?php endwhile; ?>
