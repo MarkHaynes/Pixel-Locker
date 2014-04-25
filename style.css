@@ -278,21 +278,24 @@ ul#servicesList {
   margin: 0 auto;
   text-align: center;
   max-width: 1200px;
+  display: block;
 }
-/* line 60, ../sass/_frontPage.scss */
+/* line 61, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox {
   padding: 2%;
   margin: 0 0.5%;
   width: 28.333%;
   max-width: 273.375px;
   display: inline-block;
+  vertical-align: top;
   background-color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  height: 460px;
 }
-/* line 69, ../sass/_frontPage.scss */
+/* line 72, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon {
   width: 60px;
   margin: 20px 0 0 0;
@@ -301,85 +304,85 @@ ul#servicesList li.serviceBox .serviceIcon {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 74, ../sass/_frontPage.scss */
+/* line 77, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox .notFound h1, .notFound ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4 {
   margin: 0px;
 }
-/* line 77, ../sass/_frontPage.scss */
+/* line 80, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox p {
   text-align: justify;
 }
-/* line 80, ../sass/_frontPage.scss */
+/* line 83, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT {
   color: #994242;
 }
-/* line 83, ../sass/_frontPage.scss */
+/* line 86, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 86, ../sass/_frontPage.scss */
+/* line 89, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 90, ../sass/_frontPage.scss */
+/* line 93, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover {
   color: #fff;
 }
-/* line 93, ../sass/_frontPage.scss */
+/* line 96, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 98, ../sass/_frontPage.scss */
+/* line 101, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover {
   background-color: #994242;
 }
-/* line 101, ../sass/_frontPage.scss */
+/* line 104, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 104, ../sass/_frontPage.scss */
+/* line 107, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover {
   background-color: #759cc2;
 }
 
-/* line 110, ../sass/_frontPage.scss */
+/* line 113, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
 }
-/* line 114, ../sass/_frontPage.scss */
+/* line 117, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 0;
 }
-/* line 117, ../sass/_frontPage.scss */
+/* line 120, ../sass/_frontPage.scss */
 #meetTheTeam p {
   text-align: justify;
   margin-top: 0;
 }
-/* line 122, ../sass/_frontPage.scss */
+/* line 125, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam #teamMembers, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 127, ../sass/_frontPage.scss */
+/* line 130, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc {
   width: 40%;
   max-width: 410.063px;
   margin-left: 2%;
   margin-right: 8%;
 }
-/* line 134, ../sass/_frontPage.scss */
+/* line 137, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers {
   width: 48%;
   margin-right: 2%;
 }
-/* line 138, ../sass/_frontPage.scss */
+/* line 141, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember {
   padding: 5% 0;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 143, ../sass/_frontPage.scss */
+/* line 146, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: 16%;
   width: 16%;
@@ -387,11 +390,11 @@ ul#servicesList li.host:hover {
   background-color: #87c8ee;
   border-radius: 50%;
 }
-/* line 150, ../sass/_frontPage.scss */
+/* line 153, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 80%;
 }
-/* line 152, ../sass/_frontPage.scss */
+/* line 155, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc p {
   font-style: italic;
 }
@@ -698,65 +701,66 @@ footer {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
+    height: auto;
   }
-  /* line 46, ../sass/_mobile.scss */
+  /* line 47, ../sass/_mobile.scss */
   ul#servicesList li.p {
     text-align: justify;
   }
 
-  /* line 53, ../sass/_mobile.scss */
+  /* line 54, ../sass/_mobile.scss */
   #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam #postsNav, #meetTheTeam .serviceBtn, #meetTheTeam .facebook, #meetTheTeam .twitter {
     text-align: center;
   }
-  /* line 57, ../sass/_mobile.scss */
+  /* line 58, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 61, ../sass/_mobile.scss */
+  /* line 62, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /* line 67, ../sass/_mobile.scss */
+  /* line 68, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 410.063px;
   }
-  /* line 70, ../sass/_mobile.scss */
+  /* line 71, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     margin: 0;
   }
-  /* line 73, ../sass/_mobile.scss */
+  /* line 74, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 79, ../sass/_mobile.scss */
+  /* line 80, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 82, ../sass/_mobile.scss */
+  /* line 83, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 860px) {
-  /* line 96, ../sass/_mobile.scss */
+  /* line 97, ../sass/_mobile.scss */
   .wrap, .contentWrap, .postWrap {
     width: 92%;
     padding: 0 4%;
   }
 
-  /* line 101, ../sass/_mobile.scss */
+  /* line 102, ../sass/_mobile.scss */
   ul#servicesList {
     list-style-type: none;
     width: 100%;
     text-align: center;
   }
-  /* line 106, ../sass/_mobile.scss */
+  /* line 107, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox {
     padding: 2% 4%;
     margin: 1%;
@@ -768,61 +772,62 @@ footer {
     -ms-border-radius: 4px;
     border-radius: 4px;
   }
-  /* line 115, ../sass/_mobile.scss */
+  /* line 116, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox:last-child {
     width: 90%;
     max-width: 620px;
+    height: auto;
   }
-  /* line 120, ../sass/_mobile.scss */
+  /* line 122, ../sass/_mobile.scss */
   ul#servicesList li.p {
     text-align: justify;
   }
 
-  /* line 127, ../sass/_mobile.scss */
+  /* line 129, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 131, ../sass/_mobile.scss */
+  /* line 133, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
     width: 100%;
     margin: 0 auto;
     display: block;
     max-width: 615.094px;
   }
-  /* line 140, ../sass/_mobile.scss */
+  /* line 142, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers h2, #meetTheTeam #teamMembers .notFound h1, .notFound #meetTheTeam #teamMembers h1, #meetTheTeam #teamMembers .btn, #meetTheTeam #teamMembers .quote, #meetTheTeam #teamMembers #postsNav, #meetTheTeam #teamMembers .serviceBtn, #meetTheTeam #teamMembers .facebook, #meetTheTeam #teamMembers .twitter {
     text-align: center;
   }
-  /* line 144, ../sass/_mobile.scss */
+  /* line 146, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     width: 46%;
     margin: 0 2%;
     display: inline-block;
   }
-  /* line 149, ../sass/_mobile.scss */
+  /* line 151, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 155, ../sass/_mobile.scss */
+  /* line 157, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 158, ../sass/_mobile.scss */
+  /* line 160, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 }
 @media screen and (max-width: 860px) {
-  /* line 173, ../sass/_mobile.scss */
+  /* line 175, ../sass/_mobile.scss */
   nav#mainNav, nav#bottomNav {
     display: none;
   }
 
-  /* line 177, ../sass/_mobile.scss */
+  /* line 179, ../sass/_mobile.scss */
   a#mobile-button:link, a#mobile-button:visited {
     min-width: 50px;
     line-height: 44px;
@@ -840,13 +845,13 @@ footer {
     color: #ddd;
   }
 
-  /* line 191, ../sass/_mobile.scss */
+  /* line 193, ../sass/_mobile.scss */
   a#mobile-button:hover, a#mobile-button:focus {
     background-color: #1c5185;
     color: #fff;
   }
 
-  /* line 196, ../sass/_mobile.scss */
+  /* line 198, ../sass/_mobile.scss */
   #nav-wrap-mobile {
     display: none;
     top: 60px;
@@ -857,7 +862,7 @@ footer {
     position: absolute;
   }
 
-  /* line 206, ../sass/_mobile.scss */
+  /* line 208, ../sass/_mobile.scss */
   ul.menu-mobile {
     margin: 0;
     padding: 0;
@@ -865,7 +870,7 @@ footer {
     border-right: 1px solid #0e2842;
   }
 
-  /* line 213, ../sass/_mobile.scss */
+  /* line 215, ../sass/_mobile.scss */
   ul.menu-mobile li {
     width: 100%;
     height: auto;
@@ -873,7 +878,7 @@ footer {
     margin: 0;
   }
 
-  /* line 220, ../sass/_mobile.scss */
+  /* line 222, ../sass/_mobile.scss */
   ul.menu-mobile li a {
     display: block;
     padding: 10px;
@@ -886,14 +891,14 @@ footer {
     font-size: 1.2em;
   }
 
-  /* line 232, ../sass/_mobile.scss */
+  /* line 234, ../sass/_mobile.scss */
   ul.menu-mobile li a:hover {
     background-color: #1c5185;
     text-decoration: none;
     color: #fff;
   }
 
-  /* line 238, ../sass/_mobile.scss */
+  /* line 240, ../sass/_mobile.scss */
   #copyright {
     float: none;
     text-align: center;

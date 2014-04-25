@@ -56,6 +56,7 @@ ul#servicesList {
 	margin: 0 auto;
 	text-align: center;
 	max-width: 1200px;
+	display: block;
 
 	li.serviceBox {
 		padding:  2%;
@@ -63,8 +64,10 @@ ul#servicesList {
 		width: 28.333%;
 		max-width: 273.375px;
 		display: inline-block;
+		vertical-align: top;
 		background-color: #fff;
 		@include border-radius($box-radius);
+		height: 460px;
 
 		.serviceIcon{
 			width: 60px;

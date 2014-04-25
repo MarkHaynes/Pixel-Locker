@@ -4,9 +4,20 @@
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 class="title">Pixel Blogger</h1>
+				<?php $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+					$cat_title = single_cat_title('',false);;
 
-				<span class="tagline">Here you can find out about our latest adventures and projects.</span>
+					if (false !== strpos($url,'/category/')) {
+					    $top_title = 'Posts in: '. $cat_title;
+					    $top_tagline = 'These posts are filed under the <strong>'. $cat_title .'</strong> category.';
+					} else {
+					    $top_title = "Pixel Blogger";
+					    $top_tagline = "Here you can find out about our latest adventures and projects.";
+					}
+
+				?>	
+				<h1 class="title"><?php echo $top_title;?></h1>
+				<span class="tagline"><?php echo $top_tagline;?></span>
 			
 			</div>
 		</section>
@@ -17,7 +28,7 @@
         <article class="blogPost">
 
 			<?php if ( has_post_thumbnail() ): ?>
-				
+
 			<section class="thumbStrip">
 				<div class="postWrap">
 

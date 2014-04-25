@@ -6,7 +6,16 @@ Template Name: Services Page
 /* Custom Pages have to have the template data above */
 ?>
 
-<?php get_header(); ?>
+<?php
+
+	$child_pages = new WP_Query( array(
+	    'post_type'      => 'page', // set the post type to page
+	    'posts_per_page' => 10, // number of posts (pages) to show
+	    'post_parent'    => $post->ID, // enter the post ID of the parent page
+	) );
+
+	 get_header();
+?>
 
 	<main>
 		<section id="topStrip">
@@ -19,16 +28,14 @@ Template Name: Services Page
 			</div>
 		</section>
 
-		<section id="design">
+		<?php echo $parent_name; if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>  
+
+		<section id="<?php echo $post->post_name; ?>">
 			<div class="wrap">
 				<div class="serviceDesc">	
 					<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<?php the_excerpt(); ?>
 
 					<div class="serviceBtn"><a href="<?php the_permalink() ?>">Find out more...</a></div>
 
@@ -37,41 +44,20 @@ Template Name: Services Page
 			</div>
 		</section>
 
-		<section id="develop">
-			<div class="wrap">
-				<div class="serviceDesc">	
-					<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+		<?php endwhile; else: ?>
+        
+			<section class="notFound">
+				<div class="wrap">
+					<h1><?php _e('Sorry, we could not find what you are looking for.'); ?></h1>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            	<div class="btn"><a href="<?php echo get_option('home'); ?>">Return to the homepage</a></div>
+	            </div>
+		 	</section>
+            
+		<?php endif; ?>
 
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<?php wp_reset_postdata(); ?>
 
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-					<div class="serviceBtn"><a href="<?php the_permalink() ?>">Find out more...</a></div>
-
-				</div>
-				<div class="clear"></div>
-			</div>
-		</section>
-
-		<section id="host">
-			<div class="wrap">
-				<div class="serviceDesc">	
-					<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-					<div class="serviceBtn"><a href="<?php the_permalink() ?>">Find out more...</a></div>
-
-				</div>
-				<div class="clear"></div>
-			</div>
-		</section>
 	</main>
 
 	<div style="clear:both"></div>

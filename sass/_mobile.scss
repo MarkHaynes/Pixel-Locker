@@ -41,6 +41,7 @@
 			display: inline-block;
 			background-color: #fff;
 			@include border-radius($box-radius);
+			height: auto;
 		}
 
 		li.p {
@@ -115,6 +116,7 @@
 		li.serviceBox:last-child {
 			width: 90%;
 			max-width: 620px;
+			height: auto;
 		}
 
 		li.p {

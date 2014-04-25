@@ -43,5 +43,6 @@
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' ); 
+
 ?>
