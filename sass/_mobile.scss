@@ -69,6 +69,7 @@
 			max-width: 410.063px;
 
 			.teamMember {
+				width: 100%;
 				margin: 0;
 
 				.memberAvatar {
@@ -123,51 +124,14 @@
 			text-align: justify;
 		}
 	}
-
 	#meetTheTeam {
 
-		p {
-			margin: 1em auto;
-		}
-
-		#teamDesc, #teamMembers {
-			width: 100%;
-			margin: 0 auto;
-			display: block;
-			max-width: 615.094px;
-		}
-
 		#teamMembers {
-
-			h2, .btn {
-				text-align: center;
-			}
-
-			.teamMember {
-				width: 46%;
-				margin: 0 2%;
-				display: inline-block;
-
-				.memberAvatar {
-					height: auto;
-					width: 30%;
-					margin: 2% auto;
-					display: block;
-				}
-				.memberDesc {
-					width: 100%;
-
-					p {
-						text-align: center;
-						margin-top: 0;
-					}
-				}
-			}
+			max-width: 100%;
 
 		}
 	}
 }
-
 
 @media screen and (max-width: 860px){
 //Mobile Nav
