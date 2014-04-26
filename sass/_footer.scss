@@ -19,16 +19,6 @@ footer {
 	}
 }
 
-#copyright {
-	float: left;
-
-	p {
-		margin: 0;
-		color: #999;
-		font-size: 0.875em;
-		line-height: 60px;
-	}
-}
 .facebook {
 	@extend .btn;
 	
@@ -53,6 +43,15 @@ footer {
 	}
 }
 
-.social {
+.social, #bottomNav {
 	text-align: center;
+}
+
+#bottomNav a {
+	font-size: 0.875em;
+	color: #aaa;
+}
+
+#bottomNav a:hover {
+	color: #fff;
 }

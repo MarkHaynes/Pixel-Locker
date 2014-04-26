@@ -191,26 +191,27 @@ nav ul li {
 }
 /* line 34, ../sass/_header.scss */
 nav ul li a {
-  min-width: 120px;
+  min-width: 80px;
+  padding: 0 20px;
   display: block;
   text-align: center;
   font-size: 1em;
   color: #ccc;
 }
-/* line 42, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 nav ul li a:hover {
   background-color: #0b2035;
   color: #fff;
   text-decoration: none;
 }
-/* line 49, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 
-/* line 56, ../sass/_header.scss */
-#mainNav, #bottomNav {
+/* line 57, ../sass/_header.scss */
+#mainNav {
   float: right;
 }
 
@@ -614,39 +615,38 @@ footer {
   text-align: center;
 }
 
-/* line 22, ../sass/_footer.scss */
-#copyright {
-  float: left;
-}
 /* line 25, ../sass/_footer.scss */
-#copyright p {
-  margin: 0;
-  color: #999;
-  font-size: 0.875em;
-  line-height: 60px;
-}
-
-/* line 35, ../sass/_footer.scss */
 .facebook a {
   background-color: #4c69ba;
 }
-/* line 39, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 .facebook a:hover {
   background-color: #7188c8;
 }
 
-/* line 47, ../sass/_footer.scss */
+/* line 37, ../sass/_footer.scss */
 .twitter a {
   background-color: #55acee;
 }
-/* line 51, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 .twitter a:hover {
   background-color: #83c3f3;
 }
 
-/* line 56, ../sass/_footer.scss */
-.social {
+/* line 46, ../sass/_footer.scss */
+.social, #bottomNav {
   text-align: center;
+}
+
+/* line 50, ../sass/_footer.scss */
+#bottomNav a {
+  font-size: 0.875em;
+  color: #aaa;
+}
+
+/* line 55, ../sass/_footer.scss */
+#bottomNav a:hover {
+  color: #fff;
 }
 
 /* line 1, ../sass/_mobile.scss */

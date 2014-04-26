@@ -32,7 +32,8 @@ nav {
 		    line-height: 60px;
 
 			a {
-			    min-width: 120px;
+			    min-width: 80px;
+			    padding: 0 20px;
 			    display: block;
 			    text-align: center;
 			    font-size: 1em;
@@ -53,7 +54,7 @@ nav {
 	}
 }
 
-#mainNav, #bottomNav {
+#mainNav {
 	float: right;
 }
 

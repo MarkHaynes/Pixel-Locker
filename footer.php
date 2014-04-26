@@ -14,12 +14,6 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</nav>
 
-					<div id="copyright">
-						
-						<p>Copyright © 2011-2014 Pixel Locker</p>
-
-					</div>
-
 				</div>
 			</footer>
 			
