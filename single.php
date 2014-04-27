@@ -17,7 +17,6 @@
 				</div>
 			</section>
 
-
 			<?php if ( has_post_thumbnail() ): ?>
 				
 			<section class="thumbStrip">

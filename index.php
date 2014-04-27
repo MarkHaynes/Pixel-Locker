@@ -9,7 +9,7 @@
 
 					if (false !== strpos($url,'/category/')) {
 					    $top_title = 'Posts in: '. $cat_title;
-					    $top_tagline = 'These posts are filed under the <strong>'. $cat_title .'</strong> category.';
+					    $top_tagline = 'These posts are filed under the '. $cat_title .' category.';
 					} else {
 					    $top_title = "Pixel Blogger";
 					    $top_tagline = "Here you can find out about our latest adventures and projects.";

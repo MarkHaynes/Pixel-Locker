@@ -19,6 +19,10 @@
 
 @media screen and (max-width: 600px){
 
+	#pl-logo {
+		height: 30px;
+	}
+
 	h1 {
 		font-size: 2.5em;
 	}
@@ -26,6 +30,10 @@
 	.wrap {
 		width: 88%;
 		padding: 0 6%;
+	}
+
+	.strip, .whiteStrip, .thumbStrip {
+		padding: 6% 0;
 	}
 
 	ul#servicesList {
@@ -66,7 +74,7 @@
 		}
 
 		#teamMembers {
-			max-width: 410.063px;
+			max-width: 410px;
 
 			.teamMember {
 				width: 100%;
@@ -98,6 +106,10 @@
 	.wrap {
 		width: 92%;
 		padding: 0 4%;
+	}
+
+	.strip, .whiteStrip, .thumbStrip {
+		padding: 4% 0;
 	}
 
 	ul#servicesList {

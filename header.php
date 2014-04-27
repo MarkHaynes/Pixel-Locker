@@ -41,7 +41,7 @@
 
 				<div id="logo">
 					<a href="http://pixellocker.co.uk">
-						<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
+						<img alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
 					</a>
 				</div>
 

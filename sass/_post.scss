@@ -6,7 +6,7 @@
 }
 
 .postInfoWrap {
-	margin: 30px auto 0 auto;
+	margin: 30px auto 14px auto;
 }
 
 .postInfo {
@@ -19,38 +19,20 @@
 }
 
 .thumbStrip {
-	background-color: lighten($colour-darkblue, 82%);
+	background-color: lighten($colour-darkblue, 80%);
+	display: block;
+	padding: 2% 0;
 }
 
 .thumb {
-	width: 100%;
+	max-width: 100%;
 	display: block;
 	text-align: center;
-	overflow: hidden;
 
 	img {
 		height: auto;
 		max-width: 100%;
 	}
-}
-.post {
-	background-color: lighten($colour-darkblue, 82%);
-	padding-bottom: 40px;
-
-	.thumbStrip {
-		padding: 40px 0;
-	}
-
-}
-
-.blogPost {
-	background-color: lighten($colour-darkblue, 82%);
-	padding: 40px 0;
-
-	.thumbStrip {
-		padding-bottom: 40px;
-	}
-
 }
 
 .blogPost h1, .blogPost p {
@@ -64,7 +46,7 @@
 }
 
 .blogPost, #postsNav {
-	border-top: 5px solid lighten($colour-darkblue, 74%);
+	border-top: 5px solid lighten($colour-darkblue, 76%);
 }
 
 #postsNav {

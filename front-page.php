@@ -13,7 +13,7 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png" height="30px"></h1>
+				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png"></h1>
 
 				<span class="tagline">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
 			
