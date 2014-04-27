@@ -31,7 +31,16 @@ Template Name: Services Page
 		<?php echo $parent_name; if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>  
 
 		<section id="<?php echo $post->post_name; ?>">
-			<div class="wrap">
+			<div class="serviceWrap">
+
+				<?php if ( has_post_thumbnail() ): ?>
+
+				<div class="serviceImg">
+                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+				</div>
+
+				<?php  endif; ?>
+
 				<div class="serviceDesc">	
 					<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 

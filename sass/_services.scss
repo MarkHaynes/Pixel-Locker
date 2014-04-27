@@ -1,8 +1,35 @@
-
-.serviceDesc {
-	width: 60%;
-	max-width: 615.094px;
+.serviceWrap {
+	@extend .wrap;
+	max-width: 1240px;
+	text-align: center;
 }
+.serviceDesc {
+	width: 48%;
+	max-width: 616px;
+	display: inline-block;
+	vertical-align: middle;
+
+	h1 {
+		text-align: left;
+	}
+
+}
+
+.serviceImg {
+	width: 48%;
+	display: inline-block;
+	vertical-align: middle;
+
+	img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.serviceImg, .serviceDesc {
+	direction: ltr;
+}
+
 
 .serviceBtn {
 	@extend .btn;
@@ -24,11 +51,6 @@
 	@extend .strip;
 	background-color: $colour-red;
 
-	.wrap {
-		background: url('images/wedesignlarge.png') no-repeat right;
-		background-size: 40%;
-	}
-	
 	h1, h2, h3, p, h1 a {
 		color: #fff;
 	}
@@ -36,6 +58,10 @@
 	p {
 		text-align: justify;
 		margin-top: 0;
+	}
+
+	.serviceWrap {
+		direction: rtl;
 	}
 
 	.serviceBtn {
@@ -53,11 +79,6 @@
 #develop {
 	@extend .strip;
 	background-color: $colour-green;
-
-	.wrap {
-		background: url('images/wedeveloplarge.png') no-repeat left;
-		background-size: 40%;
-	}
 	
 	h1, h2, h3, p, h1 a {
 		color: #fff;
@@ -66,10 +87,6 @@
 	p {
 		text-align: justify;
 		margin-top: 0;
-	}
-
-	.serviceDesc {
-		float: right;
 	}
 
 	.serviceBtn {
@@ -88,13 +105,12 @@
 	@extend .strip;
 	background-color: $colour-blue;
 
-	.wrap {
-		background: url('images/wehostlarge.png') no-repeat right;
-		background-size: 40%;
-	}
-	
 	h1, h2, h3, p, h1 a {
 		color: #fff;
+	}
+
+	.serviceWrap {
+		direction: rtl;
 	}
 
 	p {
