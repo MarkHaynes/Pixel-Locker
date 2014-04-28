@@ -456,30 +456,30 @@ ul#servicesList li.host:hover {
   margin-top: 0px;
 }
 
-/* line 41, ../sass/_post.scss */
+/* line 42, ../sass/_post.scss */
 .blogPost img {
   margin-bottom: 4%;
 }
 
-/* line 45, ../sass/_post.scss */
+/* line 46, ../sass/_post.scss */
 .postWrap {
   max-width: 620px;
   text-align: center;
 }
 
-/* line 51, ../sass/_post.scss */
+/* line 52, ../sass/_post.scss */
 .blogPost {
   border-top: 12px solid #dceaf8;
 }
 
-/* line 55, ../sass/_post.scss */
+/* line 56, ../sass/_post.scss */
 #postsNav {
   border-top: 5px solid #d4e5f6;
   line-height: 60px;
   background-color: #e5f3fb;
   text-align: center;
 }
-/* line 61, ../sass/_post.scss */
+/* line 62, ../sass/_post.scss */
 #postsNav a {
   margin: 0 5px;
 }
