@@ -6,7 +6,7 @@ $colour-font: #4e6c81;
 $colour-darkblue: #0e2842;
 $colour-lightblue: #87c8ee;
 $heading-colour: #5ab4e8;
-$btn-colour: #365c7b;
+$btn-colour: #1b84c1;
 
 /* Service colors */
 $colour-red: #994242;
@@ -114,7 +114,9 @@ a:hover {
         text-align: center;
         @include border-radius($btn-radius);
         display: inline-block;
-        background-color: lighten($btn-colour,10%);
+        *display: inline;
+        zoom: 1;
+        background-color: $btn-colour;
         color: #ddd;
     }
     a:hover {

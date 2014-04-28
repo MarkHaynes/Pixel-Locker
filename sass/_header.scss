@@ -28,7 +28,9 @@ nav {
 
 		li {
 		    margin: 0 3px;
-		    display: inline-block;
+	        display: inline-block;
+	        *display: inline;
+	        zoom: 1;
 		    line-height: 60px;
 
 			a {

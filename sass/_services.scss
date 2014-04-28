@@ -6,7 +6,9 @@
 .serviceDesc {
 	width: 48%;
 	max-width: 616px;
-	display: inline-block;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
 	vertical-align: middle;
 
 	h1 {
@@ -17,7 +19,9 @@
 
 .serviceImg {
 	width: 48%;
-	display: inline-block;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
 	vertical-align: middle;
 
 	img {
