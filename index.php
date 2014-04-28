@@ -27,23 +27,19 @@
 
         <article class="blogPost">
 
-			<?php if ( has_post_thumbnail() ): ?>
-
-			<section class="thumbStrip">
-				<div class="postWrap">
-
-					<div class="thumb">
-	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-	                </div>
-
-				</div>
-			</section>
-
-			<?php  endif; ?>
-
-
 			<section class="whiteStrip">
 				<div class="postWrap">
+
+				<?php if (has_post_thumbnail( $post->ID ) ){ ?>
+					<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog-list-thumbnail' );?>
+
+					<div class="thumb">
+	                    <a href="<?php the_permalink() ?>">
+	                    	<img src="<?php echo $featuredImage[0]; ?>" class="blog-list-thumbnail" title="<?php the_title_attribute();?>" alt="<?php echo the_title();?>">
+	                    </a>
+	                </div>
+
+					<?php } ?>
 
 					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 

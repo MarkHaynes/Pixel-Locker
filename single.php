@@ -23,7 +23,7 @@
 				<div class="contentWrap">
 
 					<div class="thumb">
-	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+	                    <?php the_post_thumbnail('large'); ?>
 	                </div>
 
 				</div>

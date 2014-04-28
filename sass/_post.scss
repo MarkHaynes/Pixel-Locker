@@ -31,12 +31,15 @@
 
 	img {
 		height: auto;
-		max-width: 100%;
+		width: 100%;
 	}
 }
 
 .blogPost h1, .blogPost p {
 	margin-top: 0px;
+}
+.blogPost img {
+	margin-bottom: 4%;
 }
 
 .postWrap {
@@ -45,12 +48,13 @@
 	text-align: center;
 }
 
-.blogPost, #postsNav {
-	border-top: 5px solid lighten($colour-darkblue, 76%);
+.blogPost {
+	border-top: 12px solid lighten($colour-darkblue, 76%);
 }
 
 #postsNav {
 	@extend .btn;
+	border-top: 5px solid lighten($colour-darkblue, 74%);
 	line-height: 60px;
 	background-color: lighten($colour-lightblue, 21%);
 	text-align: center;
