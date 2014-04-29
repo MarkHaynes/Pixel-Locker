@@ -55,7 +55,7 @@
 	height: 36px;
 }
 
-ul#servicesList {
+ul#servicesList, ul#portfolioList {
 	list-style-type: none;
 	padding: 0;
 	margin: 0 auto;
@@ -63,7 +63,7 @@ ul#servicesList {
 	max-width: 1200px;
 	display: block;
 
-	li.serviceBox {
+	li.serviceBox, li.portfolioBox {
 		padding:  2%;
 		margin: 0 0.5%;
 		width: 28.333%;

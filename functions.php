@@ -43,11 +43,31 @@
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+	//Featured Images
+
 	add_theme_support( 'post-thumbnails' );
 
 	if ( function_exists( 'add_theme_support' ) ) {
 		set_post_thumbnail_size( 150, 150, true );
-		add_image_size( 'blog-list-thumbnail', 620, 200, true); 
+		add_image_size( 'blog-list-thumbnail', 620, 200, true);
+		add_image_size( 'portfolio-list-thumbnail', 300, 200, true); 
 	}
+
+	// Short Excerpt
+
+	function get_portfolio_excerpt($count){
+		$excerpt = get_the_excerpt();
+		$excerptLength = strlen($excerpt);
+		$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+		$excerpt = strip_shortcodes($excerpt);
+		$excerpt = strip_tags($excerpt);
+		$excerpt = substr($excerpt, 0, $count);
+		$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+		if ($excerptLength > $count) {
+			$excerpt = $excerpt.'...';
+		}
+	return $excerpt;
+}
+
 
 ?>

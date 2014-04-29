@@ -283,7 +283,7 @@ nav ul li.current-menu-item a {
 }
 
 /* line 58, ../sass/_frontPage.scss */
-ul#servicesList {
+ul#servicesList, ul#portfolioList {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
@@ -292,7 +292,7 @@ ul#servicesList {
   display: block;
 }
 /* line 66, ../sass/_frontPage.scss */
-ul#servicesList li.serviceBox {
+ul#servicesList li.serviceBox, ul#portfolioList li.portfolioBox  {
   padding: 2%;
   margin: 0 0.5%;
   width: 28.333%;

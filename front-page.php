@@ -8,7 +8,6 @@ Template Name: Custom Front Page
 
 <?php get_header(); ?>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<main>
 		<section id="topStrip">
 			<div class="wrap">
@@ -102,18 +101,44 @@ Template Name: Custom Front Page
 						</div>
 					</div>
 				</div>
-				<div class="wrap">
+		</section>
 
-		   			<?php the_content(); ?>
+		<section class="lightStrip">
+			<div class="wrap">
+				<h1 class="title"> Our Projects </h1>
+				<span class="tagline">We have worked on many exciting projects, feel free to take a look around...</span>
+
+				<ul id="portfolioList">
+
+					<?php query_posts( array( 'category_name' => 'portfolio', 'posts_per_page' => 6 ) );
+					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			   			<li class="portfolioBox">
+			   				<?php the_title()?>
+
+			   				<?php if (has_post_thumbnail( $post->ID ) ){
+							 	$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'portfolio-list-thumbnail' );?>
+									<div class="portfolioThumb">
+					                    <a href="<?php the_permalink() ?>">
+					                    	<img src="<?php echo $featuredImage[0]; ?>" class="portfolio-thumbnail" title="<?php the_title_attribute();?>" alt="<?php echo the_title();?>">
+					                    </a>
+					                </div>
+							<?php } ?>
+
+							<?php echo get_portfolio_excerpt(270);?>
+							<br><br>
+							<div class="btn">
+								<a class="portfolioLink" href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Take a Look</a>
+							</div>
+			   			</li>
 
 					<?php endwhile; else: ?>
 
-		 				<p>Sorry, no posts matched your criteria.</p>
+			 			<li><p>Sorry, no posts matched your criteria.</p></li>
 
 		 			<?php endif; ?>
-
-				</div>		
-			</div>
+		 			<?php wp_reset_query(); ?>
+		 		</ul>
+		 	</div>
 		</section>
 	</main>
 <?php get_footer(); ?>
