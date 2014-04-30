@@ -369,6 +369,7 @@ ul#servicesList, ul#portfolioList {
   max-width: 1200px;
   display: block;
 }
+<<<<<<< HEAD
 /* line 126, ../sass/_frontPage.scss */
 ul#servicesList h1, ul#servicesList h2, ul#servicesList .notFound h1, .notFound ul#servicesList h1, ul#servicesList h3, ul#portfolioList h1, ul#portfolioList h2, ul#portfolioList .notFound h1, .notFound ul#portfolioList h1, ul#portfolioList h3 {
   margin: 0px;
@@ -378,6 +379,9 @@ ul#servicesList p, ul#portfolioList p {
   text-align: justify;
 }
 /* line 133, ../sass/_frontPage.scss */
+=======
+/* line 66, ../sass/_frontPage.scss */
+>>>>>>> 06c59538bff702fd7a1e44aa2ccbd90afac5c7fa
 ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
   padding: 2%;
   margin: 0 0.5%;
@@ -421,8 +425,13 @@ ul#servicesList li.portfolioBox .portfolio-thumbnail, ul#portfolioList li.portfo
 ul#servicesList li.serviceBox, ul#portfolioList li.serviceBox {
   height: 460px;
 }
+<<<<<<< HEAD
 /* line 174, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon {
+=======
+/* line 79, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .serviceIcon, ul#servicesList li.portfolioBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon, ul#portfolioList li.portfolioBox .serviceIcon {
+>>>>>>> 06c59538bff702fd7a1e44aa2ccbd90afac5c7fa
   width: 60px;
   margin: 14px 0 0 0;
   -webkit-border-radius: 2px;
@@ -430,6 +439,7 @@ ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serv
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
+<<<<<<< HEAD
 /* line 180, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT, ul#portfolioList li.serviceBox .designT {
   color: #994242;
@@ -459,6 +469,45 @@ ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
   background-color: #8cad6a;
 }
 /* line 205, ../sass/_frontPage.scss */
+=======
+/* line 84, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h2, ul#servicesList li.serviceBox .notFound h1, .notFound ul#servicesList li.serviceBox h1, ul#servicesList li.serviceBox h3, ul#servicesList li.serviceBox h4, ul#servicesList li.portfolioBox h1, ul#servicesList li.portfolioBox h2, ul#servicesList li.portfolioBox .notFound h1, .notFound ul#servicesList li.portfolioBox h1, ul#servicesList li.portfolioBox h3, ul#servicesList li.portfolioBox h4, ul#portfolioList li.serviceBox h1, ul#portfolioList li.serviceBox h2, ul#portfolioList li.serviceBox .notFound h1, .notFound ul#portfolioList li.serviceBox h1, ul#portfolioList li.serviceBox h3, ul#portfolioList li.serviceBox h4, ul#portfolioList li.portfolioBox h1, ul#portfolioList li.portfolioBox h2, ul#portfolioList li.portfolioBox .notFound h1, .notFound ul#portfolioList li.portfolioBox h1, ul#portfolioList li.portfolioBox h3, ul#portfolioList li.portfolioBox h4 {
+  margin: 0px;
+}
+/* line 87, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox p, ul#servicesList li.portfolioBox p, ul#portfolioList li.serviceBox p, ul#portfolioList li.portfolioBox p {
+  text-align: justify;
+}
+/* line 90, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .designT, ul#servicesList li.portfolioBox .designT, ul#portfolioList li.serviceBox .designT, ul#portfolioList li.portfolioBox .designT {
+  color: #994242;
+}
+/* line 93, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .devT, ul#servicesList li.portfolioBox .devT, ul#portfolioList li.serviceBox .devT, ul#portfolioList li.portfolioBox .devT {
+  color: #8cad6a;
+}
+/* line 96, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox .hostT, ul#servicesList li.portfolioBox .hostT, ul#portfolioList li.serviceBox .hostT, ul#portfolioList li.portfolioBox .hostT {
+  color: #759cc2;
+}
+/* line 100, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox:hover, ul#portfolioList li.serviceBox:hover {
+  color: #fff;
+}
+/* line 103, ../sass/_frontPage.scss */
+ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT, ul#portfolioList li.serviceBox:hover .designT, ul#portfolioList li.serviceBox:hover .devT, ul#portfolioList li.serviceBox:hover .hostT {
+  color: #fff;
+}
+/* line 108, ../sass/_frontPage.scss */
+ul#servicesList li.design:hover, ul#portfolioList li.design:hover {
+  background-color: #994242;
+}
+/* line 111, ../sass/_frontPage.scss */
+ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
+  background-color: #8cad6a;
+}
+/* line 114, ../sass/_frontPage.scss */
+>>>>>>> 06c59538bff702fd7a1e44aa2ccbd90afac5c7fa
 ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #759cc2;
 }
@@ -717,6 +766,98 @@ ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
 /* line 130, ../sass/_services.scss */
 #host .serviceBtn a:hover {
   background-color: #5a89b6;
+}
+
+/* line 1, ../sass/_contact.scss */
+form#frmContact {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 10, ../sass/_contact.scss */
+form#frmContact input[type='text'], form#frmContact input[type='email'], form#frmContact input[type='tel'] {
+  width: 96%;
+  max-width: 400px;
+  padding: 2%;
+  margin: 5px auto;
+  display: block;
+}
+/* line 18, ../sass/_contact.scss */
+form#frmContact textarea {
+  width: 96%;
+  max-width: 400px;
+  height: 150px;
+  padding: 2%;
+  margin: 5px auto;
+  display: block;
+}
+/* line 27, ../sass/_contact.scss */
+form#frmContact input[type='submit'] {
+  min-width: 60px;
+  line-height: 38px;
+  padding: 0 15px;
+  font-size: 0.875em;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border: 2px solid #1b84c1;
+  border-radius: 2px;
+  display: block;
+  zoom: 1;
+  background-color: #1b84c1;
+  color: #ddd;
+  -webkit-transition: all 0.4s ease-in-out;
+  -mox-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 0 auto;
+}
+/* line 49, ../sass/_contact.scss */
+form#frmContact input[type='submit']:hover {
+  background-color: #5ab4e8;
+  color: #fff;
+  border: 2px solid #5ab4e8;
+}
+/* line 55, ../sass/_contact.scss */
+form#frmContact input[type="checkbox"] {
+  display: none;
+}
+/* line 58, ../sass/_contact.scss */
+form#frmContact input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin: -2px 8px 0 0;
+  vertical-align: middle;
+  background: url(images/formsprite.png) left top no-repeat;
+  cursor: pointer;
+  text-indent: 40px;
+}
+/* line 68, ../sass/_contact.scss */
+form#frmContact input[type="checkbox"]:checked + label span {
+  background: url(images/formsprite.png) -38px top no-repeat;
+}
+/* line 72, ../sass/_contact.scss */
+form#frmContact span {
+  padding-top: 6px;
+}
+
+/* line 77, ../sass/_contact.scss */
+ul.formError {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 0;
+}
+
+/* line 84, ../sass/_contact.scss */
+ul.formError li {
+  color: red;
+  font-weight: 400;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
 }
 
 /* line 1, ../sass/_footer.scss */
