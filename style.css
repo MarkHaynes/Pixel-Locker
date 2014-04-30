@@ -622,18 +622,18 @@ form#frmContact {
 }
 /* line 10, ../sass/_contact.scss */
 form#frmContact input[type='text'], form#frmContact input[type='email'], form#frmContact input[type='tel'] {
-  width: 100%;
+  width: 96%;
   max-width: 400px;
-  padding: 10px;
+  padding: 2%;
   margin: 5px auto;
   display: block;
 }
 /* line 18, ../sass/_contact.scss */
 form#frmContact textarea {
-  width: 100%;
+  width: 96%;
   max-width: 400px;
   height: 150px;
-  padding: 10px;
+  padding: 2%;
   margin: 5px auto;
   display: block;
 }
