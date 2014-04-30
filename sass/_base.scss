@@ -54,10 +54,13 @@ main {
     z-index: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     text-decoration: none;
     font-weight: 300;
 
+}
+h4, h5, h6 {
+    text-decoration: none;
 }
 
 h1 {
@@ -76,8 +79,9 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.625em;
     color: darken($heading-colour, 10%);
+    font-weight: 400;
 }
 h5 {
     font-size: 1.25em;
@@ -86,6 +90,9 @@ h5 {
 h6 {
     font-size: 1.125em;
     color: darken($heading-colour, 30%);
+}
+h5, h6 {
+    font-weight: 600;
 }
 p {
     line-height: 1.75em;

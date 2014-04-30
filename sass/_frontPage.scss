@@ -25,6 +25,7 @@
 #topStrip {
 	@extend .strip;
 	background-color: lighten($colour-darkblue, 4%);
+	text-align: center;
 	
 	.title {
 		color: #ffffff;
@@ -51,8 +52,67 @@
 	padding: 40px 0;
 }
 
+#featuredImg, #featuredDesc {
+	display: inline-block;
+	*display: inline;
+    zoom: 1;
+	vertical-align: middle;
+}
+#featuredImg {
+	max-width: 780px;
+	width: 60%;
+}
+#featuredDesc {
+	max-width: 500px;
+	width: 32%;
+
+	h1.title {
+		margin-top: 14px;
+		font-size: 2.25em;
+	}
+
+	ul#featuredList {
+		list-style-type: none;
+		text-align: center;
+		margin-bottom: 24px;
+		padding: 0;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 1.25em;
+		display: block;
+		color: #ccc;
+
+		li {
+			margin: 10px 0;
+		}
+	}
+
+	.featuredBtn {
+        text-align: center;
+
+		a {
+	        min-width: 60px;
+	        line-height: 48px;
+	        padding: 0 24px;
+	        font-size: 1.25em;
+	        @include border-radius($btn-radius);
+	        display: inline-block;
+	        *display: inline;
+	        zoom: 1;
+	        background-color: $btn-colour;
+	        color: #ddd;
+	    }
+
+	    a:hover {
+	        background-color: lighten($btn-colour,20%);
+	        color: #fff;
+	    }
+	}
+}
+
+
 #pl-logo {
-	height: 36px;
+	max-width: 100%;
 }
 
 ul#servicesList, ul#portfolioList {
@@ -62,6 +122,13 @@ ul#servicesList, ul#portfolioList {
 	text-align: center;
 	max-width: 1200px;
 	display: block;
+
+	h1, h2, h3{
+		margin: 0px;
+	}
+	p {
+		text-align: justify;
+	}
 
 	li.serviceBox, li.portfolioBox {
 		padding:  2%;
@@ -74,19 +141,42 @@ ul#servicesList, ul#portfolioList {
 		vertical-align: top;
 		background-color: #fff;
 		@include border-radius($box-radius);
+
+		.boxContainer {
+			position: relative;
+			height: 100%;
+			width: 100%;
+		
+			.btn {
+				position: absolute;
+				bottom: 3%;
+				width: 100%;
+			}
+		}
+	}
+
+	li.portfolioBox {
+		height: 590px;
+		
+		h1 {
+			@extend h4;
+			margin: 0.25em 0;
+		}
+
+		.portfolio-thumbnail {
+			max-width: 100%;
+		}
+	}
+
+	li.serviceBox {	
 		height: 460px;
 
 		.serviceIcon{
 			width: 60px;
-			margin: 20px 0 0 0;
-		@include border-radius($btn-radius);
+			margin: 14px 0 0 0;
+			@include border-radius($btn-radius);
 		}
-		h1, h2, h3, h4,{
-			margin: 0px;
-		}
-		p {
-			text-align: justify;
-		}
+
 		.designT {
 			color: $colour-red;
 		}
@@ -97,6 +187,7 @@ ul#servicesList, ul#portfolioList {
 			color: $colour-blue;
 		}
 	}
+
 	li.serviceBox:hover {
 		color: #fff;
 
@@ -114,7 +205,6 @@ ul#servicesList, ul#portfolioList {
 	li.host:hover {
 		background-color: $colour-blue;
 	}
-
 }
 
 #meetTheTeam {

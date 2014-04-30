@@ -12,9 +12,23 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png"></h1>
 
-				<span class="tagline">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
+				<img id="featuredImg" alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.png"><!--
+				--><div id="featuredDesc">
+
+					<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
+
+					<h1 class="title">Responsive web design</h1>
+
+					<ul id="featuredList">
+						<li>Appeal to a new generation of internet users.</li>
+						<li>Turn your mobile visitors into customers.</li>
+						<li>Fully flexible, responsive websites.</li>
+					</ul>
+
+					<div class="featuredBtn"><a href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Contact Us Now!</a></div>
+
+				</div>
 			
 			</div>
 		</section>
@@ -108,13 +122,13 @@ Template Name: Custom Front Page
 				<h1 class="title"> Our Projects </h1>
 				<span class="tagline">We have worked on many exciting projects, feel free to take a look around...</span>
 
-				<ul id="portfolioList">
+				<div class="strip">
+					<ul id="portfolioList">
 
 					<?php query_posts( array( 'category_name' => 'portfolio', 'posts_per_page' => 6 ) );
 					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			   			<li class="portfolioBox">
-			   				<?php the_title()?>
-
+			   			<div class="boxContainer">
 			   				<?php if (has_post_thumbnail( $post->ID ) ){
 							 	$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'portfolio-list-thumbnail' );?>
 									<div class="portfolioThumb">
@@ -124,11 +138,13 @@ Template Name: Custom Front Page
 					                </div>
 							<?php } ?>
 
-							<?php echo get_portfolio_excerpt(270);?>
-							<br><br>
+			   				<h1><a href="<?php the_permalink() ?>"><?php the_title()?></a></h1>
+
+							<p><?php echo get_portfolio_excerpt(270);?></p>
 							<div class="btn">
 								<a class="portfolioLink" href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Take a Look</a>
 							</div>
+						</div>
 			   			</li>
 
 					<?php endwhile; else: ?>
@@ -137,7 +153,9 @@ Template Name: Custom Front Page
 
 		 			<?php endif; ?>
 		 			<?php wp_reset_query(); ?>
-		 		</ul>
+
+		 			</ul>
+		 		</div>
 		 	</div>
 		</section>
 	</main>
