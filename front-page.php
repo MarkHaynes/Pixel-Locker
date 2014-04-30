@@ -12,8 +12,6 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-<<<<<<< HEAD
-
 				<img id="featuredImg" alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.png"><!--
 				--><div id="featuredDesc">
 
@@ -30,12 +28,7 @@ Template Name: Custom Front Page
 					<div class="featuredBtn"><a href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Contact Us Now!</a></div>
 
 				</div>
-=======
-				<img alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/test.png">
 
-				
->>>>>>> 06c59538bff702fd7a1e44aa2ccbd90afac5c7fa
-			
 			</div>
 		</section>
 
