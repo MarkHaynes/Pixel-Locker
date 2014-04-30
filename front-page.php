@@ -12,9 +12,9 @@ Template Name: Custom Front Page
 		<section id="topStrip">
 			<div class="wrap">
 
-				<h1 class="title">Welcome to <img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png"></h1>
+				<img alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/test.png">
 
-				<span class="tagline">We are a friendly team that loves to design innovative and creative websites which comply with modern standards.</span>
+				
 			
 			</div>
 		</section>
@@ -105,7 +105,7 @@ Template Name: Custom Front Page
 
 		<section class="lightStrip">
 			<div class="wrap">
-				<h1 class="title"> Our Projects </h1>
+				<h1 class="title"> Featured Work </h1>
 				<span class="tagline">We have worked on many exciting projects, feel free to take a look around...</span>
 
 				<ul id="portfolioList">
