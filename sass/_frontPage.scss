@@ -143,6 +143,7 @@ ul#servicesList, ul#portfolioList {
 
 		.portfolio-thumbnail {
 			max-width: 100%;
+			@include border-radius($btn-radius);
 		}
 	}
 

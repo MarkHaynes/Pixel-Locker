@@ -13,6 +13,7 @@ Template Name: Custom Front Page
 			<div class="wrap">
 
 				<img id="featuredImg" alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.png"><!--
+				<img id="featuredImg" alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.jpg"><!--
 				--><div id="featuredDesc">
 
 					<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
