@@ -39,64 +39,104 @@ main {
 }
 
 /* line 57, ../sass/_base.scss */
+img {
+  max-width: 100%;
+  width: auto;
+  display: block;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 64, ../sass/_base.scss */
+  .left {
+    float: left;
+  }
+
+  /* line 68, ../sass/_base.scss */
+  .right {
+    float: right;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 74, ../sass/_base.scss */
+  .left, .right {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 82, ../sass/_base.scss */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 88, ../sass/_base.scss */
 h1, h2, .notFound h1, h3 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 62, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 h4, ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1, h5, h6 {
   text-decoration: none;
 }
 
-/* line 66, ../sass/_base.scss */
+/* line 97, ../sass/_base.scss */
 h1 {
   font-size: 3em;
   color: #5ab4e8;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 h2, .notFound h1 {
   font-size: 2.25em;
   color: #70beeb;
 }
 
-/* line 76, ../sass/_base.scss */
+/* line 107, ../sass/_base.scss */
 h3 {
   font-size: 2em;
   color: #1b84c1;
 }
 
-/* line 81, ../sass/_base.scss */
+/* line 112, ../sass/_base.scss */
 h4, ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
   font-size: 1.625em;
   color: #2da0e2;
   font-weight: 400;
 }
 
-/* line 86, ../sass/_base.scss */
+/* line 117, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #1b84c1;
 }
 
-/* line 90, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #156694;
 }
 
-/* line 94, ../sass/_base.scss */
+/* line 125, ../sass/_base.scss */
 h5, h6 {
   font-weight: 600;
 }
 
-/* line 97, ../sass/_base.scss */
+/* line 128, ../sass/_base.scss */
 p {
   line-height: 1.75em;
 }
 
-/* line 101, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
+p:before {
+  content: "";
+  width: 10em;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 139, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #458ed7;
@@ -106,13 +146,13 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 110, ../sass/_base.scss */
+/* line 148, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: #84b4e5;
 }
 
-/* line 116, ../sass/_base.scss */
+/* line 154, ../sass/_base.scss */
 .btn a, .quote a, #postsNav a, .serviceBtn a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -129,13 +169,39 @@ a:hover {
   background-color: #1b84c1;
   color: #ddd;
 }
-/* line 129, ../sass/_base.scss */
+/* line 167, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, #postsNav a:hover, .serviceBtn a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 135, ../sass/_base.scss */
+/* line 173, ../sass/_base.scss */
+.featuredBtn {
+  text-align: center;
+}
+/* line 176, ../sass/_base.scss */
+.featuredBtn a {
+  min-width: 60px;
+  line-height: 48px;
+  padding: 0 24px;
+  font-size: 1.25em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-color: #1b84c1;
+  color: #ddd;
+}
+/* line 189, ../sass/_base.scss */
+.featuredBtn a:hover {
+  background-color: #5ab4e8;
+  color: #fff;
+}
+
+/* line 195, ../sass/_base.scss */
 .wrap, .contentWrap, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
@@ -143,27 +209,27 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 142, ../sass/_base.scss */
+/* line 202, ../sass/_base.scss */
 .contentWrap {
   max-width: 920px;
 }
-/* line 145, ../sass/_base.scss */
+/* line 205, ../sass/_base.scss */
 .contentWrap p {
   text-align: justify;
 }
 
-/* line 150, ../sass/_base.scss */
+/* line 210, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 155, ../sass/_base.scss */
+/* line 215, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 160, ../sass/_base.scss */
+/* line 220, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -329,38 +395,13 @@ nav ul li.current-menu-item a {
 #featuredDesc ul#featuredList li {
   margin: 10px 0;
 }
-/* line 90, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn {
-  text-align: center;
-}
-/* line 93, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn a {
-  min-width: 60px;
-  line-height: 48px;
-  padding: 0 24px;
-  font-size: 1.25em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  background-color: #1b84c1;
-  color: #ddd;
-}
-/* line 106, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn a:hover {
-  background-color: #5ab4e8;
-  color: #fff;
-}
 
-/* line 114, ../sass/_frontPage.scss */
+/* line 92, ../sass/_frontPage.scss */
 #pl-logo {
   max-width: 100%;
 }
 
-/* line 118, ../sass/_frontPage.scss */
+/* line 96, ../sass/_frontPage.scss */
 ul#servicesList, ul#portfolioList {
   list-style-type: none;
   padding: 0;
@@ -369,15 +410,15 @@ ul#servicesList, ul#portfolioList {
   max-width: 1200px;
   display: block;
 }
-/* line 126, ../sass/_frontPage.scss */
+/* line 104, ../sass/_frontPage.scss */
 ul#servicesList h1, ul#servicesList h2, ul#servicesList .notFound h1, .notFound ul#servicesList h1, ul#servicesList h3, ul#portfolioList h1, ul#portfolioList h2, ul#portfolioList .notFound h1, .notFound ul#portfolioList h1, ul#portfolioList h3 {
   margin: 0px;
 }
-/* line 129, ../sass/_frontPage.scss */
+/* line 107, ../sass/_frontPage.scss */
 ul#servicesList p, ul#portfolioList p {
   text-align: justify;
 }
-/* line 133, ../sass/_frontPage.scss */
+/* line 111, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
   padding: 2%;
   margin: 0 0.5%;
@@ -393,35 +434,35 @@ ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 145, ../sass/_frontPage.scss */
+/* line 123, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer, ul#servicesList li.portfolioBox .boxContainer, ul#portfolioList li.serviceBox .boxContainer, ul#portfolioList li.portfolioBox .boxContainer {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 150, ../sass/_frontPage.scss */
+/* line 128, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer .btn, ul#servicesList li.serviceBox .boxContainer .quote, ul#servicesList li.serviceBox .boxContainer #postsNav, ul#servicesList li.serviceBox .boxContainer .serviceBtn, ul#servicesList li.serviceBox .boxContainer .facebook, ul#servicesList li.serviceBox .boxContainer .twitter, ul#servicesList li.portfolioBox .boxContainer .btn, ul#servicesList li.portfolioBox .boxContainer .quote, ul#servicesList li.portfolioBox .boxContainer #postsNav, ul#servicesList li.portfolioBox .boxContainer .serviceBtn, ul#servicesList li.portfolioBox .boxContainer .facebook, ul#servicesList li.portfolioBox .boxContainer .twitter, ul#portfolioList li.serviceBox .boxContainer .btn, ul#portfolioList li.serviceBox .boxContainer .quote, ul#portfolioList li.serviceBox .boxContainer #postsNav, ul#portfolioList li.serviceBox .boxContainer .serviceBtn, ul#portfolioList li.serviceBox .boxContainer .facebook, ul#portfolioList li.serviceBox .boxContainer .twitter, ul#portfolioList li.portfolioBox .boxContainer .btn, ul#portfolioList li.portfolioBox .boxContainer .quote, ul#portfolioList li.portfolioBox .boxContainer #postsNav, ul#portfolioList li.portfolioBox .boxContainer .serviceBtn, ul#portfolioList li.portfolioBox .boxContainer .facebook, ul#portfolioList li.portfolioBox .boxContainer .twitter {
   position: absolute;
   bottom: 3%;
   width: 100%;
 }
-/* line 158, ../sass/_frontPage.scss */
+/* line 136, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
   height: 590px;
 }
-/* line 161, ../sass/_frontPage.scss */
+/* line 139, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
   margin: 0.25em 0;
 }
-/* line 166, ../sass/_frontPage.scss */
+/* line 144, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox .portfolio-thumbnail, ul#portfolioList li.portfolioBox .portfolio-thumbnail {
   max-width: 100%;
 }
-/* line 171, ../sass/_frontPage.scss */
+/* line 149, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#portfolioList li.serviceBox {
   height: 460px;
 }
-/* line 174, ../sass/_frontPage.scss */
+/* line 152, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon {
   width: 60px;
   margin: 14px 0 0 0;
@@ -430,88 +471,88 @@ ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serv
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 180, ../sass/_frontPage.scss */
+/* line 158, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT, ul#portfolioList li.serviceBox .designT {
   color: #994242;
 }
-/* line 183, ../sass/_frontPage.scss */
+/* line 161, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT, ul#portfolioList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 186, ../sass/_frontPage.scss */
+/* line 164, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT, ul#portfolioList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 191, ../sass/_frontPage.scss */
+/* line 169, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover, ul#portfolioList li.serviceBox:hover {
   color: #fff;
 }
-/* line 194, ../sass/_frontPage.scss */
+/* line 172, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT, ul#portfolioList li.serviceBox:hover .designT, ul#portfolioList li.serviceBox:hover .devT, ul#portfolioList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 199, ../sass/_frontPage.scss */
+/* line 177, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover, ul#portfolioList li.design:hover {
   background-color: #994242;
 }
-/* line 202, ../sass/_frontPage.scss */
+/* line 180, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 205, ../sass/_frontPage.scss */
+/* line 183, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #759cc2;
 }
 
-/* line 210, ../sass/_frontPage.scss */
+/* line 188, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 215, ../sass/_frontPage.scss */
+/* line 193, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 16px auto;
 }
-/* line 218, ../sass/_frontPage.scss */
+/* line 196, ../sass/_frontPage.scss */
 #meetTheTeam p {
   margin: 1em auto;
 }
-/* line 222, ../sass/_frontPage.scss */
+/* line 200, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam .teamMember, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   *display: inline;
   zoom: 1;
   vertical-align: top;
 }
-/* line 229, ../sass/_frontPage.scss */
+/* line 207, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
   width: 100%;
   margin: 0 auto;
 }
-/* line 234, ../sass/_frontPage.scss */
+/* line 212, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers {
   max-width: 80%;
 }
-/* line 237, ../sass/_frontPage.scss */
+/* line 215, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember {
   width: 45%;
   padding: 5% 0;
   margin: 0 2%;
   text-align: center;
 }
-/* line 243, ../sass/_frontPage.scss */
+/* line 221, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: auto;
   width: 25%;
   margin: 2% auto;
   display: block;
 }
-/* line 250, ../sass/_frontPage.scss */
+/* line 228, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 100%;
 }
-/* line 252, ../sass/_frontPage.scss */
+/* line 230, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc p {
   text-align: center;
   font-style: italic;
