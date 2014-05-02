@@ -24,7 +24,8 @@
 	</div><!--Main Wrapper-->
 
 		<!-- Mobile Nav -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="<?php bloginfo('template_url')?>/scripts/cycle.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 			    var pageWidth = $(window).width();  

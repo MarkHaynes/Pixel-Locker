@@ -9,10 +9,13 @@ Template Name: Custom Front Page
 <?php get_header(); ?>
 
 	<main>
-		<section id="topStrip">
-			<div class="wrap">
+		<section id="topStrip" class="homeStrip">
+			<div class="wrap homeWrap">
 
-				<img id="featuredImg" alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.jpg"><!--
+			<div class="cycle-slideshow" data-cycle-speed="800" data-cycle-fx="fade">
+			    <img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.jpg">
+				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign2.jpg">
+			</div><!--
 				--><div id="featuredDesc">
 
 					<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
@@ -98,7 +101,6 @@ Template Name: Custom Front Page
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-								<div class="btn"><a href="#">Personal Website</a></div>
 							</div>
 						</div><!--
 						--><div class="teamMember">
@@ -108,8 +110,6 @@ Template Name: Custom Front Page
 								<h2>Chris Huxley</h2>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-								<div class="btn"><a href="#">Personal Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -158,4 +158,5 @@ Template Name: Custom Front Page
 		 	</div>
 		</section>
 	</main>
+	
 <?php get_footer(); ?>

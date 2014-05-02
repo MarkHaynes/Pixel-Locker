@@ -68,6 +68,10 @@ img {
     .right {
         float: right;
     }
+
+    .ib {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -76,7 +80,9 @@ img {
         margin: 0 auto;
     }
 
-
+    .ib {
+        display: block;
+    }
 }
 
 .cf:after {

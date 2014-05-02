@@ -152,7 +152,7 @@ ul#servicesList, ul#portfolioList {
 
 		.serviceIcon{
 			width: 60px;
-			margin: 14px 0 0 0;
+			margin: 14px auto 0 auto;
 			@include border-radius($btn-radius);
 		}
 
@@ -215,7 +215,7 @@ ul#servicesList, ul#portfolioList {
 
 		.teamMember {
 			width: 45%;
-			padding: 5% 0;
+			padding: 0;
 			margin: 0 2%;
 			text-align: center;
 
@@ -235,5 +235,19 @@ ul#servicesList, ul#portfolioList {
 			}
 		}
 	}
+}
+
+.cycle-slideshow {
+	max-width: 780px;
+	width: 60%;
+	display: inline-block;
+	*display: inline;
+    zoom: 1;
+	vertical-align: middle;
+}
+
+.cycle-slideshow img {
+	max-width: 100% !important;
+	display: block;
 }
 
