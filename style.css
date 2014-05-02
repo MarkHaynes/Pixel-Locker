@@ -558,7 +558,7 @@ ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
 /* line 222, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: auto;
-  width: 25%;
+  width: 40%;
   margin: 2% auto;
   display: block;
 }

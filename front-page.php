@@ -13,8 +13,8 @@ Template Name: Custom Front Page
 			<div class="wrap homeWrap">
 
 			<div class="cycle-slideshow" data-cycle-speed="800" data-cycle-fx="fade">
-			    <img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.jpg">
-				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign2.jpg">
+			    <img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.png">
+				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign2.png">
 			</div><!--
 				--><div id="featuredDesc">
 
@@ -95,21 +95,21 @@ Template Name: Custom Front Page
 					--><div id="teamMembers">
 						<div class="teamMember">
 
-							<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/avatar.png" height="30px"><!--
+							<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/avatar-mark.jpg" height="70px"><!--
 							--><div class="memberDesc">
 								<h2>Mark Haynes</h2>
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>"I specialise in Wordpress Development and look forward to working with our clients using my skills obtained from my Degree to create the very best experiences."</p>
 
 							</div>
 						</div><!--
 						--><div class="teamMember">
 
-							<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/avatar.png" height="30px"><!--
+							<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/avatar-chris.jpg" height="70px"><!--
 							--><div class="memberDesc">
 								<h2>Chris Huxley</h2>
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>"I graduated from University with a Degree in Web Development, and look forward to using my skills in Graphic and Web Design to bring your project to life."</p>
 							</div>
 						</div>
 					</div>
