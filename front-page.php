@@ -12,9 +12,10 @@ Template Name: Custom Front Page
 		<section id="topStrip" class="homeStrip">
 			<div class="wrap homeWrap">
 
-			<div class="cycle-slideshow" data-cycle-speed="800" data-cycle-fx="fade">
+			<div class="cycle-slideshow" data-cycle-speed="1000" data-cycle-fx="fade">
 			    <img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign.png">
 				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign2.png">
+				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign3.png">
 			</div><!--
 				--><div id="featuredDesc">
 
