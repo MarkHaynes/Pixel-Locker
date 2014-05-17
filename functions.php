@@ -26,7 +26,7 @@
 		else {
 			echo '<h1 class="title">It would be great to hear from you :)</h1>';
 			echo '<nav class="social"><ul>';
-			echo '<li class="btn"><a href="http://pixellocker.co.uk">email</a></li>';
+			echo '<li class="btn"><a href="'. get_permalink(get_page_by_path( 'contact' )) .'" alt="Contact Us Now!">email</a></li>';
 			echo '<li class="facebook"><a href="#">facebook</a></li>';
 			echo '<li class="twitter"><a href="#">twitter</a></li>';
 			echo '</ul></nav>';

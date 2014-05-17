@@ -23,7 +23,7 @@ Template Name: Custom Responsive Page
 				<img class="left" src="<?php bloginfo('template_url')?>/images/responsive-03.png" alt="Example of Responsive Web Design">
 				<p >At Pixel Locker <strong>we create websites with mobile users in mind from the start.</strong> Providing a mobile experience to users isn't about hiding elements of the website or giving a dumbed down version of your website to visitors. Mobile Design focuses on <strong>providing your visitors with a rich user experience</strong> focusing on the goals of visitor. <strong>We understand the needs and goals of a mobile visitor are different than other users</strong> and our design philosophy represents that.</p>
 				<br>
-				<div class="cf featuredBtn"><a href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Contact Us Now!</a></div>
+				<div class="cf featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact Us Now!">Contact Us Now!</a></div>
 			
 			</div>
 		</section>

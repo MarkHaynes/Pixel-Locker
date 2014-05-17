@@ -133,3 +133,22 @@
 	}
 
 }
+
+.serviceHeaderWrap {
+	@extend .contentWrap;
+	text-align: center;
+
+	.servicePageImg {
+		width: 30%;
+		max-width: 175px;
+		display: inline-block;
+	    *display: inline;
+	    zoom: 1;
+		text-align: center;
+
+		img {
+			height: auto;
+		}
+	}
+
+}

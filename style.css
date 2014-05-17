@@ -212,7 +212,7 @@ a:hover {
 }
 
 /* line 201, ../sass/_base.scss */
-.wrap, .contentWrap, .postWrap, .serviceWrap {
+.wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
   margin: 0 auto;
@@ -220,11 +220,11 @@ a:hover {
 }
 
 /* line 208, ../sass/_base.scss */
-.contentWrap {
+.contentWrap, .serviceHeaderWrap {
   max-width: 920px;
 }
 /* line 211, ../sass/_base.scss */
-.contentWrap p {
+.contentWrap p, .serviceHeaderWrap p {
   text-align: justify;
 }
 
@@ -462,60 +462,57 @@ ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
 }
 /* line 139, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
-  margin: 0.25em 0;
+  margin: 20px 0 16px 0;
 }
-/* line 144, ../sass/_frontPage.scss */
-ul#servicesList li.portfolioBox .portfolio-thumbnail, ul#portfolioList li.portfolioBox .portfolio-thumbnail {
-  max-width: 100%;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-}
-/* line 150, ../sass/_frontPage.scss */
+/* line 145, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#portfolioList li.serviceBox {
-  height: 460px;
+  height: 400px;
 }
-/* line 153, ../sass/_frontPage.scss */
+/* line 148, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon {
   width: 60px;
-  margin: 14px auto 0 auto;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
+  margin-top: 14px;
 }
-/* line 159, ../sass/_frontPage.scss */
+/* line 153, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT, ul#portfolioList li.serviceBox .designT {
   color: #994242;
 }
-/* line 162, ../sass/_frontPage.scss */
+/* line 156, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT, ul#portfolioList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 165, ../sass/_frontPage.scss */
+/* line 159, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT, ul#portfolioList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 170, ../sass/_frontPage.scss */
+/* line 164, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover, ul#portfolioList li.serviceBox:hover {
   color: #fff;
 }
-/* line 173, ../sass/_frontPage.scss */
+/* line 167, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT, ul#portfolioList li.serviceBox:hover .designT, ul#portfolioList li.serviceBox:hover .devT, ul#portfolioList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 178, ../sass/_frontPage.scss */
+/* line 172, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover, ul#portfolioList li.design:hover {
   background-color: #994242;
 }
-/* line 181, ../sass/_frontPage.scss */
+/* line 175, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 184, ../sass/_frontPage.scss */
+/* line 178, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #759cc2;
+}
+/* line 182, ../sass/_frontPage.scss */
+ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolioList .serviceIcon, ul#portfolioList .portfolio-thumbnail {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 189, ../sass/_frontPage.scss */
@@ -790,6 +787,24 @@ ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #5a89b6;
 }
 
+/* line 137, ../sass/_services.scss */
+.serviceHeaderWrap {
+  text-align: center;
+}
+/* line 141, ../sass/_services.scss */
+.serviceHeaderWrap .servicePageImg {
+  width: 30%;
+  max-width: 175px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+}
+/* line 149, ../sass/_services.scss */
+.serviceHeaderWrap .servicePageImg img {
+  height: auto;
+}
+
 /* line 1, ../sass/_contact.scss */
 form#frmContact {
   width: 100%;
@@ -971,7 +986,7 @@ footer {
   }
 
   /* line 26, ../sass/_mobile.scss */
-  .wrap, .contentWrap, .postWrap, .serviceWrap {
+  .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
     width: 88%;
     padding: 0 6%;
   }
@@ -1064,7 +1079,7 @@ footer {
 }
 @media screen and (min-width: 601px) and (max-width: 860px) {
   /* line 119, ../sass/_mobile.scss */
-  .wrap, .contentWrap, .postWrap, .serviceWrap {
+  .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
     width: 92%;
     padding: 0 4%;
   }
@@ -1098,38 +1113,42 @@ footer {
     max-width: 620px;
     height: auto;
   }
-  /* line 148, ../sass/_mobile.scss */
+  /* line 147, ../sass/_mobile.scss */
+  ul#servicesList li.serviceBox:last-child p, ul#portfolioList li.serviceBox:last-child p {
+    text-align: center;
+  }
+  /* line 153, ../sass/_mobile.scss */
   ul#servicesList li.p, ul#portfolioList li.p {
     text-align: justify;
   }
-  /* line 152, ../sass/_mobile.scss */
+  /* line 157, ../sass/_mobile.scss */
   ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
     height: 590px;
   }
 
-  /* line 158, ../sass/_mobile.scss */
+  /* line 163, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 100%;
   }
 
-  /* line 164, ../sass/_mobile.scss */
+  /* line 169, ../sass/_mobile.scss */
   .serviceDesc {
     width: 100%;
     max-width: 620px;
   }
-  /* line 169, ../sass/_mobile.scss */
+  /* line 174, ../sass/_mobile.scss */
   .serviceDesc h1 {
     margin-top: 0;
     text-align: center;
   }
 }
 @media screen and (max-width: 920px) {
-  /* line 181, ../sass/_mobile.scss */
+  /* line 186, ../sass/_mobile.scss */
   nav#mainNav, nav#bottomNav {
     display: none;
   }
 
-  /* line 185, ../sass/_mobile.scss */
+  /* line 190, ../sass/_mobile.scss */
   a#mobile-button:link, a#mobile-button:visited {
     min-width: 50px;
     line-height: 44px;
@@ -1147,13 +1166,13 @@ footer {
     color: #ddd;
   }
 
-  /* line 199, ../sass/_mobile.scss */
+  /* line 204, ../sass/_mobile.scss */
   a#mobile-button:hover, a#mobile-button:focus {
     background-color: #1c5185;
     color: #fff;
   }
 
-  /* line 204, ../sass/_mobile.scss */
+  /* line 209, ../sass/_mobile.scss */
   #nav-wrap-mobile {
     display: none;
     top: 60px;
@@ -1164,7 +1183,7 @@ footer {
     position: absolute;
   }
 
-  /* line 214, ../sass/_mobile.scss */
+  /* line 219, ../sass/_mobile.scss */
   ul.menu-mobile {
     margin: 0;
     padding: 0;
@@ -1172,7 +1191,7 @@ footer {
     border-right: 1px solid #0e2842;
   }
 
-  /* line 221, ../sass/_mobile.scss */
+  /* line 226, ../sass/_mobile.scss */
   ul.menu-mobile li {
     width: 100%;
     height: auto;
@@ -1180,7 +1199,7 @@ footer {
     margin: 0;
   }
 
-  /* line 228, ../sass/_mobile.scss */
+  /* line 233, ../sass/_mobile.scss */
   ul.menu-mobile li a {
     display: block;
     padding: 10px;
@@ -1193,40 +1212,40 @@ footer {
     font-size: 1.2em;
   }
 
-  /* line 240, ../sass/_mobile.scss */
+  /* line 245, ../sass/_mobile.scss */
   ul.menu-mobile li a:hover {
     background-color: #1c5185;
     text-decoration: none;
     color: #fff;
   }
 
-  /* line 246, ../sass/_mobile.scss */
+  /* line 251, ../sass/_mobile.scss */
   .serviceWrap, .serviceImg, .serviceDesc {
     text-align: center;
     direction: ltr;
   }
 
-  /* line 251, ../sass/_mobile.scss */
+  /* line 256, ../sass/_mobile.scss */
   .serviceImg {
     width: 30%;
   }
 
-  /* line 255, ../sass/_mobile.scss */
+  /* line 260, ../sass/_mobile.scss */
   #featuredImg {
     width: 75%;
   }
 
-  /* line 259, ../sass/_mobile.scss */
+  /* line 264, ../sass/_mobile.scss */
   #featuredDesc {
     max-width: 500px;
     width: 92%;
     padding-bottom: 3%;
   }
-  /* line 264, ../sass/_mobile.scss */
+  /* line 269, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn {
     text-align: center;
   }
-  /* line 266, ../sass/_mobile.scss */
+  /* line 271, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn a {
     min-width: 60px;
     line-height: 48px;

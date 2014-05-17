@@ -26,10 +26,10 @@ Template Name: Custom Front Page
 					<ul id="featuredList">
 						<li>Appeal to a new generation of internet users.</li>
 						<li>Turn your mobile visitors into customers.</li>
-						<li>Fully flexible, responsive websites.</li>
+						<li>Treat yourself to a fully flexible, responsive website.</li>
 					</ul>
 
-					<div class="featuredBtn"><a href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Contact Us Now!</a></div>
+					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact US">Contact Us Now!</a></div>
 
 				</div>
 
@@ -51,8 +51,8 @@ Template Name: Custom Front Page
 
 							<h2 class="designT">We Design</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>We love to create unique designs that meet your requirements and complement your brand.</p>
+							<p>Our approach to design focuses on human experience to ensure that your message is absorbed by your audience clearly and concisely.</p>
 
 						</li><!--
 						--><li class="serviceBox dev">
@@ -61,8 +61,8 @@ Template Name: Custom Front Page
 
 							<h2 class="devT">We Develop</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>We enjoy a challenge and thrive on developing the perfect solution to a problem.</p>
+							<p>Our development process is fuelled by your ideas, allowing us to realise the best solution that will promote success for your business online.</p>
 
 						</li><!--
 						--><li class="serviceBox host">
@@ -71,8 +71,8 @@ Template Name: Custom Front Page
 
 							<h2 class="hostT">We Host</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>We understand that choosing the most suitable web host can be difficult, so we keep things simple.</p>
+							<p>Our hosting packages can provide your website with all of the essential tools to run a successful business online.</p>
 
 						</li>
 					</ul>
@@ -81,7 +81,7 @@ Template Name: Custom Front Page
 
 					<h3 class="subHeading">We have a lot to offer.</h3>
 
-					<div class="btn"><a href="#">Read More</a></div>
+					<div class="btn"><a href="<?php echo get_permalink(get_page_by_path('services')); ?>" alt="Read More">Read More</a></div>
 
 				</div>
 			</div>
@@ -132,17 +132,17 @@ Template Name: Custom Front Page
 			   				<?php if (has_post_thumbnail( $post->ID ) ){
 							 	$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'portfolio-list-thumbnail' );?>
 									<div class="portfolioThumb">
-					                    <a href="<?php the_permalink() ?>">
+					                    <a href="<?php the_permalink() ?>" alt="<?php echo the_title(); ?>">
 					                    	<img src="<?php echo $featuredImage[0]; ?>" class="portfolio-thumbnail" title="<?php the_title_attribute();?>" alt="<?php echo the_title();?>">
 					                    </a>
 					                </div>
 							<?php } ?>
 
-			   				<h1><a href="<?php the_permalink() ?>"><?php the_title()?></a></h1>
+			   				<h1><a href="<?php the_permalink() ?>" alt="<?php echo the_title(); ?>"><?php the_title()?></a></h1>
 
 							<p><?php echo get_portfolio_excerpt(270);?></p>
 							<div class="btn">
-								<a class="portfolioLink" href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>">Take a Look</a>
+								<a class="portfolioLink" href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>" alt="<?php echo the_title(); ?>">Take a Look</a>
 							</div>
 						</div>
 			   			</li>
