@@ -27,20 +27,6 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="<?php bloginfo('template_url')?>/scripts/cycle.js"></script>
 
-		<script type"text/javascript">
-			$(document).ready(function(){
-				var pageHeight = $(window).height();
-				var correctHeight = pageHeight - 120;
-				if (pageHeight >=600) {
-					$(".homeWrap").css("height", correctHeight);
-				}
-
-			});
-
-		</script>
-
-
-
 		<script type="text/javascript">
 
 			$(document).ready(function(){
