@@ -12,6 +12,8 @@ Template Name: Services Page
 	    'post_type'      => 'page', // set the post type to page
 	    'posts_per_page' => 10, // number of posts (pages) to show
 	    'post_parent'    => $post->ID, // enter the post ID of the parent page
+	    'order' => 'ASC',
+        'orderby' => 'menu_order',
 	) );
 
 	$postnum = 0;
@@ -26,7 +28,7 @@ Template Name: Services Page
 
 				<h1 class="title">What can we do for you?</h1>
 
-				<span class="tagline">Our teams skill set gives us the ability to provide solutions tailored to meet your requirements.</span>
+				<span class="tagline">Working together we create a beautiful experience.</span>
 			
 			</div>
 		</section>
