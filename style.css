@@ -9,7 +9,7 @@
 /* Content Section colors */
 /* Service colors */
 /* Variables End */
-/* line 32, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #0a1b2d;
@@ -18,18 +18,18 @@ body {
   max-width: 100%;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 .wrapper {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 45, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 main, section {
   display: block;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 main {
   background-color: #f5f9fd;
   position: relative;
@@ -38,7 +38,7 @@ main {
   z-index: 1;
 }
 
-/* line 57, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 img {
   max-width: 100%;
   width: auto;
@@ -46,99 +46,99 @@ img {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 64, ../sass/_base.scss */
+  /* line 67, ../sass/_base.scss */
   .left {
     float: left;
   }
 
-  /* line 68, ../sass/_base.scss */
+  /* line 71, ../sass/_base.scss */
   .right {
     float: right;
   }
 
-  /* line 72, ../sass/_base.scss */
+  /* line 75, ../sass/_base.scss */
   .ib {
     display: inline-block;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 78, ../sass/_base.scss */
+  /* line 81, ../sass/_base.scss */
   .left, .right {
     display: block;
     margin: 0 auto;
   }
 
-  /* line 83, ../sass/_base.scss */
+  /* line 86, ../sass/_base.scss */
   .ib {
     display: block;
   }
 }
-/* line 88, ../sass/_base.scss */
+/* line 91, ../sass/_base.scss */
 .cf:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 94, ../sass/_base.scss */
+/* line 97, ../sass/_base.scss */
 h1, h2, .notFound h1, h3 {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 99, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 h4, ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1, h5, h6 {
   text-decoration: none;
 }
 
-/* line 103, ../sass/_base.scss */
+/* line 106, ../sass/_base.scss */
 h1 {
   font-size: 3em;
   color: #5ab4e8;
 }
 
-/* line 108, ../sass/_base.scss */
+/* line 111, ../sass/_base.scss */
 h2, .notFound h1 {
   font-size: 2.25em;
   color: #70beeb;
 }
 
-/* line 113, ../sass/_base.scss */
+/* line 116, ../sass/_base.scss */
 h3 {
   font-size: 2em;
   color: #1b84c1;
 }
 
-/* line 118, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 h4, ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
   font-size: 1.625em;
   color: #2da0e2;
   font-weight: 400;
 }
 
-/* line 123, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 h5 {
   font-size: 1.25em;
   color: #1b84c1;
 }
 
-/* line 127, ../sass/_base.scss */
+/* line 130, ../sass/_base.scss */
 h6 {
   font-size: 1.125em;
   color: #156694;
 }
 
-/* line 131, ../sass/_base.scss */
+/* line 134, ../sass/_base.scss */
 h5, h6 {
   font-weight: 600;
 }
 
-/* line 134, ../sass/_base.scss */
+/* line 137, ../sass/_base.scss */
 p {
   line-height: 1.75em;
 }
 
-/* line 138, ../sass/_base.scss */
+/* line 141, ../sass/_base.scss */
 p:before {
   content: "";
   width: 10em;
@@ -146,7 +146,7 @@ p:before {
   overflow: hidden;
 }
 
-/* line 145, ../sass/_base.scss */
+/* line 148, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #458ed7;
@@ -156,13 +156,13 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 154, ../sass/_base.scss */
+/* line 157, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: #84b4e5;
 }
 
-/* line 160, ../sass/_base.scss */
+/* line 163, ../sass/_base.scss */
 .btn a, .quote a, #postsNav a, .serviceBtn a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -179,17 +179,17 @@ a:hover {
   background-color: #1b84c1;
   color: #ddd;
 }
-/* line 173, ../sass/_base.scss */
+/* line 176, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, #postsNav a:hover, .serviceBtn a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 179, ../sass/_base.scss */
+/* line 182, ../sass/_base.scss */
 .featuredBtn {
   text-align: center;
 }
-/* line 182, ../sass/_base.scss */
+/* line 185, ../sass/_base.scss */
 .featuredBtn a {
   min-width: 60px;
   line-height: 48px;
@@ -205,13 +205,13 @@ a:hover {
   background-color: #1b84c1;
   color: #ddd;
 }
-/* line 195, ../sass/_base.scss */
+/* line 198, ../sass/_base.scss */
 .featuredBtn a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 201, ../sass/_base.scss */
+/* line 204, ../sass/_base.scss */
 .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
@@ -219,27 +219,27 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 208, ../sass/_base.scss */
+/* line 211, ../sass/_base.scss */
 .contentWrap, .serviceHeaderWrap {
   max-width: 920px;
 }
-/* line 211, ../sass/_base.scss */
+/* line 214, ../sass/_base.scss */
 .contentWrap p, .serviceHeaderWrap p {
   text-align: justify;
 }
 
-/* line 216, ../sass/_base.scss */
+/* line 219, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 221, ../sass/_base.scss */
+/* line 224, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 226, ../sass/_base.scss */
+/* line 229, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -308,16 +308,16 @@ nav ul li.current-menu-item a {
 }
 
 /* line 1, ../sass/_frontPage.scss */
-.strip, #topStrip, .lightStrip, #design, #develop, #host, #bottomStrip {
+.strip, #topStrip, .lightStrip, .service, #bottomStrip {
   padding: 40px 0;
 }
 /* line 4, ../sass/_frontPage.scss */
-.strip .title, #topStrip .title, .lightStrip .title, #design .title, #develop .title, #host .title, #bottomStrip .title {
+.strip .title, #topStrip .title, .lightStrip .title, .service .title, #bottomStrip .title {
   margin: 0 0 14px 0;
   text-align: center;
 }
 /* line 9, ../sass/_frontPage.scss */
-.strip .tagline, #topStrip .tagline, .lightStrip .tagline, #design .tagline, #develop .tagline, #host .tagline, #bottomStrip .tagline {
+.strip .tagline, #topStrip .tagline, .lightStrip .tagline, .service .tagline, #bottomStrip .tagline {
   max-width: 720px;
   margin: 14px auto;
   text-align: center;
@@ -327,7 +327,7 @@ nav ul li.current-menu-item a {
   display: block;
 }
 /* line 19, ../sass/_frontPage.scss */
-.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, #design .subHeading, #develop .subHeading, #host .subHeading, #bottomStrip .subHeading {
+.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, .service .subHeading, #bottomStrip .subHeading {
   margin: 0 0 14px 0;
   text-align: center;
 }
@@ -569,22 +569,6 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   font-style: italic;
 }
 
-/* line 240, ../sass/_frontPage.scss */
-.cycle-slideshow {
-  max-width: 780px;
-  width: 60%;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: middle;
-}
-
-/* line 249, ../sass/_frontPage.scss */
-.cycle-slideshow img {
-  max-width: 100% !important;
-  display: block;
-}
-
 /* line 3, ../sass/_post.scss */
 #topStrip .postInfo {
   color: #ccc;
@@ -607,7 +591,7 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
 
 /* line 21, ../sass/_post.scss */
 .thumbStrip {
-  background-color: #edf4fb;
+  background-color: #e4eff9;
   display: block;
   padding: 2% 0;
 }
@@ -663,7 +647,26 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   text-align: center;
 }
 
-/* line 6, ../sass/_services.scss */
+/* line 7, ../sass/_services.scss */
+.rtl {
+  direction: rtl;
+}
+
+/* line 11, ../sass/_services.scss */
+.service {
+  background-color: #666666;
+}
+/* line 15, ../sass/_services.scss */
+.service h1, .service h2, .service .notFound h1, .notFound .service h1, .service h3, .service p, .service h1 a {
+  color: #fff;
+  margin-top: 0;
+}
+/* line 20, ../sass/_services.scss */
+.service p {
+  text-align: justify;
+}
+
+/* line 25, ../sass/_services.scss */
 .serviceDesc {
   width: 48%;
   max-width: 616px;
@@ -672,12 +675,12 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   zoom: 1;
   vertical-align: middle;
 }
-/* line 14, ../sass/_services.scss */
+/* line 33, ../sass/_services.scss */
 .serviceDesc h1 {
   text-align: left;
 }
 
-/* line 20, ../sass/_services.scss */
+/* line 39, ../sass/_services.scss */
 .serviceImg {
   width: 48%;
   display: inline-block;
@@ -685,22 +688,22 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   zoom: 1;
   vertical-align: middle;
 }
-/* line 27, ../sass/_services.scss */
+/* line 46, ../sass/_services.scss */
 .serviceImg img {
   height: auto;
   width: 100%;
 }
 
-/* line 33, ../sass/_services.scss */
+/* line 52, ../sass/_services.scss */
 .serviceImg, .serviceDesc {
   direction: ltr;
 }
 
-/* line 38, ../sass/_services.scss */
+/* line 57, ../sass/_services.scss */
 .serviceBtn {
   text-align: center;
 }
-/* line 41, ../sass/_services.scss */
+/* line 60, ../sass/_services.scss */
 .serviceBtn a {
   color: #ddd;
   line-height: 44px;
@@ -708,90 +711,94 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   font-size: 0.875em;
   margin: 1em 0;
 }
-/* line 49, ../sass/_services.scss */
+/* line 68, ../sass/_services.scss */
 .serviceBtn a:hover {
   color: #fff;
 }
 
-/* line 54, ../sass/_services.scss */
-#design {
+/* line 73, ../sass/_services.scss */
+#starter-package {
+  background-color: #6e4c8a;
+}
+/* line 77, ../sass/_services.scss */
+#starter-package .serviceBtn a {
+  background-color: #4d3561;
+}
+/* line 81, ../sass/_services.scss */
+#starter-package .serviceBtn a:hover {
+  background-color: #5a3e71;
+}
+
+/* line 87, ../sass/_services.scss */
+#website-design {
   background-color: #994242;
 }
-/* line 58, ../sass/_services.scss */
-#design h1, #design h2, #design .notFound h1, .notFound #design h1, #design h3, #design p, #design h1 a {
-  color: #fff;
-}
-/* line 62, ../sass/_services.scss */
-#design p {
-  text-align: justify;
-  margin-top: 0;
-}
-/* line 67, ../sass/_services.scss */
-#design .serviceWrap {
-  direction: rtl;
-}
-/* line 72, ../sass/_services.scss */
-#design .serviceBtn a {
+/* line 92, ../sass/_services.scss */
+#website-design .serviceBtn a {
   background-color: #6c2f2f;
 }
-/* line 76, ../sass/_services.scss */
-#design .serviceBtn a:hover {
+/* line 96, ../sass/_services.scss */
+#website-design .serviceBtn a:hover {
   background-color: #7e3636;
 }
 
-/* line 83, ../sass/_services.scss */
-#develop {
+/* line 103, ../sass/_services.scss */
+#responsive-website-design {
+  background-color: #bc5938;
+}
+/* line 108, ../sass/_services.scss */
+#responsive-website-design .serviceBtn a {
+  background-color: #8b4229;
+}
+/* line 112, ../sass/_services.scss */
+#responsive-website-design .serviceBtn a:hover {
+  background-color: #9f4b2f;
+}
+
+/* line 118, ../sass/_services.scss */
+#green {
   background-color: #8cad6a;
 }
-/* line 87, ../sass/_services.scss */
-#develop h1, #develop h2, #develop .notFound h1, .notFound #develop h1, #develop h3, #develop p, #develop h1 a {
-  color: #fff;
-}
-/* line 91, ../sass/_services.scss */
-#develop p {
-  text-align: justify;
-  margin-top: 0;
-}
-/* line 97, ../sass/_services.scss */
-#develop .serviceBtn a {
+/* line 123, ../sass/_services.scss */
+#green .serviceBtn a {
   background-color: #6c8b4c;
 }
-/* line 101, ../sass/_services.scss */
-#develop .serviceBtn a:hover {
+/* line 127, ../sass/_services.scss */
+#green .serviceBtn a:hover {
   background-color: #799b55;
 }
 
-/* line 108, ../sass/_services.scss */
-#host {
+/* line 134, ../sass/_services.scss */
+#ecommerce {
+  background-color: #61a399;
+}
+/* line 138, ../sass/_services.scss */
+#ecommerce .serviceBtn a {
+  background-color: #487c74;
+}
+/* line 142, ../sass/_services.scss */
+#ecommerce .serviceBtn a:hover {
+  background-color: #528c83;
+}
+
+/* line 148, ../sass/_services.scss */
+#wordpress-design {
   background-color: #759cc2;
 }
-/* line 112, ../sass/_services.scss */
-#host h1, #host h2, #host .notFound h1, .notFound #host h1, #host h3, #host p, #host h1 a {
-  color: #fff;
-}
-/* line 116, ../sass/_services.scss */
-#host .serviceWrap {
-  direction: rtl;
-}
-/* line 120, ../sass/_services.scss */
-#host p {
-  text-align: justify;
-  margin-top: 0;
-}
-/* line 126, ../sass/_services.scss */
-#host .serviceBtn a {
+/* line 153, ../sass/_services.scss */
+#wordpress-design .serviceBtn a {
   background-color: #4c7cab;
 }
-/* line 130, ../sass/_services.scss */
-#host .serviceBtn a:hover {
+/* line 157, ../sass/_services.scss */
+#wordpress-design .serviceBtn a:hover {
   background-color: #5a89b6;
 }
 
-/* line 137, ../sass/_services.scss */
+/* line 163, ../sass/_services.scss */
 .serviceHeaderWrap {
   text-align: center;
 }
-/* line 141, ../sass/_services.scss */
+/* line 167, ../sass/_services.scss */
 .serviceHeaderWrap .servicePageImg {
   width: 30%;
   max-width: 175px;
@@ -800,7 +807,7 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   zoom: 1;
   text-align: center;
 }
-/* line 149, ../sass/_services.scss */
+/* line 175, ../sass/_services.scss */
 .serviceHeaderWrap .servicePageImg img {
   height: auto;
 }
@@ -992,7 +999,7 @@ footer {
   }
 
   /* line 31, ../sass/_mobile.scss */
-  .strip, #topStrip, .lightStrip, #design, #develop, #host, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
+  .strip, #topStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
     padding: 6% 0;
   }
 
@@ -1085,7 +1092,7 @@ footer {
   }
 
   /* line 124, ../sass/_mobile.scss */
-  .strip, #topStrip, .lightStrip, #design, #develop, #host, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
+  .strip, #topStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
     padding: 4% 0;
   }
 
@@ -1220,7 +1227,7 @@ footer {
   }
 
   /* line 251, ../sass/_mobile.scss */
-  .serviceWrap, .serviceImg, .serviceDesc {
+  .service, .serviceImg, .serviceDesc {
     text-align: center;
     direction: ltr;
   }
