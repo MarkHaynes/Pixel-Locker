@@ -15,3 +15,4 @@ sitemap.xml.gz
 sass-cache
 /.sass-cache
 /sass-cache
+*.codekit

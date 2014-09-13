@@ -142,27 +142,28 @@ Template Name: Custom Contact Page
 		<section id="topStrip">
 			<div class="wrap">
 				
-				<h1 class="title">Let's discuss your next project!</h1>
+				<h1 class="title">Contact Us</h1>
 
-				<span class="tagline">We can consider any project, none are too big or too small. We can help bring your idea into a reality and we are also happy to provide you with advice you require. </span>
+				<span class="tagline">We can consider any project, none are too big or too small. We can help bring your idea into a reality and we are also happy to provide you with advice you require. We are more than happy to come and visit you to discuss your project!</span>
 			
 			</div>
 		</section>
 
 		<section class="whiteStrip">
 			<div class="contentWrap">
-
+				
+				<h2>Contact Us Using The Form Below Or Give Us A Call.</h2>
 
 				<?php 
 
 				if ($completed == true) { ?>
-					<div style="text-align: center;">
-						<h1 class="title">Thank you for contacting us, we are excited to contact you shortly.</h1>
-					</div>
+						<div style="text-align: center;">
+							<h1 class="title">Thank you for contacting us, we are excited to contact you shortly.</h1>
+						</div>
 				<?php }
-				
+					
 				else {
-				?>
+					?>
 
 			
 					<ul class="formError">
@@ -176,8 +177,10 @@ Template Name: Custom Contact Page
 							} 
 						}?>
 					</ul>
-			
 					
+
+				<div class="contact-left">
+				<h2> Please Enter Your Details Below </h2>
 			   		<form id="frmContact" action="" method="post">
 				   		<label>
 				   			Full Name:<br>
@@ -251,7 +254,32 @@ Template Name: Custom Contact Page
 				   		</label>
 
 			   		</form>
-			   <?php } ?>
+ 					<?php } ?>
+
+			   		<div style="clear:both"></div>
+			   	</div>
+
+			   	<div class="contact-right">
+
+			   		<h2> Contact Us </h2>
+
+			   		<ul>
+			   			<li> <strong>Email: <br></strong> <email><a href="mailto:hello@pixellocker.co.uk">hello@pixellocker.co.uk</a></email></li><br>
+			   			<li> <strong>Telephone: <br> </strong> 0330 2231 321<br></li>
+			   			<br>
+			   			<li><strong>Address:</strong> <address>12 Lindale Grove<br> Meir Park<br>Stoke on Trent<br> ST3 7TS</address><strong>&</strong><br><address>20 Tennant Place<br> Porthill<br> Newcastle Under Lyme<br> ST5 8QP</address>
+			   			<br>
+			   			<li><strong>Social Networks:</strong><br> Twitter: <a href="http://twitter.com/pixellocker" title="Twitter">@PixelLocker</a>
+
+			   		</ul>
+
+			   	</div>
+
+
+			   	<div style="clear:both"></div>
+
+
+			  
 
 	 		</div>
 	 	</section>
