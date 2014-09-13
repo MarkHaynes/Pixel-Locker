@@ -164,14 +164,15 @@ a:hover {
         min-width: 60px;
         line-height: 38px;
         padding: 0 15px;
-        font-size: 0.875em;
+        font-size: 12px;
+        font-size: 0.875rem;
         text-align: center;
         @include border-radius($btn-radius);
         display: inline-block;
         *display: inline;
         zoom: 1;
         background-color: $btn-colour;
-        color: #ddd;
+        color: #eee;
     }
     a:hover {
             background-color: lighten($btn-colour,20%);

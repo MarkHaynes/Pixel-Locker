@@ -14,6 +14,7 @@ Template Name: Services Page
 	    'post_parent'    => $post->ID, // enter the post ID of the parent page
 	    'order' => 'ASC',
         'orderby' => 'menu_order',
+        'post__not_in' => array(75),
 	) );
 
 	$postnum = 0;

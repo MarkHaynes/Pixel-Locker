@@ -19,6 +19,27 @@
 
 @media screen and (max-width: 600px){
 
+	.promo-img {
+		width: 100%;
+		display: block !important;
+		margin: 0 auto;
+	}
+
+	.promo-details {
+		width: 90% !important;
+		display: block !important;
+		margin: 0 auto;
+	}
+
+	.promo {
+		ul { 
+			margin: 0px;
+			padding: 10px;
+			text-align: justify;
+			width: 90% !important;
+		}
+	}
+
 	h1 {
 		font-size: 2.5em;
 	}

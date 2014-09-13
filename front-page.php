@@ -17,7 +17,7 @@ Template Name: Custom Front Page
 				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign2.png">
 				<img alt="Responsive web design." src="<?php bloginfo('template_url'); ?>/images/responsivedesign3.png">
 			</div><!--
-				--><div id="featuredDesc">
+				--><div id="featuredDesc" class="homeDesc">
 
 					<img id="pl-logo" alt="Pixel Locker Logo" src="<?php bloginfo('template_url'); ?>/images/pixellockerlogo.png">
 
@@ -29,15 +29,45 @@ Template Name: Custom Front Page
 						<li>Treat yourself to a fully flexible, responsive website.</li>
 					</ul>
 
-					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact US">Contact Us Now!</a></div>
+					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact US">Request a Quotation.</a></div>
 
 				</div>
-
+				<div style="clear:both"></div>
 			</div>
 		</section>
 
-		<section class="lightStrip">
-			<div class="wrap">
+		<section class="purpleStrip">
+							<div class="strip">
+					<div class="promo">
+						<div class="promo-img">
+							<img src="<?php bloginfo('template_url'); ?>/images/starterpackage-smaller.png" alt="Starter Package">
+						</div>
+
+						<div class="promo-details">
+							<h1> Starter Package </h1>
+							<ul>
+								<li>A Bespoke Website Using the Wordpress Content Management System.</li>
+								<li>Up to 5 pages of your choosing. (We can be add more if you wish)</li>
+								<li>A contact page with Google Map integration and an enquiry form.</li>
+								<li>Guides on how to use your new system plus 3 months of support.</li>
+								<li>Free Website hosting for 12 months.</li>
+								<li>Free Unlimited Email accounts for 12 months.</li>
+								<li>Free .co.uk domain if you require one.</li>
+							</ul>
+
+							<a class"promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>" alt="Find Out More">Find Out More</a>
+						</div>
+
+						<div style="clear: both"></div>
+					</div>
+
+				</div>
+		</section>
+
+
+		<section class="lightStrip home-lightStrip">
+			<div class="wrap homeWrapper">
+
 
 					<h1 class="title">Always happy to help,</h1>
 
@@ -72,7 +102,7 @@ Template Name: Custom Front Page
 							<h2 class="hostT">We Host</h2>
 
 							<p>We understand that choosing the most suitable web host can be difficult, so we keep things simple.</p>
-							<p>Our hosting packages can provide your website with all of the essential tools to run a successful business online.</p>
+							<p>Every client who we design a website for is offered Web Hosting. We set it up, optimise it and can fully manage it for you if you wish.</p>
 
 						</li>
 					</ul>
@@ -81,7 +111,7 @@ Template Name: Custom Front Page
 
 					<h3 class="subHeading">We have a lot to offer.</h3>
 
-					<div class="btn"><a href="<?php echo get_permalink(get_page_by_path('services')); ?>" alt="Read More">Read More</a></div>
+					<div class="btn"><a href="<?php echo get_permalink(get_page_by_path('websites')); ?>" alt="Read More">Read More</a></div>
 
 				</div>
 			</div>
