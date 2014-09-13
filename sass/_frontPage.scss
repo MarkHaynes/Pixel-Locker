@@ -52,6 +52,20 @@
 	padding: 40px 0;
 }
 
+.cycle-slideshow {
+	max-width: 780px;
+	width: 60%;
+	display: inline-block;
+	*display: inline;
+    zoom: 1;
+	vertical-align: middle;
+}
+
+.cycle-slideshow img {
+	max-width: 100% !important;
+	display: block;
+}
+
 #featuredImg, #featuredDesc {
 	display: inline-block;
 	*display: inline;
@@ -64,7 +78,7 @@
 }
 #featuredDesc {
 	max-width: 500px;
-	width: 32%;
+	width: 40%;
 
 	h1.title {
 		margin-top: 14px;
@@ -88,9 +102,9 @@
 	}
 }
 
-
 #pl-logo {
-	max-width: 100%;
+	max-width: 75%;
+	margin: 0 auto;
 }
 
 ul#servicesList, ul#portfolioList {

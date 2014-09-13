@@ -114,7 +114,6 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 860px){
-//Mobile Nav
 
 	.wrap {
 		width: 92%;
@@ -223,11 +222,12 @@
 		border-right: 1px solid $colour-darkblue;
 	}
 
-	ul.menu-mobile li {
+	ul.menu-mobile li{
 		width: 100%;
 		height: auto;
 		text-align: center;
 		margin: 0;
+		text-decoration: none;
 	}
 
 	ul.menu-mobile li a {
@@ -237,7 +237,7 @@
 		text-decoration: none;
 		background-color: lighten($colour-darkblue, 6%);
 		border-bottom: 1px solid $colour-darkblue;
-		height: 40px;
+		min-height: 40px;
 		line-height: 40px;
 		font-size: 1.2em;
 	}
@@ -248,6 +248,25 @@
 		color: #fff;
 	}
 
+	ul.sub-menu {
+		display: block;
+		position: static !important;
+		text-decoration: none;
+	}
+
+	ul.sub-menu li a {
+		display: block;
+		background-color: lighten($colour-darkblue, 3%);
+		min-height: 32px;
+		line-height: 32px;
+		font-size: 1.125em;
+	}
+
+	ul li.current-menu-item {
+		text-decoration: underline;
+		color: lighten($colour-darkblue, 60%) !important;
+	}
+	
 	.service, .serviceImg, .serviceDesc {
 		text-align: center;
 		direction: ltr;
