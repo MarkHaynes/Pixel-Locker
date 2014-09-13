@@ -3,6 +3,25 @@
 	max-width: 1240px;
 	text-align: center;
 }
+
+.rtl {
+	direction: rtl;
+}
+
+.service {
+	@extend .strip;
+	background-color: #666666;
+
+	h1, h2, h3, p, h1 a {
+		color: #fff;
+		margin-top: 0;
+	}
+
+	p {
+		text-align: justify;
+	}
+}
+
 .serviceDesc {
 	width: 48%;
 	max-width: 616px;
@@ -51,87 +70,94 @@
     }
 }
 
-#design {
-	@extend .strip;
+#starter-package {
+	background-color: $colour-purple;
+
+	.serviceBtn {
+		a {
+			background-color: darken($colour-purple, 12.5%);
+		}
+
+		a:hover {
+			background-color: darken($colour-purple, 7.5%);
+		}
+	}
+}
+
+#website-design {
+
 	background-color: $colour-red;
-
-	h1, h2, h3, p, h1 a {
-		color: #fff;
-	}
-
-	p {
-		text-align: justify;
-		margin-top: 0;
-	}
-
-	.serviceWrap {
-		direction: rtl;
-	}
 
 	.serviceBtn {
 		a {
 			background-color: darken($colour-red, 12.5%);
 		}
 
-	    a:hover {
-	        background-color: darken($colour-red, 7.5%);
-	    }
+   		a:hover {
+    		background-color: darken($colour-red, 7.5%);
+    	}
 	}
 
 }
 
-#develop {
-	@extend .strip;
-	background-color: $colour-green;
-	
-	h1, h2, h3, p, h1 a {
-		color: #fff;
-	}
+#responsive-website-design{
 
-	p {
-		text-align: justify;
-		margin-top: 0;
+	background-color: $colour-orange;
+
+	.serviceBtn {
+		a {
+			background-color: darken($colour-orange, 12.5%);
+		}
+
+   		a:hover {
+    		background-color: darken($colour-orange, 7.5%);
+    	}
 	}
+}
+
+#green {
+
+	background-color: $colour-green;
 
 	.serviceBtn {
 		a {
 			background-color: darken($colour-green, 12.5%);
 		}
 
-	    a:hover {
-	        background-color: darken($colour-green, 7.5%);
-	    }
+   		a:hover {
+    		background-color: darken($colour-green, 7.5%);
+    	}
 	}
 
 }
 
-#host {
-	@extend .strip;
+#ecommerce {
+	background-color: $colour-green-blue;
+
+	.serviceBtn {
+		a {
+			background-color: darken($colour-green-blue, 12.5%);
+		}
+
+		a:hover {
+			background-color: darken($colour-green-blue, 7.5%);
+		}
+	}
+}
+
+#wordpress-design {
+
 	background-color: $colour-blue;
 
-	h1, h2, h3, p, h1 a {
-		color: #fff;
-	}
-
-	.serviceWrap {
-		direction: rtl;
-	}
-
-	p {
-		text-align: justify;
-		margin-top: 0;
-	}
-
-		.serviceBtn {
+	.serviceBtn {
 		a {
 			background-color: darken($colour-blue, 12.5%);
 		}
 
-	    a:hover {
-	        background-color: darken($colour-blue, 7.5%);
-	    }
+   		a:hover {
+    		background-color: darken($colour-blue, 7.5%);
+    	}
 	}
-
 }
 
 .serviceHeaderWrap {

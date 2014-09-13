@@ -16,7 +16,10 @@ Template Name: Services Page
         'orderby' => 'menu_order',
 	) );
 
-	 get_header();
+	$postnum = 0;
+
+	get_header();
+
 ?>
 
 	<main>
@@ -30,15 +33,19 @@ Template Name: Services Page
 			</div>
 		</section>
 
-		<?php echo $parent_name; if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>  
+		<?php if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); 
 
-		<section id="<?php echo $post->post_name; ?>">
+			$postnum ++;
+			$class = ( $postnum % 2 ) ? 'service  rtl' : 'service';
+		?>  
+
+		<section id="<?php echo $post->post_name; ?>" class="<?php echo $class;?>">
 			<div class="serviceWrap">
 
 				<?php if ( has_post_thumbnail() ): ?>
 
 				<div class="serviceImg">
-                    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute();?>"><?php the_post_thumbnail(); ?></a>
+                    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute();?>"><?php the_post_thumbnail('large'); ?></a>
 				</div>
 
 				<?php  endif; ?>
