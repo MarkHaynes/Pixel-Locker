@@ -301,8 +301,38 @@ nav ul li.current-menu-item a {
   text-decoration: underline;
   color: #99c1e9;
 }
+/* line 57, ../sass/_header.scss */
+nav ul li:hover > ul.sub-menu {
+  display: block;
+}
 
-/* line 59, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
+ul.sub-menu {
+  display: none;
+  max-width: 400px;
+  position: absolute;
+  z-index: 99999;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #0d253e;
+  border-left: 1px solid #0d253e;
+  -moz-box-shadow: #0f2b46 2px 2px 5px;
+  -webkit-box-shadow: #0f2b46 2px 2px 5px;
+  box-shadow: #0f2b46 2px 2px 5px;
+}
+/* line 78, ../sass/_header.scss */
+ul.sub-menu li {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  background-image: -moz-linear-gradient(#143a5f, #123557);
+  background-image: -webkit-linear-gradient(#143a5f, #123557);
+  background-image: linear-gradient(#143a5f, #123557);
+  background-color: #123557;
+  border-bottom: 1px solid #0d253e;
+}
+
+/* line 88, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }

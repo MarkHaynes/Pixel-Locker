@@ -51,8 +51,37 @@ nav {
 
 		li.current-menu-item a {
 			text-decoration: underline;
-			color: lighten($colour-darkblue, 60%);;
+			color: lighten($colour-darkblue, 60%);
 		}
+		
+		li:hover > ul.sub-menu {
+			display: block;
+		}		
+
+	}
+
+	
+}
+
+ul.sub-menu {
+	display: none;
+	max-width: 400px;
+	position: absolute;
+	z-index: 99999;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid darken($colour-darkblue, 1%);
+	border-left: 1px solid darken($colour-darkblue, 1%);
+	@include box-shadow(lighten($colour-darkblue, 1%) 2px 2px 5px); 
+
+
+	li {
+		padding: 0px;
+		margin: 0px;
+		display: block;
+		@include background-image(linear-gradient(lighten($colour-darkblue, 7%), lighten($colour-darkblue, 5%)));
+		background-color: lighten($colour-darkblue, 5%);
+		border-bottom: 1px solid darken($colour-darkblue, 1%);
 	}
 }
 
