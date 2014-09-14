@@ -79,7 +79,7 @@
 		}
 
 		a:hover {
-			background-color: darken($colour-purple, 7.5%);
+			background-color: lighten($colour-purple, 10%);
 		}
 	}
 }
@@ -94,7 +94,7 @@
 		}
 
    		a:hover {
-    		background-color: darken($colour-red, 7.5%);
+    		background-color: lighten($colour-red, 10%);
     	}
 	}
 
@@ -110,7 +110,7 @@
 		}
 
    		a:hover {
-    		background-color: darken($colour-orange, 7.5%);
+    		background-color: lighten($colour-orange, 10%);
     	}
 	}
 }
@@ -125,7 +125,7 @@
 		}
 
    		a:hover {
-    		background-color: darken($colour-green, 7.5%);
+    		background-color: lighten($colour-green, 10%);
     	}
 	}
 
@@ -140,7 +140,7 @@
 		}
 
 		a:hover {
-			background-color: darken($colour-green-blue, 7.5%);
+			background-color: lighten($colour-green-blue, 10%);
 		}
 	}
 }
@@ -155,7 +155,7 @@
 		}
 
    		a:hover {
-    		background-color: darken($colour-blue, 7.5%);
+    		background-color: lighten($colour-blue, 10%);
     	}
 	}
 }
