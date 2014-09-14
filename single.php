@@ -11,8 +11,16 @@
 					
 					<h1 class="title"><?php the_title(); ?></h1>
 
-					<span class="postInfo"><?php the_time( 'D, jS F, Y' ); ?></span>
-					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?></span>
+					<?php if ( in_category( 'portfolio' )) {
+
+					}
+
+					else { ?>
+
+						<span class="postInfo"><?php the_time( 'D, jS F, Y' ); ?></span>
+						<span class="postInfo">Posted in: <?php the_category(' ~ '); ?></span>
+
+					<?php } ?>
 				
 				</div>
 			</section>

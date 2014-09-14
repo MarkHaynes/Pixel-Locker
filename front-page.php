@@ -24,9 +24,9 @@ Template Name: Custom Front Page
 					<h1 class="title">Responsive web design</h1>
 
 					<ul id="featuredList">
-						<li>Appeal to a new generation of internet users.</li>
-						<li>Turn your mobile visitors into customers.</li>
-						<li>Treat yourself to a fully flexible, responsive website.</li>
+						<li>Pixel Locker is a Website Design company based in Stoke on Trent, Staffordshire. We create bespoke
+						responsive websites for our clients. Whether your a small SME or larger business we want to work with you on your
+						next project.</li>
 					</ul>
 
 					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact US">Request a Quotation.</a></div>
