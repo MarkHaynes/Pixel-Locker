@@ -19,6 +19,27 @@
 
 @media screen and (max-width: 600px){
 
+	.promo-img {
+		width: 100%;
+		display: block !important;
+		margin: 0 auto;
+	}
+
+	.promo-details {
+		width: 90% !important;
+		display: block !important;
+		margin: 0 auto;
+	}
+
+	.promo {
+		ul { 
+			margin: 0px;
+			padding: 10px;
+			text-align: justify;
+			width: 90% !important;
+		}
+	}
+
 	h1 {
 		font-size: 2.5em;
 	}
@@ -111,6 +132,9 @@
 
 	}
 
+	.cycle-slideshow {
+		width: 100% !important;
+	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 860px){
@@ -252,6 +276,8 @@
 		display: block;
 		position: static !important;
 		text-decoration: none;
+		border: none;
+		color: #aaa;
 	}
 
 	ul.sub-menu li a {
@@ -259,12 +285,13 @@
 		background-color: lighten($colour-darkblue, 3%);
 		min-height: 32px;
 		line-height: 32px;
-		font-size: 1.125em;
+		font-size: 1em !important;
+		border: none;
 	}
 
-	ul li.current-menu-item {
+	nav#nav-mobile ul li.current-menu-item {
 		text-decoration: underline;
-		color: lighten($colour-darkblue, 60%) !important;
+		color: lighten($colour-darkblue, 60%);
 	}
 	
 	.service, .serviceImg, .serviceDesc {
@@ -294,6 +321,10 @@
 		        font-size: 1.125em;
 		    }
 		}
+	}
+
+	.cycle-slideshow {
+		width: 80%;
 	}
 
 }

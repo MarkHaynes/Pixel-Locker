@@ -1,3 +1,4 @@
+
 .strip {
 	padding: 40px 0;
 
@@ -36,6 +37,13 @@
 	}
 
 }
+
+.purpleStrip {
+	padding: 0px 0;
+	@extend .strip;
+	background-color: $colour-purple;
+}
+
 .lightStrip {
 	@extend .strip;
 	background-color: lighten($colour-lightblue, 21%);
@@ -47,6 +55,7 @@
 		text-align: center;
 	}
 }
+
 .whiteStrip {
 	background-color: #fff;
 	padding: 40px 0;
@@ -106,6 +115,72 @@
 	max-width: 75%;
 	margin: 0 auto;
 }
+
+.promo {
+	max-width: 980px;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: $colour-purple;
+	@include border-radius (4px);
+
+	.promo-img {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+	}
+
+	.promo-details {
+		display: inline-block;
+		width: 60%;
+		vertical-align: top;
+	}
+
+	img {
+		width: 100%;
+		max-width: 300px;
+		display: block;
+	}
+
+	h1 {
+		color: #fff;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		
+
+		li {
+			color: #fff;
+		}
+	}
+
+	a:link, a:visited {
+		min-width: 60px;
+		line-height: 48px;
+		padding: 0 24px;
+		font-size: 12.5px;
+		font-size: 1.25rem;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		border-radius: 2px;
+		display: inline-block;
+		zoom: 1;
+		background-color: darken($colour-purple, 10%);
+		color: #fff;
+
+		float: right;
+	}
+
+	a:hover {
+		background-color: lighten($colour-purple, 5%);
+	}
+
+
+}
+
 
 ul#servicesList, ul#portfolioList {
 	list-style-type: none;

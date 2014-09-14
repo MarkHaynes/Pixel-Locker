@@ -1,7 +1,6 @@
 form#frmContact {
-	width: 100%;
-	max-width: 400px;
-	margin: 0 auto;
+	width: 90%;
+	margin: 0 auto 50px auto;
 
 	label {
 
@@ -87,4 +86,51 @@ ul.formError li {
 		list-style-type: none;
 		margin: 5px 0;
 		padding: 0;
+}
+
+.contact-left, .contact-right {
+	
+	h2 {
+		font-size: 18px;
+		font-size: 1.8rem;
+		margin: 0 0 15px 0;
+		text-align: center;
+	}	
+}
+
+.contact-left {
+	width: 90%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.contact-right {
+	text-align: center;
+	width: 90%;
+	max-width: 400px;
+	margin: 0 auto;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+
+		li {
+			list-style-type: none;
+		}
+
 	}
+}
+
+@media screen and (min-width: 800px) {
+	.contact-left {
+		float: left;
+		width: 50%;
+	}
+	.contact-right {
+		float: right;
+		width: 50%;
+
+	}
+}

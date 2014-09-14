@@ -167,7 +167,8 @@ a:hover {
   min-width: 60px;
   line-height: 38px;
   padding: 0 15px;
-  font-size: 0.875em;
+  font-size: 12px;
+  font-size: 0.875rem;
   text-align: center;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -177,19 +178,19 @@ a:hover {
   *display: inline;
   zoom: 1;
   background-color: #1b84c1;
-  color: #ddd;
+  color: #eee;
 }
-/* line 176, ../sass/_base.scss */
+/* line 177, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, #postsNav a:hover, .serviceBtn a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 182, ../sass/_base.scss */
+/* line 183, ../sass/_base.scss */
 .featuredBtn {
   text-align: center;
 }
-/* line 185, ../sass/_base.scss */
+/* line 186, ../sass/_base.scss */
 .featuredBtn a {
   min-width: 60px;
   line-height: 48px;
@@ -205,13 +206,13 @@ a:hover {
   background-color: #1b84c1;
   color: #ddd;
 }
-/* line 198, ../sass/_base.scss */
+/* line 199, ../sass/_base.scss */
 .featuredBtn a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 204, ../sass/_base.scss */
+/* line 205, ../sass/_base.scss */
 .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
@@ -219,27 +220,27 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 211, ../sass/_base.scss */
+/* line 212, ../sass/_base.scss */
 .contentWrap, .serviceHeaderWrap {
   max-width: 920px;
 }
-/* line 214, ../sass/_base.scss */
+/* line 215, ../sass/_base.scss */
 .contentWrap p, .serviceHeaderWrap p {
   text-align: justify;
 }
 
-/* line 219, ../sass/_base.scss */
+/* line 220, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 224, ../sass/_base.scss */
+/* line 225, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 229, ../sass/_base.scss */
+/* line 230, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -303,48 +304,60 @@ nav ul li a:hover {
   text-decoration: none;
 }
 /* line 59, ../sass/_header.scss */
-nav ul li:hover > ul {
+nav ul li.current-menu-item a {
+  text-decoration: underline;
+  color: #99c1e9;
+}
+/* line 64, ../sass/_header.scss */
+nav ul li:hover > ul.sub-menu {
   display: block;
 }
 
-/* line 67, ../sass/_header.scss */
+/* line 72, ../sass/_header.scss */
 ul.sub-menu {
-  font-size: 0.875em;
-  width: inherit;
   display: none;
+  max-width: 400px;
   position: absolute;
   z-index: 99999;
-  background-color: #0b2035;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #0d253e;
+  border-left: 1px solid #0d253e;
+  -webkit-box-shadow: #0f2b46 2px 2px 5px;
+  -moz-box-shadow: #0f2b46 2px 2px 5px;
+  box-shadow: #0f2b46 2px 2px 5px;
 }
-/* line 75, ../sass/_header.scss */
+/* line 84, ../sass/_header.scss */
 ul.sub-menu li {
+  padding: 0px;
+  margin: 0px;
   display: block;
-  line-height: 44px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #143a5f), color-stop(100%, #123557));
+  background-image: -webkit-linear-gradient(#143a5f, #123557);
+  background-image: -moz-linear-gradient(#143a5f, #123557);
+  background-image: -o-linear-gradient(#143a5f, #123557);
+  background-image: linear-gradient(#143a5f, #123557);
+  background-color: #123557;
+  border-bottom: 1px solid #0d253e;
   color: #aaa;
 }
 
-/* line 84, ../sass/_header.scss */
-ul li.current-menu-item {
-  text-decoration: underline;
-  color: #99c1e9 !important;
-}
-
-/* line 89, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }
 
-/* line 1, ../sass/_frontPage.scss */
-.strip, #topStrip, .lightStrip, .service, #bottomStrip {
+/* line 2, ../sass/_frontPage.scss */
+.strip, #topStrip, .purpleStrip, .lightStrip, .service, #bottomStrip {
   padding: 40px 0;
 }
-/* line 4, ../sass/_frontPage.scss */
-.strip .title, #topStrip .title, .lightStrip .title, .service .title, #bottomStrip .title {
+/* line 5, ../sass/_frontPage.scss */
+.strip .title, #topStrip .title, .purpleStrip .title, .lightStrip .title, .service .title, #bottomStrip .title {
   margin: 0 0 14px 0;
   text-align: center;
 }
-/* line 9, ../sass/_frontPage.scss */
-.strip .tagline, #topStrip .tagline, .lightStrip .tagline, .service .tagline, #bottomStrip .tagline {
+/* line 10, ../sass/_frontPage.scss */
+.strip .tagline, #topStrip .tagline, .purpleStrip .tagline, .lightStrip .tagline, .service .tagline, #bottomStrip .tagline {
   max-width: 720px;
   margin: 14px auto;
   text-align: center;
@@ -353,46 +366,52 @@ ul li.current-menu-item {
   font-size: 1.25em;
   display: block;
 }
-/* line 19, ../sass/_frontPage.scss */
-.strip .subHeading, #topStrip .subHeading, .lightStrip .subHeading, .service .subHeading, #bottomStrip .subHeading {
+/* line 20, ../sass/_frontPage.scss */
+.strip .subHeading, #topStrip .subHeading, .purpleStrip .subHeading, .lightStrip .subHeading, .service .subHeading, #bottomStrip .subHeading {
   margin: 0 0 14px 0;
   text-align: center;
 }
 
-/* line 25, ../sass/_frontPage.scss */
+/* line 26, ../sass/_frontPage.scss */
 #topStrip {
   background-color: #123253;
   text-align: center;
 }
-/* line 30, ../sass/_frontPage.scss */
+/* line 31, ../sass/_frontPage.scss */
 #topStrip .title {
   color: #ffffff;
 }
-/* line 34, ../sass/_frontPage.scss */
+/* line 35, ../sass/_frontPage.scss */
 #topStrip .tagline {
   color: #ccc;
 }
 
-/* line 39, ../sass/_frontPage.scss */
+/* line 41, ../sass/_frontPage.scss */
+.purpleStrip {
+  padding: 0px 0;
+  background-color: #6e4c8a;
+}
+
+/* line 47, ../sass/_frontPage.scss */
 .lightStrip {
   background-color: #e5f3fb;
 }
-/* line 43, ../sass/_frontPage.scss */
+/* line 51, ../sass/_frontPage.scss */
 .lightStrip .tagline {
   color: #6286a0;
 }
-/* line 46, ../sass/_frontPage.scss */
+/* line 54, ../sass/_frontPage.scss */
 .lightStrip .btn, .lightStrip .quote, .lightStrip #postsNav, .lightStrip .serviceBtn, .lightStrip .facebook, .lightStrip .twitter {
   text-align: center;
 }
 
-/* line 50, ../sass/_frontPage.scss */
+/* line 59, ../sass/_frontPage.scss */
 .whiteStrip {
   background-color: #fff;
   padding: 40px 0;
 }
 
-/* line 55, ../sass/_frontPage.scss */
+/* line 64, ../sass/_frontPage.scss */
 .cycle-slideshow {
   max-width: 780px;
   width: 60%;
@@ -402,13 +421,13 @@ ul li.current-menu-item {
   vertical-align: middle;
 }
 
-/* line 64, ../sass/_frontPage.scss */
+/* line 73, ../sass/_frontPage.scss */
 .cycle-slideshow img {
   max-width: 100% !important;
   display: block;
 }
 
-/* line 69, ../sass/_frontPage.scss */
+/* line 78, ../sass/_frontPage.scss */
 #featuredImg, #featuredDesc {
   display: inline-block;
   *display: inline;
@@ -416,23 +435,23 @@ ul li.current-menu-item {
   vertical-align: middle;
 }
 
-/* line 75, ../sass/_frontPage.scss */
+/* line 84, ../sass/_frontPage.scss */
 #featuredImg {
   max-width: 780px;
   width: 60%;
 }
 
-/* line 79, ../sass/_frontPage.scss */
+/* line 88, ../sass/_frontPage.scss */
 #featuredDesc {
   max-width: 500px;
   width: 40%;
 }
-/* line 83, ../sass/_frontPage.scss */
+/* line 92, ../sass/_frontPage.scss */
 #featuredDesc h1.title {
   margin-top: 14px;
   font-size: 2.25em;
 }
-/* line 88, ../sass/_frontPage.scss */
+/* line 97, ../sass/_frontPage.scss */
 #featuredDesc ul#featuredList {
   list-style-type: none;
   text-align: center;
@@ -444,18 +463,80 @@ ul li.current-menu-item {
   display: block;
   color: #ccc;
 }
-/* line 99, ../sass/_frontPage.scss */
+/* line 108, ../sass/_frontPage.scss */
 #featuredDesc ul#featuredList li {
   margin: 10px 0;
 }
 
-/* line 105, ../sass/_frontPage.scss */
+/* line 114, ../sass/_frontPage.scss */
 #pl-logo {
   max-width: 75%;
   margin: 0 auto;
 }
 
-/* line 110, ../sass/_frontPage.scss */
+/* line 119, ../sass/_frontPage.scss */
+.promo {
+  max-width: 980px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #6e4c8a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 126, ../sass/_frontPage.scss */
+.promo .promo-img {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+/* line 132, ../sass/_frontPage.scss */
+.promo .promo-details {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+/* line 138, ../sass/_frontPage.scss */
+.promo img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+/* line 144, ../sass/_frontPage.scss */
+.promo h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 154, ../sass/_frontPage.scss */
+.promo ul li {
+  color: #fff;
+}
+/* line 159, ../sass/_frontPage.scss */
+.promo a:link, .promo a:visited {
+  min-width: 60px;
+  line-height: 48px;
+  padding: 0 24px;
+  font-size: 12.5px;
+  font-size: 1.25rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  zoom: 1;
+  background-color: #543a69;
+  color: #fff;
+  float: right;
+}
+/* line 177, ../sass/_frontPage.scss */
+.promo a:hover {
+  background-color: #7b559a;
+}
+
+/* line 185, ../sass/_frontPage.scss */
 ul#servicesList, ul#portfolioList {
   list-style-type: none;
   padding: 0;
@@ -464,15 +545,15 @@ ul#servicesList, ul#portfolioList {
   max-width: 1200px;
   display: block;
 }
-/* line 118, ../sass/_frontPage.scss */
+/* line 193, ../sass/_frontPage.scss */
 ul#servicesList h1, ul#servicesList h2, ul#servicesList .notFound h1, .notFound ul#servicesList h1, ul#servicesList h3, ul#portfolioList h1, ul#portfolioList h2, ul#portfolioList .notFound h1, .notFound ul#portfolioList h1, ul#portfolioList h3 {
   margin: 0px;
 }
-/* line 121, ../sass/_frontPage.scss */
+/* line 196, ../sass/_frontPage.scss */
 ul#servicesList p, ul#portfolioList p {
   text-align: justify;
 }
-/* line 125, ../sass/_frontPage.scss */
+/* line 200, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
   padding: 2%;
   margin: 0 0.5%;
@@ -488,68 +569,68 @@ ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 137, ../sass/_frontPage.scss */
+/* line 212, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer, ul#servicesList li.portfolioBox .boxContainer, ul#portfolioList li.serviceBox .boxContainer, ul#portfolioList li.portfolioBox .boxContainer {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 142, ../sass/_frontPage.scss */
+/* line 217, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer .btn, ul#servicesList li.serviceBox .boxContainer .quote, ul#servicesList li.serviceBox .boxContainer #postsNav, ul#servicesList li.serviceBox .boxContainer .serviceBtn, ul#servicesList li.serviceBox .boxContainer .facebook, ul#servicesList li.serviceBox .boxContainer .twitter, ul#servicesList li.portfolioBox .boxContainer .btn, ul#servicesList li.portfolioBox .boxContainer .quote, ul#servicesList li.portfolioBox .boxContainer #postsNav, ul#servicesList li.portfolioBox .boxContainer .serviceBtn, ul#servicesList li.portfolioBox .boxContainer .facebook, ul#servicesList li.portfolioBox .boxContainer .twitter, ul#portfolioList li.serviceBox .boxContainer .btn, ul#portfolioList li.serviceBox .boxContainer .quote, ul#portfolioList li.serviceBox .boxContainer #postsNav, ul#portfolioList li.serviceBox .boxContainer .serviceBtn, ul#portfolioList li.serviceBox .boxContainer .facebook, ul#portfolioList li.serviceBox .boxContainer .twitter, ul#portfolioList li.portfolioBox .boxContainer .btn, ul#portfolioList li.portfolioBox .boxContainer .quote, ul#portfolioList li.portfolioBox .boxContainer #postsNav, ul#portfolioList li.portfolioBox .boxContainer .serviceBtn, ul#portfolioList li.portfolioBox .boxContainer .facebook, ul#portfolioList li.portfolioBox .boxContainer .twitter {
   position: absolute;
   bottom: 3%;
   width: 100%;
 }
-/* line 150, ../sass/_frontPage.scss */
+/* line 225, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
   height: 590px;
 }
-/* line 153, ../sass/_frontPage.scss */
+/* line 228, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
   margin: 20px 0 16px 0;
 }
-/* line 159, ../sass/_frontPage.scss */
+/* line 234, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#portfolioList li.serviceBox {
   height: 400px;
 }
-/* line 162, ../sass/_frontPage.scss */
+/* line 237, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon {
   width: 60px;
   margin-top: 14px;
 }
-/* line 167, ../sass/_frontPage.scss */
+/* line 242, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT, ul#portfolioList li.serviceBox .designT {
   color: #994242;
 }
-/* line 170, ../sass/_frontPage.scss */
+/* line 245, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT, ul#portfolioList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 173, ../sass/_frontPage.scss */
+/* line 248, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT, ul#portfolioList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 178, ../sass/_frontPage.scss */
+/* line 253, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover, ul#portfolioList li.serviceBox:hover {
   color: #fff;
 }
-/* line 181, ../sass/_frontPage.scss */
+/* line 256, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT, ul#portfolioList li.serviceBox:hover .designT, ul#portfolioList li.serviceBox:hover .devT, ul#portfolioList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 186, ../sass/_frontPage.scss */
+/* line 261, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover, ul#portfolioList li.design:hover {
   background-color: #994242;
 }
-/* line 189, ../sass/_frontPage.scss */
+/* line 264, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 192, ../sass/_frontPage.scss */
+/* line 267, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #759cc2;
 }
-/* line 196, ../sass/_frontPage.scss */
+/* line 271, ../sass/_frontPage.scss */
 ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolioList .serviceIcon, ul#portfolioList .portfolio-thumbnail {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -559,55 +640,55 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   margin-right: auto;
 }
 
-/* line 203, ../sass/_frontPage.scss */
+/* line 278, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 208, ../sass/_frontPage.scss */
+/* line 283, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 16px auto;
 }
-/* line 211, ../sass/_frontPage.scss */
+/* line 286, ../sass/_frontPage.scss */
 #meetTheTeam p {
   margin: 1em auto;
 }
-/* line 215, ../sass/_frontPage.scss */
+/* line 290, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam .teamMember, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   *display: inline;
   zoom: 1;
   vertical-align: top;
 }
-/* line 222, ../sass/_frontPage.scss */
+/* line 297, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
   width: 100%;
   margin: 0 auto;
 }
-/* line 227, ../sass/_frontPage.scss */
+/* line 302, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers {
   max-width: 80%;
 }
-/* line 230, ../sass/_frontPage.scss */
+/* line 305, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember {
   width: 45%;
   padding: 0;
   margin: 0 2%;
   text-align: center;
 }
-/* line 236, ../sass/_frontPage.scss */
+/* line 311, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: auto;
   width: 40%;
   margin: 2% auto;
   display: block;
 }
-/* line 243, ../sass/_frontPage.scss */
+/* line 318, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 100%;
 }
-/* line 245, ../sass/_frontPage.scss */
+/* line 320, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc p {
   text-align: center;
   font-style: italic;
@@ -858,11 +939,10 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
 
 /* line 1, ../sass/_contact.scss */
 form#frmContact {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 0 auto 50px auto;
 }
-/* line 10, ../sass/_contact.scss */
+/* line 9, ../sass/_contact.scss */
 form#frmContact input[type='text'], form#frmContact input[type='email'], form#frmContact input[type='tel'] {
   width: 96%;
   max-width: 400px;
@@ -870,7 +950,7 @@ form#frmContact input[type='text'], form#frmContact input[type='email'], form#fr
   margin: 5px auto;
   display: block;
 }
-/* line 18, ../sass/_contact.scss */
+/* line 17, ../sass/_contact.scss */
 form#frmContact textarea {
   width: 96%;
   max-width: 400px;
@@ -879,7 +959,7 @@ form#frmContact textarea {
   margin: 5px auto;
   display: block;
 }
-/* line 27, ../sass/_contact.scss */
+/* line 26, ../sass/_contact.scss */
 form#frmContact input[type='submit'] {
   min-width: 60px;
   line-height: 38px;
@@ -901,17 +981,17 @@ form#frmContact input[type='submit'] {
   transition: all 0.4s ease-in-out;
   margin: 0 auto;
 }
-/* line 49, ../sass/_contact.scss */
+/* line 48, ../sass/_contact.scss */
 form#frmContact input[type='submit']:hover {
   background-color: #5ab4e8;
   color: #fff;
   border: 2px solid #5ab4e8;
 }
-/* line 55, ../sass/_contact.scss */
+/* line 54, ../sass/_contact.scss */
 form#frmContact input[type="checkbox"] {
   display: none;
 }
-/* line 58, ../sass/_contact.scss */
+/* line 57, ../sass/_contact.scss */
 form#frmContact input[type="checkbox"] + label span {
   display: inline-block;
   width: 38px;
@@ -922,16 +1002,16 @@ form#frmContact input[type="checkbox"] + label span {
   cursor: pointer;
   text-indent: 40px;
 }
-/* line 68, ../sass/_contact.scss */
+/* line 67, ../sass/_contact.scss */
 form#frmContact input[type="checkbox"]:checked + label span {
   background: url(images/formsprite.png) -38px top no-repeat;
 }
-/* line 72, ../sass/_contact.scss */
+/* line 71, ../sass/_contact.scss */
 form#frmContact span {
   padding-top: 6px;
 }
 
-/* line 77, ../sass/_contact.scss */
+/* line 76, ../sass/_contact.scss */
 ul.formError {
   width: 100%;
   max-width: 400px;
@@ -939,7 +1019,7 @@ ul.formError {
   padding: 0;
 }
 
-/* line 84, ../sass/_contact.scss */
+/* line 83, ../sass/_contact.scss */
 ul.formError li {
   color: red;
   font-weight: 400;
@@ -948,6 +1028,52 @@ ul.formError li {
   padding: 0;
 }
 
+/* line 93, ../sass/_contact.scss */
+.contact-left h2, .contact-left .notFound h1, .notFound .contact-left h1, .contact-right h2, .contact-right .notFound h1, .notFound .contact-right h1 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+/* line 101, ../sass/_contact.scss */
+.contact-left {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 107, ../sass/_contact.scss */
+.contact-right {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 113, ../sass/_contact.scss */
+.contact-right ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 119, ../sass/_contact.scss */
+.contact-right ul li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 127, ../sass/_contact.scss */
+  .contact-left {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 131, ../sass/_contact.scss */
+  .contact-right {
+    float: right;
+    width: 50%;
+  }
+}
 /* line 1, ../sass/_footer.scss */
 footer {
   position: relative;
@@ -1033,28 +1159,50 @@ footer {
 }
 @media screen and (max-width: 600px) {
   /* line 22, ../sass/_mobile.scss */
+  .promo-img {
+    width: 100%;
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  /* line 28, ../sass/_mobile.scss */
+  .promo-details {
+    width: 90% !important;
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  /* line 35, ../sass/_mobile.scss */
+  .promo ul {
+    margin: 0px;
+    padding: 10px;
+    text-align: justify;
+    width: 90% !important;
+  }
+
+  /* line 43, ../sass/_mobile.scss */
   h1 {
     font-size: 2.5em;
   }
 
-  /* line 26, ../sass/_mobile.scss */
+  /* line 47, ../sass/_mobile.scss */
   .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
     width: 88%;
     padding: 0 6%;
   }
 
-  /* line 31, ../sass/_mobile.scss */
-  .strip, #topStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
+  /* line 52, ../sass/_mobile.scss */
+  .strip, #topStrip, .purpleStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
     padding: 6% 0;
   }
 
-  /* line 35, ../sass/_mobile.scss */
+  /* line 56, ../sass/_mobile.scss */
   ul#servicesList, ul#portfolioList {
     list-style-type: none;
     width: 100%;
     text-align: center;
   }
-  /* line 40, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
     padding: 6% 5%;
     margin: 2% auto;
@@ -1068,86 +1216,91 @@ footer {
     border-radius: 4px;
     height: auto;
   }
-  /* line 51, ../sass/_mobile.scss */
+  /* line 72, ../sass/_mobile.scss */
   ul#servicesList li.p, ul#portfolioList li.p {
     text-align: justify;
   }
-  /* line 54, ../sass/_mobile.scss */
+  /* line 75, ../sass/_mobile.scss */
   ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
     height: 520px;
   }
 
-  /* line 61, ../sass/_mobile.scss */
+  /* line 82, ../sass/_mobile.scss */
   #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam .btn, #meetTheTeam .quote, #meetTheTeam #postsNav, #meetTheTeam .serviceBtn, #meetTheTeam .facebook, #meetTheTeam .twitter {
     text-align: center;
   }
-  /* line 65, ../sass/_mobile.scss */
+  /* line 86, ../sass/_mobile.scss */
   #meetTheTeam p {
     margin: 1em auto;
   }
-  /* line 69, ../sass/_mobile.scss */
+  /* line 90, ../sass/_mobile.scss */
   #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /* line 76, ../sass/_mobile.scss */
+  /* line 97, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 410px;
   }
-  /* line 79, ../sass/_mobile.scss */
+  /* line 100, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember {
     width: 100%;
     margin: 0;
     padding: 5% 0;
   }
-  /* line 84, ../sass/_mobile.scss */
+  /* line 105, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberAvatar {
     height: auto;
     width: 30%;
     margin: 2% auto;
     display: block;
   }
-  /* line 90, ../sass/_mobile.scss */
+  /* line 111, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc {
     width: 100%;
   }
-  /* line 93, ../sass/_mobile.scss */
+  /* line 114, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers .teamMember .memberDesc p {
     text-align: center;
     margin-top: 0;
   }
 
-  /* line 102, ../sass/_mobile.scss */
+  /* line 123, ../sass/_mobile.scss */
   .serviceDesc {
     width: 100%;
     max-width: 410px;
   }
-  /* line 107, ../sass/_mobile.scss */
+  /* line 128, ../sass/_mobile.scss */
   .serviceDesc h1 {
     margin-top: 0;
     text-align: center;
   }
+
+  /* line 135, ../sass/_mobile.scss */
+  .cycle-slideshow {
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 860px) {
-  /* line 118, ../sass/_mobile.scss */
+  /* line 142, ../sass/_mobile.scss */
   .wrap, .contentWrap, .serviceHeaderWrap, .postWrap, .serviceWrap {
     width: 92%;
     padding: 0 4%;
   }
 
-  /* line 123, ../sass/_mobile.scss */
-  .strip, #topStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
+  /* line 147, ../sass/_mobile.scss */
+  .strip, #topStrip, .purpleStrip, .lightStrip, .service, #bottomStrip, .whiteStrip, .thumbStrip, .serviceWrap {
     padding: 4% 0;
   }
 
-  /* line 127, ../sass/_mobile.scss */
+  /* line 151, ../sass/_mobile.scss */
   ul#servicesList, ul#portfolioList {
     list-style-type: none;
     width: 100%;
     text-align: center;
   }
-  /* line 132, ../sass/_mobile.scss */
+  /* line 156, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
     padding: 4%;
     margin: 1%;
@@ -1159,48 +1312,48 @@ footer {
     -ms-border-radius: 4px;
     border-radius: 4px;
   }
-  /* line 141, ../sass/_mobile.scss */
+  /* line 165, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox:last-child, ul#portfolioList li.serviceBox:last-child {
     width: 90%;
     max-width: 620px;
     height: auto;
   }
-  /* line 146, ../sass/_mobile.scss */
+  /* line 170, ../sass/_mobile.scss */
   ul#servicesList li.serviceBox:last-child p, ul#portfolioList li.serviceBox:last-child p {
     text-align: center;
   }
-  /* line 152, ../sass/_mobile.scss */
+  /* line 176, ../sass/_mobile.scss */
   ul#servicesList li.p, ul#portfolioList li.p {
     text-align: justify;
   }
-  /* line 156, ../sass/_mobile.scss */
+  /* line 180, ../sass/_mobile.scss */
   ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
     height: 590px;
   }
 
-  /* line 162, ../sass/_mobile.scss */
+  /* line 186, ../sass/_mobile.scss */
   #meetTheTeam #teamMembers {
     max-width: 100%;
   }
 
-  /* line 168, ../sass/_mobile.scss */
+  /* line 192, ../sass/_mobile.scss */
   .serviceDesc {
     width: 100%;
     max-width: 620px;
   }
-  /* line 173, ../sass/_mobile.scss */
+  /* line 197, ../sass/_mobile.scss */
   .serviceDesc h1 {
     margin-top: 0;
     text-align: center;
   }
 }
 @media screen and (max-width: 920px) {
-  /* line 185, ../sass/_mobile.scss */
+  /* line 209, ../sass/_mobile.scss */
   nav#mainNav, nav#bottomNav {
     display: none;
   }
 
-  /* line 189, ../sass/_mobile.scss */
+  /* line 213, ../sass/_mobile.scss */
   a#mobile-button:link, a#mobile-button:visited {
     min-width: 50px;
     line-height: 44px;
@@ -1218,13 +1371,13 @@ footer {
     color: #ddd;
   }
 
-  /* line 203, ../sass/_mobile.scss */
+  /* line 227, ../sass/_mobile.scss */
   a#mobile-button:hover, a#mobile-button:focus {
     background-color: #1c5185;
     color: #fff;
   }
 
-  /* line 208, ../sass/_mobile.scss */
+  /* line 232, ../sass/_mobile.scss */
   #nav-wrap-mobile {
     display: none;
     top: 60px;
@@ -1235,7 +1388,7 @@ footer {
     position: absolute;
   }
 
-  /* line 218, ../sass/_mobile.scss */
+  /* line 242, ../sass/_mobile.scss */
   ul.menu-mobile {
     margin: 0;
     padding: 0;
@@ -1243,7 +1396,7 @@ footer {
     border-right: 1px solid #0e2842;
   }
 
-  /* line 225, ../sass/_mobile.scss */
+  /* line 249, ../sass/_mobile.scss */
   ul.menu-mobile li {
     width: 100%;
     height: auto;
@@ -1252,7 +1405,7 @@ footer {
     text-decoration: none;
   }
 
-  /* line 233, ../sass/_mobile.scss */
+  /* line 257, ../sass/_mobile.scss */
   ul.menu-mobile li a {
     display: block;
     padding: 10px;
@@ -1265,67 +1418,75 @@ footer {
     font-size: 1.2em;
   }
 
-  /* line 245, ../sass/_mobile.scss */
+  /* line 269, ../sass/_mobile.scss */
   ul.menu-mobile li a:hover {
     background-color: #1c5185;
     text-decoration: none;
     color: #fff;
   }
 
-  /* line 251, ../sass/_mobile.scss */
+  /* line 275, ../sass/_mobile.scss */
   ul.sub-menu {
     display: block;
     position: static !important;
     text-decoration: none;
+    border: none;
+    color: #aaa;
   }
 
-  /* line 257, ../sass/_mobile.scss */
+  /* line 283, ../sass/_mobile.scss */
   ul.sub-menu li a {
     display: block;
     background-color: #11304f;
     min-height: 32px;
     line-height: 32px;
-    font-size: 1.125em;
+    font-size: 1em !important;
+    border: none;
   }
 
-  /* line 265, ../sass/_mobile.scss */
-  ul li.current-menu-item {
+  /* line 292, ../sass/_mobile.scss */
+  nav#nav-mobile ul li.current-menu-item {
     text-decoration: underline;
-    color: #99c1e9 !important;
+    color: #99c1e9;
   }
 
-  /* line 270, ../sass/_mobile.scss */
+  /* line 297, ../sass/_mobile.scss */
   .service, .serviceImg, .serviceDesc {
     text-align: center;
     direction: ltr;
   }
 
-  /* line 275, ../sass/_mobile.scss */
+  /* line 302, ../sass/_mobile.scss */
   .serviceImg {
     width: 30%;
   }
 
-  /* line 279, ../sass/_mobile.scss */
+  /* line 306, ../sass/_mobile.scss */
   #featuredImg {
     width: 75%;
   }
 
-  /* line 283, ../sass/_mobile.scss */
+  /* line 310, ../sass/_mobile.scss */
   #featuredDesc {
     max-width: 500px;
     width: 92%;
     padding-bottom: 3%;
   }
-  /* line 288, ../sass/_mobile.scss */
+  /* line 315, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn {
     text-align: center;
   }
-  /* line 290, ../sass/_mobile.scss */
+  /* line 317, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn a {
     min-width: 60px;
     line-height: 48px;
     padding: 0 20px;
     font-size: 1.125em;
+  }
+
+  /* line 326, ../sass/_mobile.scss */
+  .cycle-slideshow {
+    width: 80%;
   }
 }
 /* line 1, ../sass/_wordpressCore.scss */

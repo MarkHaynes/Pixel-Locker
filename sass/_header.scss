@@ -56,34 +56,41 @@ nav {
 			}
 		}
 
-		li:hover > ul {
-  			display: block;
-  		}
+		li.current-menu-item a {
+			text-decoration: underline;
+			color: lighten($colour-darkblue, 60%);
+		}
+		
+		li:hover > ul.sub-menu {
+			display: block;
+		}		
 
 	}
-
+	
 }
 
 ul.sub-menu {
-	font-size: 0.875em;
-	width: inherit;
 	display: none;
+	max-width: 400px;
 	position: absolute;
 	z-index: 99999;
-	background-color: darken($colour-darkblue, 3%);
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid darken($colour-darkblue, 1%);
+	border-left: 1px solid darken($colour-darkblue, 1%);
+	@include box-shadow(lighten($colour-darkblue, 1%) 2px 2px 5px); 
+
 
 	li {
+		padding: 0px;
+		margin: 0px;
 		display: block;
-		line-height: 44px;
+		@include background-image(linear-gradient(lighten($colour-darkblue, 7%), lighten($colour-darkblue, 5%)));
+		background-color: lighten($colour-darkblue, 5%);
+		border-bottom: 1px solid darken($colour-darkblue, 1%);		
 		color: #aaa;
-
 	}
 
-}
-
-ul li.current-menu-item {
-	text-decoration: underline;
-	color: lighten($colour-darkblue, 60%) !important;
 }
 
 #mainNav, #bottomNav {
