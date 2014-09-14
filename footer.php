@@ -9,8 +9,8 @@
 				</section>
 
 				<div class="wrap">
-					<div style="text-align:center; float:left; color: #aaa; padding-top: 10px;"> Pixel Locker is operated by the Partnership of Mark Haynes & Christopher Huxley.</div>
-					<nav id="bottomNav">
+					<div id="partnership"><span>Pixel Locker is operated by the Partnership of Mark Haynes & Christopher Huxley.</span></div><!--
+					--><nav id="bottomNav">
 						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</nav>
 

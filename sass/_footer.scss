@@ -1,7 +1,6 @@
 footer {
 	position: relative;
 	font-size: 0.875em;
-	color: #aaa;
 }
 
 #bottomStrip {
@@ -45,7 +44,7 @@ footer {
 	}
 }
 
-.social, #bottomNav {
+.social {
 	text-align: center;
 
 	li {
@@ -54,8 +53,21 @@ footer {
 
 }
 
-#bottomNav a {
+#bottomNav, #partnership {
+	display: inline-block;
+	*display: inline;
+    zoom: 1;
+    vertical-align: middle;
 	color: #aaa;
+	width: 50%;
+
+	a {
+		color: #aaa;
+	}
+}
+
+#bottomNav li {
+	line-height: 44px;
 }
 
 #bottomNav a:hover {

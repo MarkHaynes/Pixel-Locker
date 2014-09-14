@@ -55,7 +55,7 @@ Template Name: Custom Front Page
 								<li>Free .co.uk domain if you require one.</li>
 							</ul>
 
-							<a class"promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>" alt="Find Out More">Find Out More</a>
+							<div class="promoBtn"><a class"promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>" alt="Find Out More">Find Out More</a></div>
 						</div>
 
 						<div style="clear: both"></div>
