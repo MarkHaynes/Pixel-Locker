@@ -56,9 +56,19 @@ nav {
 			}
 		}
 
-		li.current-menu-item a {
+		li.current_page_item a {
 			text-decoration: underline;
 			color: lighten($colour-darkblue, 60%);
+		}
+
+		li.current-menu-item > ul.sub-menu li a {
+			color: #ccc ;
+			text-decoration: none;
+		}
+
+		li.current-menu-item > ul.sub-menu li a:hover {
+			color: #fff !important;
+			text-decoration: none;
 		}
 		
 		li:hover > ul.sub-menu {
@@ -66,10 +76,9 @@ nav {
 		}		
 
 	}
-	
 }
 
-ul.sub-menu {
+nav ul.menu ul.sub-menu {
 	display: none;
 	max-width: 400px;
 	position: absolute;
@@ -87,10 +96,27 @@ ul.sub-menu {
 		display: block;
 		@include background-image(linear-gradient(lighten($colour-darkblue, 7%), lighten($colour-darkblue, 5%)));
 		background-color: lighten($colour-darkblue, 5%);
-		border-bottom: 1px solid darken($colour-darkblue, 1%);		
-		color: #aaa;
+		border-bottom: 1px solid darken($colour-darkblue, 1%);
+
+		a {
+			color: #ccc;
+		}
+
+		a:hover {
+			color: #fff;
+		}
+
 	}
 
+	li.current-menu-item > ul.sub-menu li a {
+			color: #ccc;
+			text-decoration: none;
+		}
+
+	li.current_page_item a {
+			text-decoration: underline;
+			color: lighten($colour-darkblue, 60%);
+		}
 }
 
 #mainNav, #bottomNav {

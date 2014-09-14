@@ -304,17 +304,27 @@ nav ul li a:hover {
   text-decoration: none;
 }
 /* line 59, ../sass/_header.scss */
-nav ul li.current-menu-item a {
+nav ul li.current_page_item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 /* line 64, ../sass/_header.scss */
+nav ul li.current-menu-item > ul.sub-menu li a {
+  color: #cccccc;
+  text-decoration: none;
+}
+/* line 69, ../sass/_header.scss */
+nav ul li.current-menu-item > ul.sub-menu li a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+/* line 74, ../sass/_header.scss */
 nav ul li:hover > ul.sub-menu {
   display: block;
 }
 
-/* line 72, ../sass/_header.scss */
-ul.sub-menu {
+/* line 81, ../sass/_header.scss */
+nav ul.menu ul.sub-menu {
   display: none;
   max-width: 400px;
   position: absolute;
@@ -327,8 +337,8 @@ ul.sub-menu {
   -moz-box-shadow: #0f2b46 2px 2px 5px;
   box-shadow: #0f2b46 2px 2px 5px;
 }
-/* line 84, ../sass/_header.scss */
-ul.sub-menu li {
+/* line 93, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li {
   padding: 0px;
   margin: 0px;
   display: block;
@@ -339,10 +349,27 @@ ul.sub-menu li {
   background-image: linear-gradient(#143a5f, #123557);
   background-color: #123557;
   border-bottom: 1px solid #0d253e;
-  color: #aaa;
+}
+/* line 101, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li a {
+  color: #ccc;
+}
+/* line 105, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li a:hover {
+  color: #fff;
+}
+/* line 111, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li.current-menu-item > ul.sub-menu li a {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 116, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li.current_page_item a {
+  text-decoration: underline;
+  color: #99c1e9;
 }
 
-/* line 96, ../sass/_header.scss */
+/* line 122, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }
@@ -1402,7 +1429,7 @@ footer {
     height: auto;
     text-align: center;
     margin: 0;
-    text-decoration: none;
+    line-height: 61px;
   }
 
   /* line 257, ../sass/_mobile.scss */
@@ -1419,64 +1446,79 @@ footer {
   }
 
   /* line 269, ../sass/_mobile.scss */
-  ul.menu-mobile li a:hover {
+  ul.menu-mobile li a:hover, ul.menu-mobile ul.sub-menu li a:hover {
     background-color: #1c5185;
     text-decoration: none;
     color: #fff;
   }
 
   /* line 275, ../sass/_mobile.scss */
-  ul.sub-menu {
+  ul.menu-mobile ul.sub-menu {
+    width: 100%;
     display: block;
-    position: static !important;
-    text-decoration: none;
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 0;
+    color: #aaa;
+    line-height: 32px;
+  }
+
+  /* line 285, ../sass/_mobile.scss */
+  ul.menu-mobile li ul.sub-menu li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+
+  /* line 293, ../sass/_mobile.scss */
+  ul.menu-mobile ul.sub-menu li a {
+    padding: 10px;
+    display: block;
+    background-color: #11304f;
+    height: auto;
+    min-height: 32px;
+    line-height: 32px;
+    font-size: 1em;
     border: none;
+    border-bottom: 1px solid #0e2842;
     color: #aaa;
   }
 
-  /* line 283, ../sass/_mobile.scss */
-  ul.sub-menu li a {
-    display: block;
-    background-color: #11304f;
-    min-height: 32px;
-    line-height: 32px;
-    font-size: 1em !important;
-    border: none;
-  }
-
-  /* line 292, ../sass/_mobile.scss */
-  nav#nav-mobile ul li.current-menu-item {
+  /* line 306, ../sass/_mobile.scss */
+  ul.menu-mobile ul.sub-menu li.current_page_item a {
     text-decoration: underline;
     color: #99c1e9;
   }
 
-  /* line 297, ../sass/_mobile.scss */
+  /* line 311, ../sass/_mobile.scss */
   .service, .serviceImg, .serviceDesc {
     text-align: center;
     direction: ltr;
   }
 
-  /* line 302, ../sass/_mobile.scss */
+  /* line 316, ../sass/_mobile.scss */
   .serviceImg {
     width: 30%;
   }
 
-  /* line 306, ../sass/_mobile.scss */
+  /* line 320, ../sass/_mobile.scss */
   #featuredImg {
     width: 75%;
   }
 
-  /* line 310, ../sass/_mobile.scss */
+  /* line 324, ../sass/_mobile.scss */
   #featuredDesc {
     max-width: 500px;
     width: 92%;
     padding-bottom: 3%;
   }
-  /* line 315, ../sass/_mobile.scss */
+  /* line 329, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn {
     text-align: center;
   }
-  /* line 317, ../sass/_mobile.scss */
+  /* line 331, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn a {
     min-width: 60px;
     line-height: 48px;
@@ -1484,7 +1526,7 @@ footer {
     font-size: 1.125em;
   }
 
-  /* line 326, ../sass/_mobile.scss */
+  /* line 340, ../sass/_mobile.scss */
   .cycle-slideshow {
     width: 80%;
   }
