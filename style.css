@@ -298,17 +298,27 @@ nav ul li a:hover {
   text-decoration: none;
 }
 /* line 52, ../sass/_header.scss */
-nav ul li.current-menu-item a {
+nav ul li.current_page_item a {
   text-decoration: underline;
   color: #99c1e9;
 }
 /* line 57, ../sass/_header.scss */
+nav ul li.current-menu-item > ul.sub-menu li a {
+  color: #cccccc;
+  text-decoration: none;
+}
+/* line 63, ../sass/_header.scss */
+nav ul li.current-menu-item > ul.sub-menu li a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+/* line 69, ../sass/_header.scss */
 nav ul li:hover > ul.sub-menu {
   display: block;
 }
 
-/* line 66, ../sass/_header.scss */
-ul.sub-menu {
+/* line 76, ../sass/_header.scss */
+nav ul.menu ul.sub-menu {
   display: none;
   max-width: 400px;
   position: absolute;
@@ -321,8 +331,8 @@ ul.sub-menu {
   -webkit-box-shadow: #0f2b46 2px 2px 5px;
   box-shadow: #0f2b46 2px 2px 5px;
 }
-/* line 78, ../sass/_header.scss */
-ul.sub-menu li {
+/* line 88, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li {
   padding: 0px;
   margin: 0px;
   display: block;
@@ -332,8 +342,26 @@ ul.sub-menu li {
   background-color: #123557;
   border-bottom: 1px solid #0d253e;
 }
+/* line 96, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li a {
+  color: #ccc;
+}
+/* line 100, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li a:hover {
+  color: #fff;
+}
+/* line 106, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li.current-menu-item > ul.sub-menu li a {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 111, ../sass/_header.scss */
+nav ul.menu ul.sub-menu li.current_page_item a {
+  text-decoration: underline;
+  color: #99c1e9;
+}
 
-/* line 88, ../sass/_header.scss */
+/* line 117, ../sass/_header.scss */
 #mainNav, #bottomNav {
   float: right;
 }
@@ -1390,9 +1418,10 @@ footer {
     height: auto;
     text-align: center;
     margin: 0;
+    line-height: 61px;
   }
 
-  /* line 254, ../sass/_mobile.scss */
+  /* line 255, ../sass/_mobile.scss */
   ul.menu-mobile li a {
     display: block;
     padding: 10px;
@@ -1405,40 +1434,80 @@ footer {
     font-size: 1.2em;
   }
 
-  /* line 266, ../sass/_mobile.scss */
-  ul.menu-mobile li a:hover {
+  /* line 267, ../sass/_mobile.scss */
+  ul.menu-mobile li a:hover, ul.menu-mobile ul.sub-menu li a:hover {
     background-color: #1c5185;
     text-decoration: none;
     color: #fff;
   }
 
-  /* line 272, ../sass/_mobile.scss */
+  /* line 273, ../sass/_mobile.scss */
+  ul.menu-mobile ul.sub-menu {
+    width: 100%;
+    display: block;
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 0;
+    color: #aaa;
+    line-height: 32px;
+  }
+
+  /* line 283, ../sass/_mobile.scss */
+  ul.menu-mobile li ul.sub-menu li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+
+  /* line 291, ../sass/_mobile.scss */
+  ul.menu-mobile ul.sub-menu li a {
+    padding: 10px;
+    display: block;
+    background-color: #11304f;
+    height: auto;
+    min-height: 32px;
+    line-height: 32px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid #0e2842;
+    color: #aaa;
+  }
+
+  /* line 304, ../sass/_mobile.scss */
+  ul.menu-mobile ul.sub-menu li.current_page_item a {
+    text-decoration: underline;
+    color: #99c1e9;
+  }
+
+  /* line 311, ../sass/_mobile.scss */
   .service, .serviceImg, .serviceDesc {
     text-align: center;
     direction: ltr;
   }
 
-  /* line 277, ../sass/_mobile.scss */
+  /* line 316, ../sass/_mobile.scss */
   .serviceImg {
     width: 30%;
   }
 
-  /* line 281, ../sass/_mobile.scss */
+  /* line 320, ../sass/_mobile.scss */
   #featuredImg {
     width: 75%;
   }
 
-  /* line 285, ../sass/_mobile.scss */
+  /* line 324, ../sass/_mobile.scss */
   #featuredDesc {
     max-width: 500px;
     width: 92%;
     padding-bottom: 3%;
   }
-  /* line 290, ../sass/_mobile.scss */
+  /* line 329, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn {
     text-align: center;
   }
-  /* line 292, ../sass/_mobile.scss */
+  /* line 331, ../sass/_mobile.scss */
   #featuredDesc .featuredBtn a {
     min-width: 60px;
     line-height: 48px;

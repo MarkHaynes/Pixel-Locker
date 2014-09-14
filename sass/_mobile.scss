@@ -239,9 +239,9 @@
 	
 	ul.menu-mobile {
 		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		border-right: 1px solid $colour-darkblue;
+        padding: 0;
+        list-style-type: none;
+        border-right: 1px solid $colour-darkblue;
 	}
 
 	ul.menu-mobile li {
@@ -249,9 +249,10 @@
 		height: auto;
 		text-align: center;
 		margin: 0;
+		line-height: 61px;
 	}
 
-	ul.menu-mobile li a {
+	ul.menu-mobile li a  {
 		display: block;
 		padding: 10px;
 		text-align: center;
@@ -263,11 +264,49 @@
 		font-size: 1.2em;
 	}
 
-	ul.menu-mobile li a:hover {
+	ul.menu-mobile li a:hover, ul.menu-mobile ul.sub-menu li a:hover {
 		background-color: lighten($colour-darkblue, 16%);
 		text-decoration: none;
 		color: #fff;
 	}
+
+	ul.menu-mobile ul.sub-menu {
+		width: 100%;
+		display: block;
+		position: relative;
+		border: 0;
+		box-shadow: 0 0 0;
+		color: #aaa;
+		line-height: 32px;
+	}
+
+	ul.menu-mobile li ul.sub-menu li {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin: 0;
+		display: block;
+	}
+
+	ul.menu-mobile ul.sub-menu li a {
+		padding: 10px;
+		display: block;
+        background-color: lighten($colour-darkblue, 3%);
+        height: auto;
+        min-height: 32px;
+        line-height: 32px;
+        font-size: 1em;
+        border: none;
+        border-bottom: 1px solid $colour-darkblue;
+        color: #aaa;
+   	}
+
+   ul.menu-mobile ul.sub-menu li.current_page_item a {
+			text-decoration: underline;
+			color: lighten($colour-darkblue, 60%);
+		}
+
+
 
 	.service, .serviceImg, .serviceDesc {
 		text-align: center;
