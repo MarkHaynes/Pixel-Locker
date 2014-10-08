@@ -100,12 +100,12 @@ h1 {
 /* line 111, ../sass/_base.scss */
 h2, .notFound h1 {
   font-size: 2.25em;
-  color: #70beeb;
+  color: #2da0e2;
 }
 
 /* line 116, ../sass/_base.scss */
 h3 {
-  font-size: 2em;
+  font-size: 1.875em;
   color: #1b84c1;
 }
 
@@ -162,7 +162,7 @@ a:hover {
   color: #84b4e5;
 }
 
-/* line 163, ../sass/_base.scss */
+/* line 164, ../sass/_base.scss */
 .btn a, .quote a, #postsNav a, .serviceBtn a, .facebook a, .twitter a {
   min-width: 60px;
   line-height: 38px;
@@ -180,13 +180,13 @@ a:hover {
   background-color: #1b84c1;
   color: #eee;
 }
-/* line 177, ../sass/_base.scss */
+/* line 178, ../sass/_base.scss */
 .btn a:hover, .quote a:hover, #postsNav a:hover, .serviceBtn a:hover, .facebook a:hover, .twitter a:hover {
   background-color: #5ab4e8;
   color: #fff;
 }
 
-/* line 183, ../sass/_base.scss */
+/* line 184, ../sass/_base.scss */
 .wrap, .contentWrap, .serviceHeaderWrap, .promo, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
@@ -194,27 +194,27 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 190, ../sass/_base.scss */
+/* line 191, ../sass/_base.scss */
 .contentWrap, .serviceHeaderWrap {
   max-width: 920px;
 }
-/* line 193, ../sass/_base.scss */
+/* line 194, ../sass/_base.scss */
 .contentWrap p, .serviceHeaderWrap p {
   text-align: justify;
 }
 
-/* line 198, ../sass/_base.scss */
+/* line 199, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 203, ../sass/_base.scss */
+/* line 204, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 208, ../sass/_base.scss */
+/* line 209, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -1052,12 +1052,13 @@ form#frmContact span {
 /* line 76, ../sass/_contact.scss */
 ul.formError {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto 30px auto;
   padding: 0;
+  text-align: center;
 }
 
-/* line 83, ../sass/_contact.scss */
+/* line 84, ../sass/_contact.scss */
 ul.formError li {
   color: red;
   font-weight: 400;
@@ -1066,7 +1067,7 @@ ul.formError li {
   padding: 0;
 }
 
-/* line 93, ../sass/_contact.scss */
+/* line 94, ../sass/_contact.scss */
 .contact-left h2, .contact-left .notFound h1, .notFound .contact-left h1, .contact-right h2, .contact-right .notFound h1, .notFound .contact-right h1 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1074,39 +1075,39 @@ ul.formError li {
   text-align: center;
 }
 
-/* line 101, ../sass/_contact.scss */
+/* line 102, ../sass/_contact.scss */
 .contact-left {
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
-/* line 107, ../sass/_contact.scss */
+/* line 108, ../sass/_contact.scss */
 .contact-right {
   text-align: center;
   width: 90%;
   max-width: 400px;
   margin: 0 auto;
 }
-/* line 113, ../sass/_contact.scss */
+/* line 114, ../sass/_contact.scss */
 .contact-right ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 119, ../sass/_contact.scss */
+/* line 120, ../sass/_contact.scss */
 .contact-right ul li {
   list-style-type: none;
 }
 
 @media screen and (min-width: 800px) {
-  /* line 127, ../sass/_contact.scss */
+  /* line 128, ../sass/_contact.scss */
   .contact-left {
     float: left;
     width: 50%;
   }
 
-  /* line 131, ../sass/_contact.scss */
+  /* line 132, ../sass/_contact.scss */
   .contact-right {
     float: right;
     width: 50%;

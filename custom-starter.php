@@ -23,7 +23,7 @@ Template Name: Custom Website Starter
 				<img class="left" src="<?php bloginfo('template_url')?>/images/web-design1.png" alt="Pixel Locker Telford Steam Railway Web Design">
 				<p>Our starter package is a great for businesses or individuals to have a bespoke, responsive web presence. It's ideal for startups or those who want to fresh a website. You can easily start here and build upon this package to make your ideal Website.</p>
 				<br>
-				<div class="cf featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact Us Now!">Contact Us For a Free Quote</a></div>
+				<div class="cf featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">Contact Us For a Free Quote</a></div>
 			
 			</div>
 		</section>
@@ -78,7 +78,5 @@ Template Name: Custom Website Starter
 	 	</section>
 
  	</main>
-
-
 
 <?php get_footer(); ?>

@@ -26,9 +26,9 @@
 		else {
 			echo '<h1 class="title">It would be great to hear from you :)</h1>';
 			echo '<nav class="social"><ul>';
-			echo '<li class="btn"><a href="'. get_permalink(get_page_by_path( 'contact' )) .'" alt="Contact Us Now!">email</a></li>';
-			echo '<li class="facebook"><a href="#">facebook</a></li>';
-			echo '<li class="twitter"><a href="#">twitter</a></li>';
+			echo '<li class="btn"><a href="'. get_permalink(get_page_by_path( 'contact' )) .'">email</a></li>';
+			echo '<li class="facebook"><a href="https://www.facebook.com/PixelLocker">facebook</a></li>';
+			echo '<li class="twitter"><a href="https://twitter.com/PixelLocker">twitter</a></li>';
 			echo '</ul></nav>';
 		}
 	}
@@ -73,6 +73,5 @@ add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
-
 
 ?>

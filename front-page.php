@@ -29,7 +29,7 @@ Template Name: Custom Front Page
 						next project.</li>
 					</ul>
 
-					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact US">Request a Quotation.</a></div>
+					<div class="featuredBtn"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">Request a Quotation.</a></div>
 
 				</div>
 				<div style="clear:both"></div>
@@ -55,7 +55,7 @@ Template Name: Custom Front Page
 								<li>Free .co.uk domain if you require one.</li>
 							</ul>
 
-							<div class="promoBtn"><a class"promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>" alt="Find Out More">Find Out More</a></div>
+							<div class="promoBtn"><a class="promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>">Find Out More</a></div>
 						</div>
 
 						<div style="clear: both"></div>
@@ -111,7 +111,7 @@ Template Name: Custom Front Page
 
 					<h3 class="subHeading">We have a lot to offer.</h3>
 
-					<div class="btn"><a href="<?php echo get_permalink(get_page_by_path('websites')); ?>" alt="Read More">Read More</a></div>
+					<div class="btn"><a href="<?php echo get_permalink(get_page_by_path('websites')); ?>">Read More</a></div>
 
 				</div>
 			</div>
@@ -126,7 +126,7 @@ Template Name: Custom Front Page
 					--><div id="teamMembers">
 						<div class="teamMember">
 
-							<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/avatar-mark.jpg" height="70px"><!--
+							<img class="memberAvatar" alt="Photo Of Mark" src="<?php bloginfo('template_url'); ?>/images/avatar-mark.jpg"><!--
 							--><div class="memberDesc">
 								<h2>Mark Haynes</h2>
 
@@ -136,7 +136,7 @@ Template Name: Custom Front Page
 						</div><!--
 						--><div class="teamMember">
 
-							<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/avatar-chris.jpg" height="70px"><!--
+							<img class="memberAvatar" alt="Photo Of Chris" src="<?php bloginfo('template_url'); ?>/images/avatar-chris.jpg"><!--
 							--><div class="memberDesc">
 								<h2>Chris Huxley</h2>
 
@@ -145,6 +145,7 @@ Template Name: Custom Front Page
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 
 		<section class="lightStrip">
@@ -162,17 +163,17 @@ Template Name: Custom Front Page
 			   				<?php if (has_post_thumbnail( $post->ID ) ){
 							 	$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'portfolio-list-thumbnail' );?>
 									<div class="portfolioThumb">
-					                    <a href="<?php the_permalink() ?>" alt="<?php echo the_title(); ?>">
+					                    <a href="<?php the_permalink() ?>">
 					                    	<img src="<?php echo $featuredImage[0]; ?>" class="portfolio-thumbnail" title="<?php the_title_attribute();?>" alt="<?php echo the_title();?>">
 					                    </a>
 					                </div>
 							<?php } ?>
 
-			   				<h1><a href="<?php the_permalink() ?>" alt="<?php echo the_title(); ?>"><?php the_title()?></a></h1>
+			   				<h1><a href="<?php the_permalink() ?>"><?php the_title()?></a></h1>
 
 							<p><?php echo get_portfolio_excerpt(270);?></p>
 							<div class="btn">
-								<a class="portfolioLink" href="<?php the_permalink()?>" alt="<?php echo the_title(); ?>" alt="<?php echo the_title(); ?>">Take a Look</a>
+								<a class="portfolioLink" href="<?php the_permalink()?>">Take a Look</a>
 							</div>
 						</div>
 			   			</li>

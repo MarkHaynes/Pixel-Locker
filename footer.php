@@ -4,7 +4,7 @@
 					
 				<section id="bottomStrip">
 					<div class="wrap">
-						<?php get_footerMsg();?>
+						<?php get_footerMsg();?> <!-- Can edit in functions.php --> 
 					</div>
 				</section>
 
@@ -19,9 +19,7 @@
 			
 			<?php wp_footer();?> <!-- Must not be removed -->
 		
-		</div> <!--#siteWrap-->
-
-	</div><!--Main Wrapper-->
+		</div> <!--class="wrapper"-->
 
 		<!-- Mobile Nav -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -68,7 +66,6 @@
 				}
 			  	
 			  	$( "#nav-wrap-mobile" ).css("height", "90%");
-
 
 			});
     	</script>

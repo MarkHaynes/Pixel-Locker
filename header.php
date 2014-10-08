@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-	<meta charset="utf-8">
-
-	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
-
 	<head>
-		
+
+		<meta charset="utf-8">
+
+		<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/normalize.css" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css"/>
@@ -63,5 +63,3 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'menu-mobile' ) ); ?>
 				</nav>
 			</div>
-
-		

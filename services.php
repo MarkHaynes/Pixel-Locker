@@ -82,7 +82,7 @@ Template Name: Services Page
 
 					<h1 class="title">But thats not all we do,</h1>
 
-					<span class="tagline">So don't be shy. If you cannot find the service you require listed here then we encourage you to <a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" alt="Contact Us Now!">contact us</a>.</span>
+					<span class="tagline">So don't be shy. If you cannot find the service you require listed here then we encourage you to <a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">contact us</a>.</span>
 			</div>
 		</section>
 

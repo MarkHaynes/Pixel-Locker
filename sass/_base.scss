@@ -110,11 +110,11 @@ h1 {
 
 h2 {
     font-size: 2.25em;
-    color: lighten($heading-colour, 5%);
+    color: darken($heading-colour, 10%);
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.875em;
     color: darken($heading-colour, 20%);
 }
 
@@ -158,6 +158,7 @@ a:hover {
     text-decoration: none;
     color: lighten($colour-darkblue, 55%);
 }
+
 .btn {
 
     a{

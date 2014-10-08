@@ -37,7 +37,7 @@ Template Name: Custom Contact Page
 	 				$errorMessage[] = "We need to be able to contact you, a phone number would be great.";
 	 			}
 	 			if (in_array($_POST['txtEnquiry'], $errorRequired)) {
-	 				$errorMessage[] = "Can you provide us some details of what you wish to achieve.";
+	 				$errorMessage[] = "Can you provide us some details of what you wish to achieve?";
 	 			}
 
 	 			if (empty($errorRequired)) {
@@ -124,7 +124,7 @@ Template Name: Custom Contact Page
 				   }
 				      
 				   else{
-				      $error = "There has been a problem sending your message";
+				      $error = "There has been a problem sending your message.";
 				   }
 
 	 			}
@@ -149,39 +149,47 @@ Template Name: Custom Contact Page
 			</div>
 		</section>
 
+		<section class="lightStrip">
+			<div class="contentWrap">
+				<h2 class="title">It would be great to hear from you :)</h2>
+
+					<span class="tagline">Just use the form below or give us a call.</span>		
+			</div>
+		</section>
+
 		<section class="whiteStrip">
 			<div class="contentWrap">
-				
-				<h2>Contact Us Using The Form Below Or Give Us A Call.</h2>
 
 				<?php 
 
-				if ($completed == true) { ?>
-						<div style="text-align: center;">
-							<h1 class="title">Thank you for contacting us, we are excited to contact you shortly.</h1>
-						</div>
-				<?php }
-					
-				else {
-					?>
+					if ($completed == true) { ?>
+							<div style="text-align: center;">
+								<h1 class="title">Thank you for contacting us, we are excited to contact you shortly.</h1>
+							</div>
+					<?php }
+						
+					else {
+				?>
 
-			
-					<ul class="formError">
-					<?php echo $error;?><br>
+		
+				<ul class="formError">
+
+					<?php echo $error;?>
 						<?php 
 
 						if (!empty($errorMessage)) {
 
+							echo "<br>";
 							foreach ($errorMessage as $key => $value) {
 								echo "<li>" . $value . "</li>";
 							} 
-						}?>
-					</ul>
-					
+					}?>
+
+				</ul>
 
 				<div class="contact-left">
 				<h2> Please Enter Your Details Below </h2>
-			   		<form id="frmContact" action="" method="post">
+			   		<form id="frmContact" action="#" method="post">
 				   		<label>
 				   			Full Name:<br>
 				   			<input name="txtFullname" type="text"  autofocus value="<?php echo stripcleantohtml($_POST['txtFullname']);?>">
@@ -219,12 +227,10 @@ Template Name: Custom Contact Page
 				   		</label>
 				   		<br>
 
-				   		<label>
-				   			How would you like us to get in touch?<br>
+				   		<label>How would you like us to get in touch?<br></label><br>
 				   			<input name="chkCall" id="chkCall"  value="Yes" type="checkbox"><label for="chkCall"><span>Phone</span></label><br>
 				   			<input name="chkEmail" id="chkEmail" value="Yes" type="checkbox"><label for="chkEmail"><span>Email</span></label><br>
 				   			<input name="chkPost" id="chkPost" value="Yes" type="checkbox"><label for="chkPost"><span>Post</span></label><br>
-				   		</label>
 				   		<br>
 
 				   		<label>
@@ -234,14 +240,14 @@ Template Name: Custom Contact Page
 				   		<br>
 
 				   		<?php if ($humanConfirm == true) {
-				   				echo '<div style="display:none;>"';
+				   				echo '<div style="display:none;">';
 				   			}
 				   			 else {
-				   			 	echo '<div style="display:block;>"'; 
+				   			 	echo '<div style="display:block;">'; 
 				   			}
 				   		?>
 
-					   		<label class"required">
+					   		<label class="required">
 					   			Just to check your Human, what's the name of OUR Company? Hint Pixel...<br>
 					   			<input type="text" name="txtHuman" value="<?php echo stripcleantohtml($_POST['txtHuman']);?>">
 					   		</label>
@@ -264,11 +270,9 @@ Template Name: Custom Contact Page
 			   		<h2> Contact Us </h2>
 
 			   		<ul>
-			   			<li> <strong>Email: <br></strong> <email><a href="mailto:hello@pixellocker.co.uk">hello@pixellocker.co.uk</a></email></li><br>
-			   			<li> <strong>Telephone: <br> </strong> 0330 2231 321<br></li>
-			   			<br>
-			   			<li><strong>Address:</strong> <address>12 Lindale Grove<br> Meir Park<br>Stoke on Trent<br> ST3 7TS</address><strong>&</strong><br><address>20 Tennant Place<br> Porthill<br> Newcastle Under Lyme<br> ST5 8QP</address>
-			   			<br>
+			   			<li> <strong>Email: <br></strong> <email><a href="mailto:hello@pixellocker.co.uk">hello@pixellocker.co.uk</a></email><br></li>
+			   			<li> <strong>Telephone: <br> </strong> 0330 2231 321<br><br></li>
+			   			<li> <strong>Address:</strong> <address>12 Lindale Grove<br> Meir Park<br>Stoke on Trent<br> ST3 7TS</address><strong>&</strong><br><address>20 Tennant Place<br> Porthill<br> Newcastle Under Lyme<br> ST5 8QP</address><br></li>
 			   			<li><strong>Social Networks:</strong><br> Twitter: <a href="http://twitter.com/pixellocker" title="Twitter">@PixelLocker</a>
 
 			   		</ul>
@@ -285,7 +289,5 @@ Template Name: Custom Contact Page
 	 	</section>
 
  	</main>
-
-
 
 <?php get_footer(); ?>
