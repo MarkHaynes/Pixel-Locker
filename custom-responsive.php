@@ -42,6 +42,4 @@ Template Name: Custom Responsive Page
 
  	</main>
 
-
-
 <?php get_footer(); ?>

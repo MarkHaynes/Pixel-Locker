@@ -187,6 +187,32 @@ a:hover {
 }
 
 /* line 184, ../sass/_base.scss */
+.featuredBtn {
+  text-align: center;
+}
+/* line 187, ../sass/_base.scss */
+.featuredBtn a {
+  min-width: 60px;
+  line-height: 48px;
+  padding: 0 24px;
+  font-size: 1.25em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-color: #1b84c1;
+  color: #ddd;
+}
+/* line 200, ../sass/_base.scss */
+.featuredBtn a:hover {
+  background-color: #5ab4e8;
+  color: #fff;
+}
+
+/* line 206, ../sass/_base.scss */
 .wrap, .contentWrap, .serviceHeaderWrap, .promo, .postWrap, .serviceWrap {
   width: 96%;
   padding: 0 2%;
@@ -194,27 +220,27 @@ a:hover {
   max-width: 1300px;
 }
 
-/* line 191, ../sass/_base.scss */
+/* line 213, ../sass/_base.scss */
 .contentWrap, .serviceHeaderWrap {
   max-width: 920px;
 }
-/* line 194, ../sass/_base.scss */
+/* line 216, ../sass/_base.scss */
 .contentWrap p, .serviceHeaderWrap p {
   text-align: justify;
 }
 
-/* line 199, ../sass/_base.scss */
+/* line 221, ../sass/_base.scss */
 .notFound {
   text-align: center;
   padding: 5em 0;
   background-color: #fff;
 }
-/* line 204, ../sass/_base.scss */
+/* line 226, ../sass/_base.scss */
 .notFound h1 {
   margin: 0 0 14px 0;
 }
 
-/* line 209, ../sass/_base.scss */
+/* line 231, ../sass/_base.scss */
 .clear {
   clear: both;
 }
@@ -468,39 +494,14 @@ nav ul.menu ul.sub-menu li.current_page_item a {
 #featuredDesc ul#featuredList li {
   margin: 10px 0;
 }
-/* line 112, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn {
-  text-align: center;
-}
-/* line 115, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn a {
-  min-width: 60px;
-  line-height: 48px;
-  padding: 0 24px;
-  font-size: 1.25em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  background-color: #1b84c1;
-  color: #ddd;
-}
-/* line 128, ../sass/_frontPage.scss */
-#featuredDesc .featuredBtn a:hover {
-  background-color: #5ab4e8;
-  color: #fff;
-}
 
-/* line 135, ../sass/_frontPage.scss */
+/* line 113, ../sass/_frontPage.scss */
 #pl-logo {
   max-width: 75%;
   margin: 0 auto;
 }
 
-/* line 140, ../sass/_frontPage.scss */
+/* line 118, ../sass/_frontPage.scss */
 .promo {
   max-width: 980px;
   padding: 10px;
@@ -512,7 +513,7 @@ nav ul.menu ul.sub-menu li.current_page_item a {
   border-radius: 4px;
   text-align: center;
 }
-/* line 149, ../sass/_frontPage.scss */
+/* line 127, ../sass/_frontPage.scss */
 .promo .promo-img {
   width: 30%;
   display: inline-block;
@@ -520,7 +521,7 @@ nav ul.menu ul.sub-menu li.current_page_item a {
   zoom: 1;
   vertical-align: middle;
 }
-/* line 157, ../sass/_frontPage.scss */
+/* line 135, ../sass/_frontPage.scss */
 .promo .promo-details {
   width: 60%;
   display: inline-block;
@@ -529,29 +530,29 @@ nav ul.menu ul.sub-menu li.current_page_item a {
   vertical-align: middle;
   text-align: left;
 }
-/* line 166, ../sass/_frontPage.scss */
+/* line 144, ../sass/_frontPage.scss */
 .promo img {
   width: 100%;
   max-width: 300px;
   display: block;
 }
-/* line 172, ../sass/_frontPage.scss */
+/* line 150, ../sass/_frontPage.scss */
 .promo h1 {
   color: #fff;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-/* line 181, ../sass/_frontPage.scss */
+/* line 159, ../sass/_frontPage.scss */
 .promo ul li {
   margin: 5px 0;
   color: #fff;
 }
-/* line 187, ../sass/_frontPage.scss */
+/* line 165, ../sass/_frontPage.scss */
 .promo .promoBtn {
   text-align: center;
 }
-/* line 190, ../sass/_frontPage.scss */
+/* line 168, ../sass/_frontPage.scss */
 .promo .promoBtn a:link, .promo .promoBtn a:visited {
   min-width: 60px;
   line-height: 48px;
@@ -568,13 +569,13 @@ nav ul.menu ul.sub-menu li.current_page_item a {
   background-color: #4d3561;
   color: #ddd;
 }
-/* line 204, ../sass/_frontPage.scss */
+/* line 182, ../sass/_frontPage.scss */
 .promo .promoBtn a:hover {
   background-color: #8861a8;
   color: #fff;
 }
 
-/* line 212, ../sass/_frontPage.scss */
+/* line 190, ../sass/_frontPage.scss */
 ul#servicesList, ul#portfolioList {
   list-style-type: none;
   padding: 0;
@@ -583,15 +584,15 @@ ul#servicesList, ul#portfolioList {
   max-width: 1200px;
   display: block;
 }
-/* line 220, ../sass/_frontPage.scss */
+/* line 198, ../sass/_frontPage.scss */
 ul#servicesList h1, ul#servicesList h2, ul#servicesList .notFound h1, .notFound ul#servicesList h1, ul#servicesList h3, ul#portfolioList h1, ul#portfolioList h2, ul#portfolioList .notFound h1, .notFound ul#portfolioList h1, ul#portfolioList h3 {
   margin: 0px;
 }
-/* line 223, ../sass/_frontPage.scss */
+/* line 201, ../sass/_frontPage.scss */
 ul#servicesList p, ul#portfolioList p {
   text-align: justify;
 }
-/* line 227, ../sass/_frontPage.scss */
+/* line 205, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList li.serviceBox, ul#portfolioList li.portfolioBox {
   padding: 2%;
   margin: 0 0.5%;
@@ -607,68 +608,68 @@ ul#servicesList li.serviceBox, ul#servicesList li.portfolioBox, ul#portfolioList
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 239, ../sass/_frontPage.scss */
+/* line 217, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer, ul#servicesList li.portfolioBox .boxContainer, ul#portfolioList li.serviceBox .boxContainer, ul#portfolioList li.portfolioBox .boxContainer {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 244, ../sass/_frontPage.scss */
+/* line 222, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .boxContainer .btn, ul#servicesList li.serviceBox .boxContainer .quote, ul#servicesList li.serviceBox .boxContainer #postsNav, ul#servicesList li.serviceBox .boxContainer .serviceBtn, ul#servicesList li.serviceBox .boxContainer .facebook, ul#servicesList li.serviceBox .boxContainer .twitter, ul#servicesList li.portfolioBox .boxContainer .btn, ul#servicesList li.portfolioBox .boxContainer .quote, ul#servicesList li.portfolioBox .boxContainer #postsNav, ul#servicesList li.portfolioBox .boxContainer .serviceBtn, ul#servicesList li.portfolioBox .boxContainer .facebook, ul#servicesList li.portfolioBox .boxContainer .twitter, ul#portfolioList li.serviceBox .boxContainer .btn, ul#portfolioList li.serviceBox .boxContainer .quote, ul#portfolioList li.serviceBox .boxContainer #postsNav, ul#portfolioList li.serviceBox .boxContainer .serviceBtn, ul#portfolioList li.serviceBox .boxContainer .facebook, ul#portfolioList li.serviceBox .boxContainer .twitter, ul#portfolioList li.portfolioBox .boxContainer .btn, ul#portfolioList li.portfolioBox .boxContainer .quote, ul#portfolioList li.portfolioBox .boxContainer #postsNav, ul#portfolioList li.portfolioBox .boxContainer .serviceBtn, ul#portfolioList li.portfolioBox .boxContainer .facebook, ul#portfolioList li.portfolioBox .boxContainer .twitter {
   position: absolute;
   bottom: 3%;
   width: 100%;
 }
-/* line 252, ../sass/_frontPage.scss */
+/* line 230, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox, ul#portfolioList li.portfolioBox {
   height: 590px;
 }
-/* line 255, ../sass/_frontPage.scss */
+/* line 233, ../sass/_frontPage.scss */
 ul#servicesList li.portfolioBox h1, ul#portfolioList li.portfolioBox h1 {
   margin: 20px 0 16px 0;
 }
-/* line 261, ../sass/_frontPage.scss */
+/* line 239, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox, ul#portfolioList li.serviceBox {
   height: 420px;
 }
-/* line 264, ../sass/_frontPage.scss */
+/* line 242, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .serviceIcon, ul#portfolioList li.serviceBox .serviceIcon {
   width: 60px;
   margin-top: 14px;
 }
-/* line 269, ../sass/_frontPage.scss */
+/* line 247, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .designT, ul#portfolioList li.serviceBox .designT {
   color: #994242;
 }
-/* line 272, ../sass/_frontPage.scss */
+/* line 250, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .devT, ul#portfolioList li.serviceBox .devT {
   color: #8cad6a;
 }
-/* line 275, ../sass/_frontPage.scss */
+/* line 253, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox .hostT, ul#portfolioList li.serviceBox .hostT {
   color: #759cc2;
 }
-/* line 280, ../sass/_frontPage.scss */
+/* line 258, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover, ul#portfolioList li.serviceBox:hover {
   color: #fff;
 }
-/* line 283, ../sass/_frontPage.scss */
+/* line 261, ../sass/_frontPage.scss */
 ul#servicesList li.serviceBox:hover .designT, ul#servicesList li.serviceBox:hover .devT, ul#servicesList li.serviceBox:hover .hostT, ul#portfolioList li.serviceBox:hover .designT, ul#portfolioList li.serviceBox:hover .devT, ul#portfolioList li.serviceBox:hover .hostT {
   color: #fff;
 }
-/* line 288, ../sass/_frontPage.scss */
+/* line 266, ../sass/_frontPage.scss */
 ul#servicesList li.design:hover, ul#portfolioList li.design:hover {
   background-color: #994242;
 }
-/* line 291, ../sass/_frontPage.scss */
+/* line 269, ../sass/_frontPage.scss */
 ul#servicesList li.dev:hover, ul#portfolioList li.dev:hover {
   background-color: #8cad6a;
 }
-/* line 294, ../sass/_frontPage.scss */
+/* line 272, ../sass/_frontPage.scss */
 ul#servicesList li.host:hover, ul#portfolioList li.host:hover {
   background-color: #759cc2;
 }
-/* line 298, ../sass/_frontPage.scss */
+/* line 276, ../sass/_frontPage.scss */
 ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolioList .serviceIcon, ul#portfolioList .portfolio-thumbnail {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -678,55 +679,55 @@ ul#servicesList .serviceIcon, ul#servicesList .portfolio-thumbnail, ul#portfolio
   margin-right: auto;
 }
 
-/* line 305, ../sass/_frontPage.scss */
+/* line 283, ../sass/_frontPage.scss */
 #meetTheTeam {
   max-width: 1040px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 310, ../sass/_frontPage.scss */
+/* line 288, ../sass/_frontPage.scss */
 #meetTheTeam h1, #meetTheTeam h2, #meetTheTeam .notFound h1, .notFound #meetTheTeam h1, #meetTheTeam h3 {
   margin: 16px auto;
 }
-/* line 313, ../sass/_frontPage.scss */
+/* line 291, ../sass/_frontPage.scss */
 #meetTheTeam p {
   margin: 1em auto;
 }
-/* line 317, ../sass/_frontPage.scss */
+/* line 295, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam .teamMember, #meetTheTeam .memberAvatar, #meetTheTeam .memberDesc {
   display: inline-block;
   *display: inline;
   zoom: 1;
   vertical-align: top;
 }
-/* line 324, ../sass/_frontPage.scss */
+/* line 302, ../sass/_frontPage.scss */
 #meetTheTeam #teamDesc, #meetTheTeam #teamMembers {
   width: 100%;
   margin: 0 auto;
 }
-/* line 329, ../sass/_frontPage.scss */
+/* line 307, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers {
   max-width: 80%;
 }
-/* line 332, ../sass/_frontPage.scss */
+/* line 310, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember {
   width: 45%;
   padding: 0;
   margin: 0 2%;
   text-align: center;
 }
-/* line 338, ../sass/_frontPage.scss */
+/* line 316, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberAvatar {
   height: auto;
   width: 40%;
   margin: 2% auto;
   display: block;
 }
-/* line 345, ../sass/_frontPage.scss */
+/* line 323, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc {
   width: 100%;
 }
-/* line 347, ../sass/_frontPage.scss */
+/* line 325, ../sass/_frontPage.scss */
 #meetTheTeam #teamMembers .teamMember .memberDesc p {
   text-align: center;
   font-style: italic;
