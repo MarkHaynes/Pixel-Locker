@@ -67,11 +67,29 @@
 			$excerpt = $excerpt.'...';
 		}
 	return $excerpt;
-}
+	}
 
-add_action( 'init', 'my_add_excerpts_to_pages' );
-function my_add_excerpts_to_pages() {
-     add_post_type_support( 'page', 'excerpt' );
-}
+	add_action( 'init', 'my_add_excerpts_to_pages' );
+	function my_add_excerpts_to_pages() {
+	     add_post_type_support( 'page', 'excerpt' );
+	}
+
+	add_action( 'init', 'create_post_type' );
+	function create_post_type() {
+	  register_post_type( 'portfolio',
+	    array(
+	      'labels' => array(
+	        'name' => __( 'Portfolio' ),
+	        'singular_name' => __( 'Portfolio' )
+	      ),
+	      'supports' => array('title', 'excerpt', 'custom-fields', 'thumbnail', 'editor' ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'show_ui' => true,
+	      'show_in_menu' => true,
+	      'menu_position' => 5,
+	    )
+	  );
+	}
 
 ?>

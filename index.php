@@ -41,7 +41,7 @@
 
 					<?php } ?>
 
-					<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+					<h2 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
 					<?php the_excerpt(); ?>
 
@@ -51,6 +51,7 @@
 
 				</div>
 			</section>
+			
         </article>
         
         <?php endwhile; ?>

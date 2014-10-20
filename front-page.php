@@ -37,31 +37,31 @@ Template Name: Custom Front Page
 		</section>
 
 		<section class="purpleStrip">
-							<div class="strip">
-					<div class="promo">
-						<div class="promo-img">
-							<img src="<?php bloginfo('template_url'); ?>/images/starterpackage-smaller.png" alt="Starter Package">
-						</div>
-
-						<div class="promo-details">
-							<h1> Starter Package </h1>
-							<ul>
-								<li>A Bespoke Website Using the Wordpress Content Management System.</li>
-								<li>Up to 5 pages of your choosing. (We can be add more if you wish)</li>
-								<li>A contact page with Google Map integration and an enquiry form.</li>
-								<li>Guides on how to use your new system plus 3 months of support.</li>
-								<li>Free Website hosting for 12 months.</li>
-								<li>Free Unlimited Email accounts for 12 months.</li>
-								<li>Free .co.uk domain if you require one.</li>
-							</ul>
-
-							<div class="promoBtn"><a class="promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>">Find Out More</a></div>
-						</div>
-
-						<div style="clear: both"></div>
+			<div class="wrap">
+				<div class="promo">
+					<div class="promo-img">
+						<img src="<?php bloginfo('template_url'); ?>/images/starterpackage-smaller.png" alt="Starter Package">
 					</div>
 
+					<div class="promo-details">
+						<h1> Starter Package </h1>
+						<ul>
+							<li>A Bespoke Website Using the Wordpress Content Management System.</li>
+							<li>Up to 5 pages of your choosing. (We can be add more if you wish)</li>
+							<li>A contact page with Google Map integration and an enquiry form.</li>
+							<li>Guides on how to use your new system plus 3 months of support.</li>
+							<li>Free Website hosting for 12 months.</li>
+							<li>Free Unlimited Email accounts for 12 months.</li>
+							<li>Free .co.uk domain if you require one.</li>
+						</ul>
+
+						<div class="promoBtn"><a class="promo-link" href="<?php echo get_permalink(get_page_by_path('websites/starter-package')); ?>">Find Out More</a></div>
+					</div>
+
+					<div style="clear: both"></div>
 				</div>
+
+			</div>
 		</section>
 
 
@@ -156,8 +156,9 @@ Template Name: Custom Front Page
 				<div class="strip">
 					<ul id="portfolioList">
 
-					<?php query_posts( array( 'category_name' => 'portfolio', 'posts_per_page' => 6 ) );
-					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 6 );
+					$loop = new WP_Query($args);
+					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			   			<li class="portfolioBox">
 			   			<div class="boxContainer">
 			   				<?php if (has_post_thumbnail( $post->ID ) ){

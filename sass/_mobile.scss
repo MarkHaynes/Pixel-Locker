@@ -126,6 +126,11 @@
 	.cycle-slideshow {
 		width: 100% !important;
 	}
+
+	.portfolio-thumb, .portfolio-excerpt {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 860px){
@@ -207,6 +212,11 @@
 			text-align: center;
 		}
 
+	}
+
+	.portfolio-thumb, .portfolio-excerpt {
+		width: 80%;
+		margin: 0;
 	}
 
 }

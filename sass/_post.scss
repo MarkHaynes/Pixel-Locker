@@ -35,8 +35,12 @@
 	}
 }
 
-.blogPost h1, .blogPost p {
+.blogPost h2, .blogPost p {
 	margin-top: 0px;
+}
+
+.blogPost h2 {
+    font-size: 2.5em;
 }
 
 .blogPost img {
@@ -62,4 +66,34 @@
 		a {
 			margin: 0 5px;
 		}
+}
+
+.portfolio-wrap {
+	@extend .contentWrap;
+	text-align: center;
+}
+
+.portfolio-thumb {
+	width: 48%;
+	max-height: 50%;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	margin-right: 3%;
+
+	img {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+}
+
+.portfolio-excerpt {
+	width: 48%;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	text-align: left;
 }

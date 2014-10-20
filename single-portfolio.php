@@ -10,20 +10,21 @@
 				<div class="wrap">
 					
 					<h1 class="title"><?php the_title(); ?></h1>
-					<span class="postInfo"><?php the_time( 'D, jS F, Y' ); ?></span>
-					<span class="postInfo">Posted in: <?php the_category(' ~ '); ?></span>
-	
+				
 				</div>
 			</section>
 
 			<?php if ( has_post_thumbnail() ): ?>
 				
-			<section class="thumbStrip">
-				<div class="contentWrap">
+			<section class="lightStrip">
+				<div class="portfolio-wrap">
 
-					<div class="thumb">
-	                    <?php the_post_thumbnail('large'); ?>
-	                </div>
+						<div class="portfolio-thumb">
+		                    <?php the_post_thumbnail('full'); ?>
+		                </div>
+						<div class="portfolio-excerpt">
+		                	<p><?php the_excerpt(); ?></p>
+		                </div>
 
 				</div>
 			</section>
